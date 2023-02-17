@@ -1,0 +1,152 @@
+@prefix : <http://nubbe-kg.aksw.org/ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://nubbe-kg.aksw.org/ontology#> .
+
+<http://nubbe-kg.aksw.org/ontology#> rdf:type owl:Ontology ;
+                                        <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ;
+                                        <http://purl.org/dc/terms/description> "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en ;
+                                        <http://purl.org/dc/terms/rights> "Copyright © 2023 ChemNet"@en ;
+                                        <http://purl.org/dc/terms/title> "nubbe: The data model for nubbeDB Knowledge Graph"@en ;
+                                        <http://purl.org/vocab/vann/preferredNamespacePrefix> "nubbe" ;
+                                        <http://purl.org/vocab/vann/preferredNamespaceUri> "http://nubbe-kg.aksw.org/ontology#" ;
+                                        rdfs:comment "The Coconut Ontology contains the data model of Coconut Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en ;
+                                        rdfs:label "nubbe: The data model for nubbeDB Knowledge Graph"@en ;
+                                        owl:versionInfo "SNAPSHOT" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://nubbe-kg.aksw.org/ontology#hasBioactivityData
+:hasBioactivityData rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Compound ;
+                    rdfs:range :BioactivityData ;
+                    rdfs:comment "A chemical compound has bioactivity data."@en ;
+                    rdfs:label "has bioactivity data"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#wasMentionedInPublication
+:wasMentionedInPublication rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Compound ;
+                    rdfs:range :Publication ;
+                    rdfs:comment "A chemical compound was mentioned in a publication."@en ;
+                    rdfs:label "has bioactivity data"@en .
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://nubbe-kg.aksw.org/ontology#name
+:name rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Compound ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Given name of a chemical compound."@en ;
+                rdfs:label "Name"@en .
+                
+###  http://nubbe-kg.aksw.org/ontology#molecularFormula
+:molecularFormula rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Compound ;
+                rdfs:range xsd:string ;
+                rdfs:comment "Molecular formula of a chemical compound."@en ;
+                rdfs:label "Molecular formula"@en .
+                
+###  http://nubbe-kg.aksw.org/ontology#subpubId
+:subpubId rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:int ;
+                rdfs:comment "The sub-publication Id of a compounds publication."@en ;
+                rdfs:label "Sub-Pub ID"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#publicationId
+:publicationId rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:int ;
+                rdfs:comment "The publication Id of a compounds publication."@en ;
+                rdfs:label "Publication ID"@en .
+                
+###  http://nubbe-kg.aksw.org/ontology#publicationType
+:publicationType rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The type of a compounds publication."@en ;
+                rdfs:label "Publication type"@en .
+                
+###  http://nubbe-kg.aksw.org/ontology#publicationTitle
+:publicationTitle rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The title of a compounds publication."@en ;
+                rdfs:label "Publication title"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#publicationDoi
+:publicationDoi rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The digital object identifier of a compounds publication."@en ;
+                rdfs:label "Publication DOI"@en .
+                
+                
+#################################################################
+#    Classes
+#################################################################
+
+
+###  http://nubbe-kg.aksw.org/ontology#Compound
+:Compound rdf:type owl:Class ;
+          rdfs:comment "A chemical compound"@en ;
+          rdfs:label "Compound"@en .
+   
+###  http://nubbe-kg.aksw.org/ontology#Publication
+:Publication rdf:type owl:Class ;
+          rdfs:comment "A publication in which a chemical compound was mentioned in."@en ;
+          rdfs:label "Publication"@en .       
+          
+###  http://nubbe-kg.aksw.org/ontology#BioactivityData
+:BioactivityData rdf:type owl:Class ;
+          rdfs:comment "Bioactivity data of a chemical compound"@en ;
+          rdfs:label "Bioactivity data"@en .
+
+
+                
+#################################################################
+#    Annotations
+#################################################################
