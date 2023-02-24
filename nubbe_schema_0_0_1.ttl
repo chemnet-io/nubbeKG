@@ -125,46 +125,46 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "Molar mass"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#logp
-:logp rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+:clogp rdf:type owl:DatatypeProperty ;
+                rdfs:domain :ConstitutionalDescriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "Prediction of logP."@en ;
-                rdfs:label "logP"@en .
+                rdfs:comment "Prediction of clogP."@en ;
+                rdfs:label "clogP"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#tpsa
 :tpsa rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+                rdfs:domain :TopologicalDescriptors ;
                 rdfs:range xsd:float ;
                 rdfs:comment "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."@en ;
                 rdfs:label "tPSA"@en .
                 
-###  http://nubbe-kg.aksw.org/ontology#nvlr
-:nvlr rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
-                rdfs:range xsd:float ;
-                rdfs:comment "nvlr TODO."@en ;
-                rdfs:label "nvlr"@en .
+###  http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures
+:lipinskiRuleOf5Failures rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :ConstitutionalDescriptors ;
+                         rdfs:range xsd:int ;
+                         rdfs:comment "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."@en ;
+                         rdfs:label "Lipinski rule of 5 failures"@en .
 
-###  http://nubbe-kg.aksw.org/ontology#non
-:non rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
-                rdfs:range xsd:float ;
-                rdfs:comment "non TODO."@en ;
-                rdfs:label "non"@en .
+###  http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount
+:hBondAcceptorCount rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ElectronicDescriptors ;
+                    rdfs:range xsd:int ;
+                    rdfs:comment "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."@en ;
+                    rdfs:label "hydrogen bond acceptor count"@en .
                 
-###  http://nubbe-kg.aksw.org/ontology#nohnh
-:nohnh rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
-                rdfs:range xsd:float ;
-                rdfs:comment "nohnh TODO."@en ;
-                rdfs:label "nonhn"@en .
+###  http://nubbe-kg.aksw.org/ontology#hBondDonorCount
+:hBondDonorCount rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :ElectronicDescriptors ;
+                 rdfs:range xsd:int ;
+                 rdfs:comment "Donor count is the sum of the atoms in the molecule which have H donor property."@en ;
+                 rdfs:label "hydrogen bond donor count"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#nrotb
 :nrotb rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+                rdfs:domain :MolecularDescriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "nrotb TODO."@en ;
-                rdfs:label "nrotb"@en .
+                rdfs:comment "Number of rotatable bonds of a chemical compound."@en ;
+                rdfs:label "nRotB"@en .
                                                 
 ###  http://nubbe-kg.aksw.org/ontology#automaticCode
 :automaticCode rdf:type owl:DatatypeProperty ;
@@ -310,14 +310,14 @@ xsd:date rdf:type rdfs:Datatype .
 :publicationCitationExtra rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Publication ;
                 rdfs:range xsd:string ;
-                rdfs:comment "Extra informations on citations of the publication.."@en ;
+                rdfs:comment "Extra informations on citations of the publication."@en ;
                 rdfs:label "Publications citation extra information"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Sd
 :Sd rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:boolean ;
-                rdfs:comment "Sd TODO."@en ;
+                rdfs:range xsd:float ;
+                rdfs:comment "Standard deviation of the method."@en ;
                 rdfs:label "SD"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Gt
@@ -337,8 +337,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://nubbe-kg.aksw.org/ontology#methodResults
 :methodResults rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:int ;
-                rdfs:comment "Bioactivity method results TODO yet unknown if only int and what it all means."@en ;
+                rdfs:range xsd:float ;
+                rdfs:comment "Method result."@en ;
                 rdfs:label "methodResults"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#acitivityId
@@ -470,40 +470,64 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "Bioactivity data of a chemical compound."@en ;
           rdfs:label "Bioactivity data"@en .
 
+###  http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors
+:ElectronicDescriptors rdf:type owl:Class ;
+          rdfs:subClassOf :Descriptors ;
+          rdfs:comment "Electronic descriptors of a chemical compound."@en ;
+          rdfs:label "Electronic descriptors"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors
+:ConstitutionalDescriptors rdf:type owl:Class ;
+          rdfs:subClassOf :Descriptors ;
+          rdfs:comment "Constitutional descriptors of a chemical compound."@en ;
+          rdfs:label "Constitutional descriptors"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors
+:TopologicalDescriptors rdf:type owl:Class ;
+          rdfs:subClassOf :Descriptors ;
+          rdfs:comment "Topological descriptors of a chemical compound."@en ;
+          rdfs:label "Topological descriptors"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#MolecularDescriptors
+:MolecularDescriptors rdf:type owl:Class ;
+          rdfs:subClassOf :Descriptors ;
+          rdfs:comment "Molecular descriptors of a chemical compound."@en ;
+          rdfs:label "Molecular descriptors"@en .
+
 ###  http://nubbe-kg.aksw.org/ontology#Ic50
 :Ic50 rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "IC50 TODO."@en ;
-          rdfs:label "IC 50"@en .
+          rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
+          rdfs:label "IC50"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Ic12
 :Ic12 rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "IC12 TODO."@en ;
-          rdfs:label "IC 12"@en .
+          rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
+          rdfs:label "IC12"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Ld50
 :Ld50 rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "LD50 TODO."@en ;
+          rdfs:comment "LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals."@en ;
           rdfs:label "Ld 50"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Ec50
 :Ec50 rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "EC50 TODO."@en ;
+          rdfs:comment "The EC50 is the concentration of a drug that gives half-maximal response."@en ;
           rdfs:label "EC 50"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Mic
 :Mic rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "MIC TODO."@en ;
+          rdfs:comment "The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
           rdfs:label "MIC"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Mfc
 :Mfc rdf:type owl:Class ;
           rdfs:subClassOf :Bioactivity ;
-          rdfs:comment "MFC TODO."@en ;
+          rdfs:comment "The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth."@en ;
           rdfs:label "MFC"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#Ed
