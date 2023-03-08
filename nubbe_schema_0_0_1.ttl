@@ -97,7 +97,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:domain :Compound ;
                     rdfs:range :Publication ;
                     rdfs:comment "A chemical compound was mentioned in a publication."@en ;
-                    rdfs:label "has bioactivity data"@en .
+                    rdfs:label "was mentioned in"@en .
 
 #################################################################
 #    Data properties
@@ -121,8 +121,8 @@ xsd:date rdf:type rdfs:Datatype .
 :molecularVolume rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Descriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "Molar mass of a chemical compound."@en ;
-                rdfs:label "Molar mass"@en .
+                rdfs:comment "Molecular volume of a chemical compound."@en ;
+                rdfs:label "Molecular volume"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#logp
 :clogp rdf:type owl:DatatypeProperty ;
