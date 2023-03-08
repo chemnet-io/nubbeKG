@@ -13,7 +13,7 @@
                                         <http://purl.org/dc/terms/title> "nubbe: The data model for nubbeDB Knowledge Graph"@en ;
                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "nubbe" ;
                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://nubbe-kg.aksw.org/ontology#" ;
-                                        rdfs:comment "The Coconut Ontology contains the data model of Coconut Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en ;
+                                        rdfs:comment "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en ;
                                         rdfs:label "nubbe: The data model for nubbeDB Knowledge Graph"@en ;
                                         owl:versionInfo "SNAPSHOT" .
 
