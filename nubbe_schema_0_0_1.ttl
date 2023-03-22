@@ -110,16 +110,23 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "Given common name of a chemical compound."@en ;
                 rdfs:label "Common name"@en .
                 
-###  http://nubbe-kg.aksw.org/ontology#molarMass
-:molarMass rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+###  http://nubbe-kg.aksw.org/ontology#molecularWeight
+:molecularWeight rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MolecularDescriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "Molar mass of a chemical compound."@en ;
-                rdfs:label "Molar mass"@en .
+                rdfs:comment "Molecular weight of a chemical compound."@en ;
+                rdfs:label "Molecular weight"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#monoisotopicMass
+:monoisotopicMass rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MolecularDescriptors ;
+                rdfs:range xsd:float ;
+                rdfs:comment "Monoisotopic mass of a chemical compound."@en ;
+                rdfs:label "Monoisotopic mass"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#molecularVolume
 :molecularVolume rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+                rdfs:domain :MolecularDescriptors ;
                 rdfs:range xsd:float ;
                 rdfs:comment "Molecular volume of a chemical compound."@en ;
                 rdfs:label "Molecular volume"@en .
@@ -166,12 +173,12 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "Number of rotatable bonds of a chemical compound."@en ;
                 rdfs:label "nRotB"@en .
                                                 
-###  http://nubbe-kg.aksw.org/ontology#automaticCode
-:automaticCode rdf:type owl:DatatypeProperty ;
+###  http://nubbe-kg.aksw.org/ontology#nubbeId
+:nubbeId rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Compound ;
                 rdfs:range xsd:string ;
-                rdfs:comment "Automatic code of a chemical compound."@en ;
-                rdfs:label "Automatic code"@en .
+                rdfs:comment "The numeric identifier a chemical compound has in the NubbeDB database."@en ;
+                rdfs:label "NUBBE ID"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#smiles
 :smiles rdf:type owl:DatatypeProperty ;
