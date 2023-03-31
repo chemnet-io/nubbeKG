@@ -103,40 +103,47 @@ xsd:date rdf:type rdfs:Datatype .
 #    Data properties
 #################################################################
 
-###  http://nubbe-kg.aksw.org/ontology#name
-:name rdf:type owl:DatatypeProperty ;
+###  http://nubbe-kg.aksw.org/ontology#commonName
+:commonName rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Compound ;
                 rdfs:range xsd:string ;
-                rdfs:comment "Given name of a chemical compound."@en ;
-                rdfs:label "Name"@en .
+                rdfs:comment "Given common name of a chemical compound."@en ;
+                rdfs:label "Common name"@en .
                 
-###  http://nubbe-kg.aksw.org/ontology#molarMass
-:molarMass rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+###  http://nubbe-kg.aksw.org/ontology#molecularWeight
+:molecularWeight rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MolecularDescriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "Molar mass of a chemical compound."@en ;
-                rdfs:label "Molar mass"@en .
+                rdfs:comment "Molecular weight of a chemical compound."@en ;
+                rdfs:label "Molecular weight"@en .
+
+###  http://nubbe-kg.aksw.org/ontology#monoisotopicMass
+:monoisotopicMass rdf:type owl:DatatypeProperty ;
+                rdfs:domain :MolecularDescriptors ;
+                rdfs:range xsd:float ;
+                rdfs:comment "Monoisotopic mass of a chemical compound."@en ;
+                rdfs:label "Monoisotopic mass"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#molecularVolume
 :molecularVolume rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Descriptors ;
+                rdfs:domain :MolecularDescriptors ;
                 rdfs:range xsd:float ;
                 rdfs:comment "Molecular volume of a chemical compound."@en ;
                 rdfs:label "Molecular volume"@en .
 
-###  http://nubbe-kg.aksw.org/ontology#logp
-:clogp rdf:type owl:DatatypeProperty ;
+###  http://nubbe-kg.aksw.org/ontology#logpCoefficient
+:logpCoefficient rdf:type owl:DatatypeProperty ;
                 rdfs:domain :ConstitutionalDescriptors ;
                 rdfs:range xsd:float ;
-                rdfs:comment "Prediction of clogP."@en ;
-                rdfs:label "clogP"@en .
+                rdfs:comment "Prediction of the logP Coefficient."@en ;
+                rdfs:label "logP Coefficient"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#tpsa
 :tpsa rdf:type owl:DatatypeProperty ;
                 rdfs:domain :TopologicalDescriptors ;
                 rdfs:range xsd:float ;
                 rdfs:comment "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."@en ;
-                rdfs:label "tPSA"@en .
+                rdfs:label "TPSA"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures
 :lipinskiRuleOf5Failures rdf:type owl:DatatypeProperty ;
@@ -166,19 +173,19 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "Number of rotatable bonds of a chemical compound."@en ;
                 rdfs:label "nRotB"@en .
                                                 
-###  http://nubbe-kg.aksw.org/ontology#automaticCode
-:automaticCode rdf:type owl:DatatypeProperty ;
+###  http://nubbe-kg.aksw.org/ontology#nubbeId
+:nubbeId rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Compound ;
                 rdfs:range xsd:string ;
-                rdfs:comment "Automatic code of a chemical compound."@en ;
-                rdfs:label "Automatic code"@en .
+                rdfs:comment "The numeric identifier a chemical compound has in the NubbeDB database."@en ;
+                rdfs:label "NUBBE ID"@en .
                 
 ###  http://nubbe-kg.aksw.org/ontology#smiles
 :smiles rdf:type owl:DatatypeProperty ;
                 rdfs:domain :UniqueIdentifiers ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Simplified Molecular Input Line Entry Specification."@en ;
-                rdfs:label "smiles"@en .
+                rdfs:label "SMILES"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#iupacName
 :iupacName rdf:type owl:DatatypeProperty ;
@@ -388,7 +395,7 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:domain :Bioactivity ;
                 rdfs:range xsd:string ;
                 rdfs:comment "A one word description of the observed properties during bioactivity analysis."@en ;
-                rdfs:label "Code"@en .
+                rdfs:label "Results"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#species
 :species rdf:type owl:DatatypeProperty ;
@@ -425,11 +432,11 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "The Class of which a chemical compound is part of."@en ;
                 rdfs:label "Class"@en .
 
-###  http://nubbe-kg.aksw.org/ontology#isolationType
-:isolationType rdf:type owl:DatatypeProperty ;
+###  http://nubbe-kg.aksw.org/ontology#obtentionMethod
+:obtentionMethod rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Isolation ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The entity from which the chemical compound has been extracted."@en ;
+                rdfs:comment "Explains in what way the chemical compound has been extracted."@en ;
                 rdfs:label "Isolation type"@en .
 
 ###  http://nubbe-kg.aksw.org/ontology#city
@@ -443,7 +450,7 @@ xsd:date rdf:type rdfs:Datatype .
 :state rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Isolation ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The state in which the chemical compound has been extracted, usually jsut by it's short code."@en ;
+                rdfs:comment "The state in which the chemical compound has been extracted, usually just by it's short code."@en ;
                 rdfs:label "Isolation state"@en .
 #################################################################
 #    Classes
