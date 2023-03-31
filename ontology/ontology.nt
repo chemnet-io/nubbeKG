@@ -1,0 +1,607 @@
+<http://nubbe-kg.aksw.org/ontology#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/dc/terms/creator> "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/dc/terms/description> "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/dc/terms/rights> "Copyright © 2023 ChemNet"@en .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/dc/terms/title> "nubbe: The data model for nubbeDB Knowledge Graph"@en .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "nubbe" .
+<http://nubbe-kg.aksw.org/ontology#> <http://purl.org/vocab/vann/preferredNamespaceUri> "http://nubbe-kg.aksw.org/ontology#" .
+<http://nubbe-kg.aksw.org/ontology#> <http://www.w3.org/2000/01/rdf-schema#comment> "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."@en .
+<http://nubbe-kg.aksw.org/ontology#> <http://www.w3.org/2000/01/rdf-schema#label> "nubbe: The data model for nubbeDB Knowledge Graph"@en .
+<http://nubbe-kg.aksw.org/ontology#> <http://www.w3.org/2002/07/owl#versionInfo> "SNAPSHOT" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://nubbe-kg.aksw.org/ontology#hasBioactivityData
+<http://nubbe-kg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has bioactivity data."@en .
+<http://nubbe-kg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#label> "has bioactivity data"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#hasDescriptors
+<http://nubbe-kg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has various descriptors."@en .
+<http://nubbe-kg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "has descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#hasIsolationData
+<http://nubbe-kg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#Isolation> .
+<http://nubbe-kg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has data about it's isolation site and origin."@en .
+<http://nubbe-kg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#label> "has isolation data"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#isClassifiedBy
+<http://nubbe-kg.aksw.org/ontology#isClassifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound is classified by a biological taxonomy."@en .
+<http://nubbe-kg.aksw.org/ontology#isClassifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is classified by"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#isIdentifiedBy
+<http://nubbe-kg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> .
+<http://nubbe-kg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound is identified by it's unique identifiers."@en .
+<http://nubbe-kg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is identified by"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#wasMentionedIn
+<http://nubbe-kg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbe-kg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound was mentioned in a publication."@en .
+<http://nubbe-kg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#label> "was mentioned in"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://nubbe-kg.aksw.org/ontology#Class
+<http://nubbe-kg.aksw.org/ontology#Class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#comment> "The Class of which a chemical compound is part of."@en .
+<http://nubbe-kg.aksw.org/ontology#Class> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Gt
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Dl> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ec50> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ed> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic12> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic50> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Inhibition> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ld50> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mfc> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mic> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#comment> "GT TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#Gt> <http://www.w3.org/2000/01/rdf-schema#label> "GT"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Lt
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Dl> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ec50> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ed> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic12> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic50> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Inhibition> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ld50> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mfc> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mic> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#comment> "Lt TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#Lt> <http://www.w3.org/2000/01/rdf-schema#label> "LT"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Sd
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Dl> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ec50> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ed> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic12> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic50> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Inhibition> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ld50> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mfc> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mic> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard deviation of the method."@en .
+<http://nubbe-kg.aksw.org/ontology#Sd> <http://www.w3.org/2000/01/rdf-schema#label> "SD"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#activityId
+<http://nubbe-kg.aksw.org/ontology#activityId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#activityId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#activityId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#activityId> <http://www.w3.org/2000/01/rdf-schema#comment> "The identification number of the bioactivity."@en .
+<http://nubbe-kg.aksw.org/ontology#activityId> <http://www.w3.org/2000/01/rdf-schema#label> "Activity ID"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#automaticCode
+<http://nubbe-kg.aksw.org/ontology#automaticCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#automaticCode> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#automaticCode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#automaticCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Automatic code of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#automaticCode> <http://www.w3.org/2000/01/rdf-schema#label> "Automatic code"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#city
+<http://nubbe-kg.aksw.org/ontology#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Isolation> .
+<http://nubbe-kg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#comment> "The city in which the chemical compound has been extracted."@en .
+<http://nubbe-kg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation city"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#clogp
+<http://nubbe-kg.aksw.org/ontology#clogp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#clogp> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#clogp> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#clogp> <http://www.w3.org/2000/01/rdf-schema#comment> "Prediction of clogP."@en .
+<http://nubbe-kg.aksw.org/ontology#clogp> <http://www.w3.org/2000/01/rdf-schema#label> "clogP"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#code
+<http://nubbe-kg.aksw.org/ontology#code> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#code> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#code> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#code> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity Code TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#code> <http://www.w3.org/2000/01/rdf-schema#label> "Code"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#concentration
+<http://nubbe-kg.aksw.org/ontology#concentration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#concentration> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#concentration> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#concentration> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity concentration? TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#concentration> <http://www.w3.org/2000/01/rdf-schema#label> "Concentration"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#extraInformation
+<http://nubbe-kg.aksw.org/ontology#extraInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#extraInformation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#extraInformation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#extraInformation> <http://www.w3.org/2000/01/rdf-schema#comment> "Additional information about the bioactivity analysis."@en .
+<http://nubbe-kg.aksw.org/ontology#extraInformation> <http://www.w3.org/2000/01/rdf-schema#label> "Extra Information"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#family
+<http://nubbe-kg.aksw.org/ontology#family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#comment> "The family of which a chemical compound is part of."@en .
+<http://nubbe-kg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#label> "Family"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#gender
+<http://nubbe-kg.aksw.org/ontology#gender> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#gender> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#gender> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#gender> <http://www.w3.org/2000/01/rdf-schema#comment> "The gender of which a chemical compound is part of."@en .
+<http://nubbe-kg.aksw.org/ontology#gender> <http://www.w3.org/2000/01/rdf-schema#label> "Gender"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount
+<http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."@en .
+<http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/2000/01/rdf-schema#label> "hydrogen bond acceptor count"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#hBondDonorCount
+<http://nubbe-kg.aksw.org/ontology#hBondDonorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#hBondDonorCount> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#hBondDonorCount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#hBondDonorCount> <http://www.w3.org/2000/01/rdf-schema#comment> "Donor count is the sum of the atoms in the molecule which have H donor property."@en .
+<http://nubbe-kg.aksw.org/ontology#hBondDonorCount> <http://www.w3.org/2000/01/rdf-schema#label> "hydrogen bond donor count"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#inchi
+<http://nubbe-kg.aksw.org/ontology#inchi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#inchi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> .
+<http://nubbe-kg.aksw.org/ontology#inchi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#inchi> <http://www.w3.org/2000/01/rdf-schema#comment> "International Chemical Identifier."@en .
+<http://nubbe-kg.aksw.org/ontology#inchi> <http://www.w3.org/2000/01/rdf-schema#label> "inchi"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#inchikey
+<http://nubbe-kg.aksw.org/ontology#inchikey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#inchikey> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> .
+<http://nubbe-kg.aksw.org/ontology#inchikey> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#inchikey> <http://www.w3.org/2000/01/rdf-schema#comment> "International Chemical Identifier key."@en .
+<http://nubbe-kg.aksw.org/ontology#inchikey> <http://www.w3.org/2000/01/rdf-schema#label> "inchikey"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#isolationType
+<http://nubbe-kg.aksw.org/ontology#isolationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#isolationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Isolation> .
+<http://nubbe-kg.aksw.org/ontology#isolationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#isolationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The entity from which the chemical compound has been extracted."@en .
+<http://nubbe-kg.aksw.org/ontology#isolationType> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation type"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#iupacName
+<http://nubbe-kg.aksw.org/ontology#iupacName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> .
+<http://nubbe-kg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name within the International Union of Pure and Applied Chemistry."@en .
+<http://nubbe-kg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#label> "IUPAC Name"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures
+<http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/2000/01/rdf-schema#label> "Lipinski rule of 5 failures"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#methodResults
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Dl> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ec50> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ed> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic12> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ic50> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Inhibition> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Ld50> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mfc> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Mic> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#comment> "Method result."@en .
+<http://nubbe-kg.aksw.org/ontology#methodResults> <http://www.w3.org/2000/01/rdf-schema#label> "methodResults"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#molarMass
+<http://nubbe-kg.aksw.org/ontology#molarMass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#molarMass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#molarMass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#molarMass> <http://www.w3.org/2000/01/rdf-schema#comment> "Molar mass of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#molarMass> <http://www.w3.org/2000/01/rdf-schema#label> "Molar mass"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#molecularFormula
+<http://nubbe-kg.aksw.org/ontology#molecularFormula> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#molecularFormula> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#molecularFormula> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#molecularFormula> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular formula of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#molecularFormula> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular formula"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#molecularVolume
+<http://nubbe-kg.aksw.org/ontology#molecularVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#molecularVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#molecularVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#molecularVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular volume of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#molecularVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular volume"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#name
+<http://nubbe-kg.aksw.org/ontology#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Compound> .
+<http://nubbe-kg.aksw.org/ontology#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Given name of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#name> <http://www.w3.org/2000/01/rdf-schema#label> "Name"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#nrotb
+<http://nubbe-kg.aksw.org/ontology#nrotb> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#nrotb> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#MolecularDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#nrotb> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#nrotb> <http://www.w3.org/2000/01/rdf-schema#comment> "Number of rotatable bonds of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#nrotb> <http://www.w3.org/2000/01/rdf-schema#label> "nRotB"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#observation
+<http://nubbe-kg.aksw.org/ontology#observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Observation information about the bioactivity analysis."@en .
+<http://nubbe-kg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#positionActivity
+<http://nubbe-kg.aksw.org/ontology#positionActivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#positionActivity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#positionActivity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#positionActivity> <http://www.w3.org/2000/01/rdf-schema#comment> "positionActivity TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#positionActivity> <http://www.w3.org/2000/01/rdf-schema#label> "Position activity"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationAgency
+<http://nubbe-kg.aksw.org/ontology#publicationAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationAgency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationAgency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationAgency> <http://www.w3.org/2000/01/rdf-schema#comment> "The agency which published the publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationAgency> <http://www.w3.org/2000/01/rdf-schema#label> "Publication agency"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationCitationExtra
+<http://nubbe-kg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#comment> "Extra informations on citations of the publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#label> "Publications citation extra information"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationDoi
+<http://nubbe-kg.aksw.org/ontology#publicationDoi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#comment> "The digital object identifier of a compounds publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#label> "Publication DOI"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationEvent
+<http://nubbe-kg.aksw.org/ontology#publicationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationEvent> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationEvent> <http://www.w3.org/2000/01/rdf-schema#comment> "Any event where the publication has been a topic."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationEvent> <http://www.w3.org/2000/01/rdf-schema#label> "Publications events"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationId
+<http://nubbe-kg.aksw.org/ontology#publicationId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#publicationId> <http://www.w3.org/2000/01/rdf-schema#comment> "The publication Id of a compounds publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationId> <http://www.w3.org/2000/01/rdf-schema#label> "Publication ID"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationLocal
+<http://nubbe-kg.aksw.org/ontology#publicationLocal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationLocal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationLocal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationLocal> <http://www.w3.org/2000/01/rdf-schema#comment> "The local publication medium in which the publication appeared."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationLocal> <http://www.w3.org/2000/01/rdf-schema#label> "Publications local publishments"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationPages
+<http://nubbe-kg.aksw.org/ontology#publicationPages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationPages> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationPages> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationPages> <http://www.w3.org/2000/01/rdf-schema#comment> "The page numbers of the mediium the publication was published."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationPages> <http://www.w3.org/2000/01/rdf-schema#label> "Publication page numbers"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationPeriodic
+<http://nubbe-kg.aksw.org/ontology#publicationPeriodic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationPeriodic> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationPeriodic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationPeriodic> <http://www.w3.org/2000/01/rdf-schema#comment> "The periodic magazine in which the publication appeared."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationPeriodic> <http://www.w3.org/2000/01/rdf-schema#label> "Publications periodic magazine"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationProcess
+<http://nubbe-kg.aksw.org/ontology#publicationProcess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationProcess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationProcess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationProcess> <http://www.w3.org/2000/01/rdf-schema#comment> "The Process TODO in which the publication appeared."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationProcess> <http://www.w3.org/2000/01/rdf-schema#label> "Publications process"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationPublisher
+<http://nubbe-kg.aksw.org/ontology#publicationPublisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationPublisher> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationPublisher> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationPublisher> <http://www.w3.org/2000/01/rdf-schema#comment> "The publisher of a publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationPublisher> <http://www.w3.org/2000/01/rdf-schema#label> "Publications publisher"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationTitle
+<http://nubbe-kg.aksw.org/ontology#publicationTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationTitle> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationTitle> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationTitle> <http://www.w3.org/2000/01/rdf-schema#comment> "The title of a compounds publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationTitle> <http://www.w3.org/2000/01/rdf-schema#label> "Publication title"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationType
+<http://nubbe-kg.aksw.org/ontology#publicationType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of a compounds publication."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationType> <http://www.w3.org/2000/01/rdf-schema#label> "Publication type"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationVolume
+<http://nubbe-kg.aksw.org/ontology#publicationVolume> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationVolume> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationVolume> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#publicationVolume> <http://www.w3.org/2000/01/rdf-schema#comment> "The volume in which the publication was published."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationVolume> <http://www.w3.org/2000/01/rdf-schema#label> "Publication volume"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#publicationYear
+<http://nubbe-kg.aksw.org/ontology#publicationYear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The year of the publication was published."@en .
+<http://nubbe-kg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#label> "Publication year"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#result
+<http://nubbe-kg.aksw.org/ontology#result> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#result> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#result> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#result> <http://www.w3.org/2000/01/rdf-schema#comment> "A one word description of the observed properties during bioactivity analysis."@en .
+<http://nubbe-kg.aksw.org/ontology#result> <http://www.w3.org/2000/01/rdf-schema#label> "Results"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#smiles
+<http://nubbe-kg.aksw.org/ontology#smiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> .
+<http://nubbe-kg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Simplified Molecular Input Line Entry Specification."@en .
+<http://nubbe-kg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#label> "smiles"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#species
+<http://nubbe-kg.aksw.org/ontology#species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#comment> "The species of which a chemical compound is part of."@en .
+<http://nubbe-kg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#state
+<http://nubbe-kg.aksw.org/ontology#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Isolation> .
+<http://nubbe-kg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which the chemical compound has been extracted, usually jsut by it's short code."@en .
+<http://nubbe-kg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation state"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#subClass
+<http://nubbe-kg.aksw.org/ontology#subClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#subClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Taxonomy> .
+<http://nubbe-kg.aksw.org/ontology#subClass> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbe-kg.aksw.org/ontology#subClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The Subclass of which a chemical compound is part of."@en .
+<http://nubbe-kg.aksw.org/ontology#subClass> <http://www.w3.org/2000/01/rdf-schema#label> "Subclass"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#subpubId
+<http://nubbe-kg.aksw.org/ontology#subpubId> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#subpubId> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#Publication> .
+<http://nubbe-kg.aksw.org/ontology#subpubId> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+<http://nubbe-kg.aksw.org/ontology#subpubId> <http://www.w3.org/2000/01/rdf-schema#comment> "The sub-publication Id of a compounds publication."@en .
+<http://nubbe-kg.aksw.org/ontology#subpubId> <http://www.w3.org/2000/01/rdf-schema#label> "Sub-Pub ID"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#tpsa
+<http://nubbe-kg.aksw.org/ontology#tpsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbe-kg.aksw.org/ontology#tpsa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors> .
+<http://nubbe-kg.aksw.org/ontology#tpsa> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#float> .
+<http://nubbe-kg.aksw.org/ontology#tpsa> <http://www.w3.org/2000/01/rdf-schema#comment> "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."@en .
+<http://nubbe-kg.aksw.org/ontology#tpsa> <http://www.w3.org/2000/01/rdf-schema#label> "tPSA"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://nubbe-kg.aksw.org/ontology#Bioactivity
+<http://nubbe-kg.aksw.org/ontology#Bioactivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity data of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#label> "Bioactivity data"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Compound
+<http://nubbe-kg.aksw.org/ontology#Compound> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Compound> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#Compound> <http://www.w3.org/2000/01/rdf-schema#label> "Compound"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors
+<http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Constitutional descriptors of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Constitutional descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Descriptors
+<http://nubbe-kg.aksw.org/ontology#Descriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Descriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Descriptors chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#Descriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Dl
+<http://nubbe-kg.aksw.org/ontology#Dl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Dl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Dl> <http://www.w3.org/2000/01/rdf-schema#comment> "DL TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#Dl> <http://www.w3.org/2000/01/rdf-schema#label> "DL"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Ec50
+<http://nubbe-kg.aksw.org/ontology#Ec50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Ec50> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Ec50> <http://www.w3.org/2000/01/rdf-schema#comment> "The EC50 is the concentration of a drug that gives half-maximal response."@en .
+<http://nubbe-kg.aksw.org/ontology#Ec50> <http://www.w3.org/2000/01/rdf-schema#label> "EC 50"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Ed
+<http://nubbe-kg.aksw.org/ontology#Ed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Ed> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Ed> <http://www.w3.org/2000/01/rdf-schema#comment> "ED TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#Ed> <http://www.w3.org/2000/01/rdf-schema#label> "ED"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors
+<http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic descriptors of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Ic12
+<http://nubbe-kg.aksw.org/ontology#Ic12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Ic12> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Ic12> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en .
+<http://nubbe-kg.aksw.org/ontology#Ic12> <http://www.w3.org/2000/01/rdf-schema#label> "IC12"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Ic50
+<http://nubbe-kg.aksw.org/ontology#Ic50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Ic50> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Ic50> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en .
+<http://nubbe-kg.aksw.org/ontology#Ic50> <http://www.w3.org/2000/01/rdf-schema#label> "IC50"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Inhibition
+<http://nubbe-kg.aksw.org/ontology#Inhibition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Inhibition> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Inhibition> <http://www.w3.org/2000/01/rdf-schema#comment> "Inhibition TODO."@en .
+<http://nubbe-kg.aksw.org/ontology#Inhibition> <http://www.w3.org/2000/01/rdf-schema#label> "Inhibition"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Isolation
+<http://nubbe-kg.aksw.org/ontology#Isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information on where and from what the chemical compound has been isolated."@en .
+<http://nubbe-kg.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Ld50
+<http://nubbe-kg.aksw.org/ontology#Ld50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Ld50> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Ld50> <http://www.w3.org/2000/01/rdf-schema#comment> "LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals."@en .
+<http://nubbe-kg.aksw.org/ontology#Ld50> <http://www.w3.org/2000/01/rdf-schema#label> "Ld 50"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Mfc
+<http://nubbe-kg.aksw.org/ontology#Mfc> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Mfc> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Mfc> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth."@en .
+<http://nubbe-kg.aksw.org/ontology#Mfc> <http://www.w3.org/2000/01/rdf-schema#label> "MFC"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Mic
+<http://nubbe-kg.aksw.org/ontology#Mic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Mic> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Bioactivity> .
+<http://nubbe-kg.aksw.org/ontology#Mic> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en .
+<http://nubbe-kg.aksw.org/ontology#Mic> <http://www.w3.org/2000/01/rdf-schema#label> "MIC"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#MolecularDescriptors
+<http://nubbe-kg.aksw.org/ontology#MolecularDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#MolecularDescriptors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#MolecularDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Molecular descriptors of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#MolecularDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Molecular descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Publication
+<http://nubbe-kg.aksw.org/ontology#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication in which a chemical compound was mentioned in."@en .
+<http://nubbe-kg.aksw.org/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#Taxonomy
+<http://nubbe-kg.aksw.org/ontology#Taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#Taxonomy> <http://www.w3.org/2000/01/rdf-schema#comment> "The biological taxonomy of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#Taxonomy> <http://www.w3.org/2000/01/rdf-schema#label> "Taxonomy"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors
+<http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbe-kg.aksw.org/ontology#Descriptors> .
+<http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Topological descriptors of a chemical compound."@en .
+<http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Topological descriptors"@en .
+# 
+# http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers
+<http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifiers of a chemical compound like smiles and inchikeys."@en .
+<http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/2000/01/rdf-schema#label> "Unique identifiers"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

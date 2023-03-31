@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@triply/yasgui": "^4.2.28",
+    "local-web-server": "^5.3.0"
+  }
+}

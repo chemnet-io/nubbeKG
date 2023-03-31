@@ -1,0 +1,1941 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2000/01/rdf-schema", "http://nubbe-kg.aksw.org/ontology", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "en" : "nubbe: The data model for nubbeDB Knowledge Graph"
+    },
+    "iri" : "http://nubbe-kg.aksw.org/ontology#",
+    "version" : "SNAPSHOT",
+    "author" : [ "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy" ],
+    "description" : {
+      "en" : "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."
+    },
+    "labels" : {
+      "en" : "nubbe: The data model for nubbeDB Knowledge Graph"
+    },
+    "comments" : {
+      "en" : "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties."
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "nubbe",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Copyright © 2023 ChemNet",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://nubbe-kg.aksw.org/ontology#",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "SNAPSHOT",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "en",
+        "value" : "nubbe: The data model for nubbeDB Knowledge Graph",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "73",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "95",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "0",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "16",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "17",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "20",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Compound",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Compound",
+      "en" : "Compound"
+    },
+    "comment" : {
+      "en" : "A chemical compound."
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Isolation",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Isolation",
+      "en" : "Isolation"
+    },
+    "comment" : {
+      "en" : "Information on where and from what the chemical compound has been isolated."
+    },
+    "id" : "22"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Ic12",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ic12",
+      "en" : "IC12"
+    },
+    "comment" : {
+      "en" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."
+    },
+    "id" : "37",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "23",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Ec50",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ec50",
+      "en" : "EC 50"
+    },
+    "comment" : {
+      "en" : "The EC50 is the concentration of a drug that gives half-maximal response."
+    },
+    "id" : "39",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "6",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "43",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "51", "37", "52", "53", "39", "54", "55", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "35"
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "51", "37", "53", "52", "39", "54", "55", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ConstitutionalDescriptors",
+      "en" : "Constitutional descriptors"
+    },
+    "comment" : {
+      "en" : "Constitutional descriptors of a chemical compound."
+    },
+    "id" : "58",
+    "superClasses" : [ "8" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "51", "37", "53", "52", "39", "54", "55", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "59"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "UniqueIdentifiers",
+      "en" : "Unique identifiers"
+    },
+    "comment" : {
+      "en" : "Unique identifiers of a chemical compound like smiles and inchikeys."
+    },
+    "id" : "66"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "50", "51", "37", "53", "52", "39", "54", "55", "56" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "47",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "73",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "61",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "75",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "76",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "79",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "80",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Mic",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mic",
+      "en" : "MIC"
+    },
+    "comment" : {
+      "en" : "The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
+    },
+    "id" : "52",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TopologicalDescriptors",
+      "en" : "Topological descriptors"
+    },
+    "comment" : {
+      "en" : "Topological descriptors of a chemical compound."
+    },
+    "id" : "46",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Publication",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Publication",
+      "en" : "Publication"
+    },
+    "comment" : {
+      "en" : "A publication in which a chemical compound was mentioned in."
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "88",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ElectronicDescriptors",
+      "en" : "Electronic descriptors"
+    },
+    "comment" : {
+      "en" : "Electronic descriptors of a chemical compound."
+    },
+    "id" : "5",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "19",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "93",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "95",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "96",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Ld50",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ld50",
+      "en" : "Ld 50"
+    },
+    "comment" : {
+      "en" : "LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals."
+    },
+    "id" : "56",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Descriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Descriptors",
+      "en" : "Descriptors"
+    },
+    "subClasses" : [ "58", "5", "14", "46" ],
+    "comment" : {
+      "en" : "Descriptors chemical compound."
+    },
+    "id" : "8"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Bioactivity",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Bioactivity",
+      "en" : "Bioactivity data"
+    },
+    "subClasses" : [ "50", "51", "37", "53", "52", "39", "54", "55", "56" ],
+    "comment" : {
+      "en" : "Bioactivity data of a chemical compound."
+    },
+    "id" : "26"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Ic50",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ic50",
+      "en" : "IC50"
+    },
+    "comment" : {
+      "en" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."
+    },
+    "id" : "54",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#MolecularDescriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MolecularDescriptors",
+      "en" : "Molecular descriptors"
+    },
+    "comment" : {
+      "en" : "Molecular descriptors of a chemical compound."
+    },
+    "id" : "14",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Mfc",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Mfc",
+      "en" : "MFC"
+    },
+    "comment" : {
+      "en" : "The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth."
+    },
+    "id" : "50",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "129",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "36",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "78",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "int"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Taxonomy",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Taxonomy",
+      "en" : "Taxonomy"
+    },
+    "comment" : {
+      "en" : "The biological taxonomy of a chemical compound."
+    },
+    "id" : "11"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Dl",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Dl",
+      "en" : "DL"
+    },
+    "comment" : {
+      "en" : "DL TODO."
+    },
+    "id" : "51",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Inhibition",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Inhibition",
+      "en" : "Inhibition"
+    },
+    "comment" : {
+      "en" : "Inhibition TODO."
+    },
+    "id" : "53",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Ed",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ed",
+      "en" : "ED"
+    },
+    "comment" : {
+      "en" : "ED TODO."
+    },
+    "id" : "55",
+    "superClasses" : [ "26" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "4",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "13",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "34",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "87",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "90",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "99",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "100",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "102",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "105",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "113",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "115",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "120",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "125",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "134",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "138",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#wasMentionedIn",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "wasMentionedIn",
+      "en" : "was mentioned in"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound was mentioned in a publication."
+    },
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hBondAcceptorCount",
+      "en" : "hydrogen bond acceptor count"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "4"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#molarMass",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "molarMass",
+      "en" : "Molar mass"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Molar mass of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#subClass",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "subClass",
+      "en" : "Subclass"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The Subclass of which a chemical compound is part of."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#nrotb",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "nrotb",
+      "en" : "nRotB"
+    },
+    "domain" : "14",
+    "comment" : {
+      "en" : "Number of rotatable bonds of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "13"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationPeriodic",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "publicationPeriodic",
+      "en" : "Publications periodic magazine"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The periodic magazine in which the publication appeared."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#isolationType",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "isolationType",
+      "en" : "Isolation type"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "The entity from which the chemical compound has been extracted."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#activityId",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "27",
+    "label" : {
+      "IRI-based" : "activityId",
+      "en" : "Activity ID"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "The identification number of the bioactivity."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationEvent",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "publicationEvent",
+      "en" : "Publications events"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Any event where the publication has been a topic."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Sd",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "36",
+    "label" : {
+      "IRI-based" : "Sd",
+      "en" : "SD"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Standard deviation of the method."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#tpsa",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "47",
+    "label" : {
+      "IRI-based" : "tpsa",
+      "en" : "tPSA"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#result",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "result",
+      "en" : "Results"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "A one word description of the observed properties during bioactivity analysis."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#hasDescriptors",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "hasDescriptors",
+      "en" : "has descriptors"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound has various descriptors."
+    },
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#hasIsolationData",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "hasIsolationData",
+      "en" : "has isolation data"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound has data about it's isolation site and origin."
+    },
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#code",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "code",
+      "en" : "Code"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Bioactivity Code TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationProcess",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "publicationProcess",
+      "en" : "Publications process"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The Process TODO in which the publication appeared."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#positionActivity",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "positionActivity",
+      "en" : "Position activity"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "positionActivity TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "40",
+    "label" : {
+      "IRI-based" : "lipinskiRuleOf5Failures",
+      "en" : "Lipinski rule of 5 failures"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#iupacName",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "iupacName",
+      "en" : "IUPAC Name"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Name within the International Union of Pure and Applied Chemistry."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#clogp",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "78",
+    "label" : {
+      "IRI-based" : "clogp",
+      "en" : "clogP"
+    },
+    "domain" : "58",
+    "comment" : {
+      "en" : "Prediction of clogP."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#isIdentifiedBy",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "isIdentifiedBy",
+      "en" : "is identified by"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound is identified by it's unique identifiers."
+    },
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#extraInformation",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "extraInformation",
+      "en" : "Extra Information"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Additional information about the bioactivity analysis."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#molecularVolume",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "molecularVolume",
+      "en" : "Molecular volume"
+    },
+    "domain" : "8",
+    "comment" : {
+      "en" : "Molecular volume of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#inchi",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "inchi",
+      "en" : "inchi"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "International Chemical Identifier."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationLocal",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "86",
+    "label" : {
+      "IRI-based" : "publicationLocal",
+      "en" : "Publications local publishments"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The local publication medium in which the publication appeared."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationType",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "88",
+    "label" : {
+      "IRI-based" : "publicationType",
+      "en" : "Publication type"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The type of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "87"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#gender",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "gender",
+      "en" : "Gender"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The gender of which a chemical compound is part of."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "89"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Class",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "91",
+    "label" : {
+      "IRI-based" : "Class",
+      "en" : "Class"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The Class of which a chemical compound is part of."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "90"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationYear",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "79",
+    "label" : {
+      "IRI-based" : "publicationYear",
+      "en" : "Publication year"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The year of the publication was published."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Gt",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "98",
+    "label" : {
+      "IRI-based" : "Gt",
+      "en" : "GT"
+    },
+    "domain" : "70",
+    "comment" : {
+      "en" : "GT TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "97"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#state",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "75",
+    "label" : {
+      "IRI-based" : "state",
+      "en" : "Isolation state"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "The state in which the chemical compound has been extracted, usually jsut by it's short code."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "99"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#hBondDonorCount",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "hBondDonorCount",
+      "en" : "hydrogen bond donor count"
+    },
+    "domain" : "5",
+    "comment" : {
+      "en" : "Donor count is the sum of the atoms in the molecule which have H donor property."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "100"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationPages",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "96",
+    "label" : {
+      "IRI-based" : "publicationPages",
+      "en" : "Publication page numbers"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The page numbers of the mediium the publication was published."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#smiles",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "smiles",
+      "en" : "smiles"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Simplified Molecular Input Line Entry Specification."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "102"
+  }, {
+    "range" : "26",
+    "domain" : "56",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationAgency",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "publicationAgency",
+      "en" : "Publication agency"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The agency which published the publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
+  }, {
+    "range" : "26",
+    "domain" : "55",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "105"
+  }, {
+    "range" : "26",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "106"
+  }, {
+    "range" : "26",
+    "domain" : "53",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "107"
+  }, {
+    "range" : "26",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "108"
+  }, {
+    "range" : "26",
+    "domain" : "39",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "109"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#automaticCode",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "111",
+    "label" : {
+      "IRI-based" : "automaticCode",
+      "en" : "Automatic code"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Automatic code of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#observation",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "observation",
+      "en" : "Observation"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Observation information about the bioactivity analysis."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#concentration",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "114",
+    "label" : {
+      "IRI-based" : "concentration",
+      "en" : "Concentration"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Bioactivity concentration? TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#methodResults",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "methodResults",
+      "en" : "methodResults"
+    },
+    "domain" : "59",
+    "comment" : {
+      "en" : "Method result."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "115"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationCitationExtra",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "16",
+    "label" : {
+      "IRI-based" : "publicationCitationExtra",
+      "en" : "Publications citation extra information"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "Extra informations on citations of the publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "116"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#isClassifiedBy",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "isClassifiedBy",
+      "en" : "is classified by"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound is classified by a biological taxonomy."
+    },
+    "attributes" : [ "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#hasBioactivityData",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "hasBioactivityData",
+      "en" : "has bioactivity data"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "A chemical compound has bioactivity data."
+    },
+    "attributes" : [ "object" ],
+    "id" : "118"
+  }, {
+    "range" : "26",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "119"
+  }, {
+    "range" : "26",
+    "domain" : "50",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#species",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "species",
+      "en" : "Species"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The species of which a chemical compound is part of."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "121"
+  }, {
+    "range" : "26",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "122"
+  }, {
+    "range" : "8",
+    "domain" : "5",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "123"
+  }, {
+    "range" : "8",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "124"
+  }, {
+    "range" : "8",
+    "domain" : "46",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationVolume",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "80",
+    "label" : {
+      "IRI-based" : "publicationVolume",
+      "en" : "Publication volume"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The volume in which the publication was published."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "126"
+  }, {
+    "range" : "8",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "127"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#family",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "family",
+      "en" : "Family"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "The family of which a chemical compound is part of."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationDoi",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "publicationDoi",
+      "en" : "Publication DOI"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The digital object identifier of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#subpubId",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "subpubId",
+      "en" : "Sub-Pub ID"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The sub-publication Id of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#molecularFormula",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "33",
+    "label" : {
+      "IRI-based" : "molecularFormula",
+      "en" : "Molecular formula"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Molecular formula of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#city",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "130",
+    "label" : {
+      "IRI-based" : "city",
+      "en" : "Isolation city"
+    },
+    "domain" : "22",
+    "comment" : {
+      "en" : "The city in which the chemical compound has been extracted."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#Lt",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "129",
+    "label" : {
+      "IRI-based" : "Lt",
+      "en" : "LT"
+    },
+    "domain" : "57",
+    "comment" : {
+      "en" : "Lt TODO."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationTitle",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "93",
+    "label" : {
+      "IRI-based" : "publicationTitle",
+      "en" : "Publication title"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The title of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#name",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "20",
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "Name"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Given name of a chemical compound."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#inchikey",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "inchikey",
+      "en" : "inchikey"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "International Chemical Identifier key."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationId",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "95",
+    "label" : {
+      "IRI-based" : "publicationId",
+      "en" : "Publication ID"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The publication Id of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://nubbe-kg.aksw.org/ontology#publicationPublisher",
+    "baseIri" : "http://nubbe-kg.aksw.org/ontology",
+    "range" : "94",
+    "label" : {
+      "IRI-based" : "publicationPublisher",
+      "en" : "Publications publisher"
+    },
+    "domain" : "3",
+    "comment" : {
+      "en" : "The publisher of a publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "140"
+  } ]
+}

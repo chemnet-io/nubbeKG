@@ -1,0 +1,1014 @@
+/******************************************************************************* Variables used throughout the theme. To adjust anything, simply edit the variables below and rebuild the theme. */
+/******************************************************************************* Themes */
+:root {
+    --global-bg-color: #ffffff;
+    --global-code-bg-color: rgba(218, 218, 10, 0.3);
+    --global-text-color: #000000;
+    --global-text-color-light: #828282;
+    --global-theme-color: #327701;
+    --global-hover-color: #2f7501;
+    --global-footer-bg-color: #1C1C1D;
+    --global-footer-text-color: #e8e8e8;
+    --global-footer-link-color: #ffffff;
+    --global-distill-app-color: #828282;
+    --global-divider-color: rgba(0, 0, 0, .1);
+
+    /** Color sheme for ontology**/
+    --global-ontology-text-color: #000000;
+    /*--global-ontology-background-color: #f2f2f2;*/
+    --global-ontology-background-color: #e3e3e3;
+    --global-ontology-inner-background-color: #F4FFFF;
+    --global-ontology-link-color: #007bff;
+    --global-ontology-link-visited-color: #b92cff;
+    --global-ontology-border-color: navy;
+    --global-ontology-hlist-color: #F4FFFF;
+}
+
+:root .fa-sun {
+    display: none;
+}
+
+:root .fa-moon {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+}
+
+html[data-theme='dark'] {
+    --global-bg-color: #1C1C1D;
+    --global-code-bg-color: #2c3237;
+    --global-text-color: #e8e8e8;
+    --global-text-color-light: #e8e8e8;
+    --global-theme-color: #2698BA;
+    --global-hover-color: #2698BA;
+    --global-footer-bg-color: #e8e8e8;
+    --global-footer-text-color: #1C1C1D;
+    --global-footer-link-color: #000000;
+    --global-distill-app-color: #e8e8e8;
+    --global-divider-color: #424246;
+    --global-ontology-border-color: white;
+    --global-ontology-text-color: white;
+    --global-yasgui-tr-background-color: #000000;
+}
+
+html[data-theme='dark'] .fa-sun {
+    padding-left: 10px;
+    padding-top: 12px;
+    display: block;
+}
+
+html[data-theme='dark'] .fa-moon {
+    display: none;
+}
+
+/****************************************************************************** Content */
+body {
+    padding-bottom: 70px;
+    color: var(--global-text-color);
+    background-color: var(--global-bg-color) !important;
+    word-break: break-word;
+}
+
+table {
+    color: var(--global-text-color);
+}
+
+body h1, body h2, body h3, body h4, body h5, body h6 {
+    scroll-margin-top: 66px;
+}
+
+body.fixed-top-nav {
+    padding-top: 56px;
+}
+
+body.sticky-bottom-footer {
+    padding-bottom: 0;
+}
+
+.container {
+    max-width: 800px !important;
+}
+
+.profile img {
+    width: 100%;
+}
+
+.navbar {
+    -webkit-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+
+/****************************************************************************** Publications */
+/***************************************************************************** Projects */
+/******************************************************************************* Styles for the base elements of the theme. */
+p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong, table {
+    color: var(--global-text-color) !important;
+}
+
+hr {
+    border-top: 1px solid var(--global-divider-color);
+}
+
+a, table.table a {
+    color: var(--global-theme-color)!important;
+}
+
+a:hover, table.table a:hover {
+    color: var(--global-theme-color)!important;
+    text-decoration: underline;
+}
+
+a:hover:after :not(.nav-item.dropdown), table.table a:hover:after :not(.nav-item.dropdown) {
+    width: 100%;
+}
+
+blockquote {
+    background: var(--global-bg-color);
+    border-left: 2px solid var(--global-theme-color);
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-size: 1.2rem;
+}
+
+.equation {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.caption {
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.citation, .citation-number {
+    color: var(--global-theme-color);
+}
+
+.profile {
+    margin-left: 1rem;
+    width: 100%;
+}
+
+.profile .address {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: monospace;
+}
+
+.profile .address p {
+    display: inline-block;
+    margin: 0;
+}
+
+@media (min-width: 576px) {
+    .profile {
+        width: 30%;
+    }
+
+    .profile .address p {
+        display: block;
+    }
+}
+
+.post-description {
+    margin-bottom: 2rem;
+    font-size: 0.875rem;
+}
+
+.post-description a {
+    color: inherit;
+}
+
+.post-description a:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+}
+
+.navbar {
+    box-shadow: none;
+    border-bottom: 1px solid var(--global-divider-color);
+    background-color: var(--global-bg-color);
+}
+
+.navbar .dropdown-menu {
+    background-color: var(--global-bg-color);
+    border: 1px solid var(--global-divider-color);
+}
+
+.navbar .dropdown-menu a:not(.active) {
+    color: var(--global-text-color);
+}
+
+.navbar .dropdown-menu a:hover {
+    color: var(--global-hover-color);
+}
+
+.navbar .dropdown-menu .dropdown-divider {
+    border-top: 1px solid var(--global-divider-color) !important;
+}
+
+.dropdown-item {
+    color: var(--global-text-color);
+}
+
+.dropdown-item:hover {
+    color: var(--global-hover-color);
+    background-color: var(--global-bg-color);
+}
+
+.navbar.navbar-light a:hover {
+    text-decoration: none;
+}
+
+.navbar.navbar-light .navbar-brand {
+    color: var(--global-text-color);
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: var(--global-text-color) !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover {
+    color: var(--global-hover-color) !important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+    background-color: inherit!important;
+    font-weight: bolder!important;
+    color: var(--global-theme-color)!important;
+}
+
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
+    color: var(--global-hover-color)!important;
+}
+
+.navbar.navbar-light .navbar-brand.social {
+    padding-bottom: 0;
+    padding-top: 0;
+    font-size: 1.7rem;
+}
+
+.navbar.navbar-light .navbar-brand.social a i::before {
+    color: var(--global-text-color);
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.navbar.navbar-light .navbar-brand.social a:hover i::before {
+    color: var(--global-theme-color);
+}
+
+.navbar-toggler .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: var(--global-text-color);
+    border-radius: 1px;
+    margin-bottom: 4px;
+    transition: all 0.2s;
+}
+
+.navbar-toggler .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+    opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.navbar-toggler.collapsed .top-bar {
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar {
+    opacity: 1;
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    transform: rotate(0);
+}
+
+.news table td {
+    font-size: 1rem;
+    color: var(--global-text-color);
+}
+
+.news table th {
+    color: var(--global-text-color);
+}
+
+.social {
+    text-align: center;
+}
+
+.social .contact-icons {
+    font-size: 4rem;
+}
+
+.social .contact-icons a i::before {
+    color: var(--global-text-color);
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.social .contact-icons a:hover i::before {
+    color: var(--global-theme-color);
+}
+
+.social .contact-note {
+    font-size: 0.8rem;
+}
+
+footer.fixed-bottom {
+    background-color: var(--global-footer-bg-color);
+    font-size: 0.75rem;
+}
+
+footer.fixed-bottom .container {
+    color: var(--global-footer-text-color)!important;
+    padding-top: 9px;
+    padding-bottom: 8px;
+}
+
+footer.fixed-bottom a {
+    color: var(--global-footer-link-color);
+}
+
+footer.fixed-bottom a:hover {
+    color: var(--global-theme-color);
+    text-decoration: none;
+}
+
+footer.sticky-bottom {
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.header-bar {
+    border-bottom: 1px solid var(--global-divider-color);
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+}
+
+.header-bar h1 {
+    color: var(--global-theme-color);
+    font-size: 5rem;
+}
+
+.post-list {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+.post-list li {
+    border-bottom: 1px solid var(--global-divider-color);
+    list-style: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.post-list li .post-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.post-list li .post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+}
+
+.post-list li a {
+    color: var(--global-text-color);
+    text-decoration: none;
+}
+
+.post-list li a:hover {
+    color: var(--global-theme-color);
+}
+
+.pagination .page-item .page-link {
+    color: var(--global-text-color);
+}
+
+.pagination .page-item .page-link:hover {
+    color: #000000;
+}
+
+.pagination .page-item.active .page-link {
+    color: #ffffff;
+    background-color: var(--global-theme-color);
+}
+
+.pagination .page-item.active .page-link:hover {
+    background-color: var(--global-theme-color);
+}
+
+.distill a:hover {
+    border-bottom-color: var(--global-theme-color);
+    text-decoration: none;
+}
+
+.projects a {
+    text-decoration: none;
+}
+
+.projects a:hover .card-title {
+    color: var(--global-theme-color);
+}
+
+.projects .card img {
+    width: 100%;
+}
+
+.projects .card .card-title {
+    color: #000000;
+}
+
+.projects .card-item {
+    width: auto;
+    margin-bottom: 10px;
+}
+
+.projects .card-item .row {
+    display: flex;
+    align-items: center;
+}
+
+.projects .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
+}
+
+.projects h2.category {
+    color: var(--global-divider-color);
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    text-align: right;
+}
+
+.publications {
+    margin-top: 2rem;
+}
+
+.publications h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.publications h2 {
+    margin-bottom: 1rem;
+}
+
+.publications h2 span {
+    font-size: 1.5rem;
+}
+
+.publications h2.year {
+    color: var(--global-divider-color);
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+    text-align: right;
+}
+
+.publications ol.bibliography {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+}
+
+.publications ol.bibliography li {
+    margin-bottom: 1rem;
+}
+
+.publications ol.bibliography li .abbr {
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.publications ol.bibliography li .abbr abbr {
+    display: inline-block;
+    background-color: var(--global-theme-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.publications ol.bibliography li .abbr abbr a {
+    color: white;
+}
+
+.publications ol.bibliography li .abbr abbr a:hover {
+    text-decoration: none;
+}
+
+.publications ol.bibliography li .abbr .award {
+    color: var(--global-theme-color) !important;
+    border: 1px solid var(--global-theme-color);
+}
+
+.publications ol.bibliography li .title {
+    font-weight: bolder;
+}
+
+.publications ol.bibliography li .author a {
+    border-bottom: 1px dashed var(--global-theme-color);
+}
+
+.publications ol.bibliography li .author a:hover {
+    border-bottom-style: solid;
+    text-decoration: none;
+}
+
+.publications ol.bibliography li .author > em {
+    border-bottom: 1px solid;
+    font-style: normal;
+}
+
+.publications ol.bibliography li .links a.btn {
+    color: var(--global-text-color);
+    border: 1px solid var(--global-text-color);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.publications ol.bibliography li .links a.btn:hover {
+    color: var(--global-theme-color);
+    border-color: var(--global-theme-color);
+}
+
+.publications ol.bibliography li .hidden {
+    font-size: 0.875rem;
+    max-height: 0px;
+    overflow: hidden;
+    text-align: justify;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+.publications ol.bibliography li .hidden p {
+    line-height: 1.4em;
+    margin: 10px;
+}
+
+.publications ol.bibliography li .hidden pre {
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 10px;
+}
+
+.publications ol.bibliography li .hidden.open {
+    max-height: 100em;
+    -webkit-transition: 0.15s ease;
+    -moz-transition: 0.15s ease;
+    -ms-transition: 0.15s ease;
+    -o-transition: 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+.publications ol.bibliography li div.abstract.hidden {
+    border: dashed 1px var(--global-bg-color);
+}
+
+.publications ol.bibliography li div.abstract.hidden.open {
+    border-color: var(--global-text-color);
+}
+
+figure.highlight {
+    margin: 0 0 1rem;
+}
+
+pre {
+    color: var(--global-theme-color);
+    background-color: var(--global-code-bg-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+}
+
+pre pre, pre code {
+    background-color: transparent;
+    border-radius: 0;
+    padding: 0;
+}
+
+code {
+    color: var(--global-theme-color);
+    border-radius: 3px;
+    padding: 3px 3px;
+}
+
+code .code-span {
+    color: var(--global-theme-color)!important;
+    border-radius: 3px;
+    padding: 3px 3px;
+}
+
+.code-container {
+    color: var(--global-theme-color);
+    background-color: var(--global-code-bg-color);
+    border-radius: 6px;
+    padding: 6px 12px;
+    width: 100%;
+    position: relative;
+}
+
+.code-container code {
+    padding-right: 10px;
+}
+
+html.transition, html.transition *, html.transition *:before, html.transition *:after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
+
+.post .post-meta {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    margin-bottom: 0;
+}
+
+.post .post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    padding-bottom: 1rem;
+}
+
+.post .post-tags a {
+    color: var(--global-text-color-light);
+    text-decoration: none;
+}
+
+.post .post-tags a:hover {
+    color: var(--global-theme-color);
+}
+
+.post .post-content blockquote {
+    border-left: 5px solid var(--global-theme-color);
+    padding: 8px;
+}
+
+.post-tags {
+    color: var(--global-text-color-light);
+    font-size: 0.875rem;
+    padding-top: 0.25rem;
+}
+
+/******************************************************************************* Style overrides for distill blog posts. */
+d-byline {
+    border-top-color: var(--global-divider-color) !important;
+}
+
+d-byline h3 {
+    color: var(--global-text-color) !important;
+}
+
+d-byline a, d-article d-byline a {
+    color: var(--global-text-color) !important;
+}
+
+d-byline a:hover, d-article d-byline a:hover {
+    color: var(--global-hover-color) !important;
+}
+
+d-article {
+    border-top-color: var(--global-divider-color) !important;
+}
+
+d-article a, d-article p, d-article h1, d-article h2, d-article h3, d-article h4, d-article h5, d-article h6, d-article li, d-article table {
+    color: var(--global-text-color) !important;
+}
+
+d-article a, d-article h1, d-article h2, d-article hr, d-article table, d-article table th, d-article table td {
+    border-bottom-color: var(--global-divider-color) !important;
+}
+
+d-article a:hover {
+    border-bottom-color: var(--global-hover-color) !important;
+}
+
+d-article b i {
+    display: inline;
+}
+
+d-article d-contents {
+    align-self: start;
+    grid-column: 1 / 4;
+    grid-row: auto / span 4;
+    justify-self: end;
+    margin-top: 0em;
+    padding-left: 2em;
+    padding-right: 3em;
+    border-right: 1px solid var(--global-divider-color);
+    width: calc(max(70%, 300px));
+    margin-right: 0px;
+    margin-top: 0em;
+    display: grid;
+    grid-template-columns: minmax(8px, 1fr) [toc] auto minmax(8px, 1fr) [toc-line] 1px minmax(32px, 2fr);
+}
+
+d-article d-contents nav {
+    grid-column: toc;
+}
+
+d-article d-contents nav a {
+    border-bottom: none !important;
+}
+
+d-article d-contents nav a:hover {
+    border-bottom: 1px solid var(--global-text-color) !important;
+}
+
+d-article d-contents nav h3 {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+d-article d-contents nav div {
+    display: block;
+    outline: none;
+    margin-bottom: 0.8em;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+}
+
+d-article d-contents nav ul {
+    padding-left: 1em;
+    margin-top: 0;
+    margin-bottom: 6px;
+    list-style-type: none;
+}
+
+d-article d-contents nav ul li {
+    margin-bottom: 0.25em;
+}
+
+d-article d-contents .figcaption {
+    line-height: 1.4em;
+}
+
+d-article d-contents toc-line {
+    border-right: 1px solid var(--global-divider-color);
+    grid-column: toc-line;
+}
+
+d-appendix {
+    border-top-color: var(--global-divider-color) !important;
+    color: var(--global-distill-app-color) !important;
+}
+
+d-appendix h3, d-appendix li, d-appendix span {
+    color: var(--global-distill-app-color) !important;
+}
+
+d-appendix a, d-appendix a.footnote-backlink {
+    color: var(--global-distill-app-color) !important;
+}
+
+d-appendix a:hover, d-appendix a.footnote-backlink:hover {
+    color: var(--global-hover-color) !important;
+}
+
+@media (max-width: 1024px) {
+    d-article d-contents {
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: -2;
+        padding-bottom: 0.5em;
+        margin-bottom: 1em;
+        padding-top: 0.5em;
+        width: 100%;
+        border: 1px solid var(--global-divider-color);
+    }
+
+    d-article d-contents nav {
+        grid-column: none;
+    }
+}
+
+table .table{
+    color: var(--global-text-color) !important;
+}
+
+.yasgui .autocompleteWrapper {
+    display: none !important;
+}
+
+#light-toggle {
+    height: 100%;
+    border: none;
+    background: transparent;
+    color: var(--global-text-color) !important;
+}
+
+.icon {
+    width: 25px;
+}
+
+#ontology h1 {
+    color: var(--global-ontology-text-color) !important;
+    background: none;
+    padding-top: 30px;
+}
+#ontology h2 {
+    color: var(--global-ontology-text-color) !important;
+    background: none;
+    padding-top: 30px;
+}
+
+#ontology h3 {
+    color: var(--global-ontology-text-color) !important;
+    background: none;
+    padding-top: 30px;
+}
+
+#ontology h4 {
+    color: var(--global-ontology-text-color) !important;
+    background: none;
+    padding-top: 30px;
+}
+
+#ontology .head {
+    color: var(--global-ontology-text-color) !important;
+}
+
+#ontology :link {
+    color: var(--global-ontology-link-color);
+    background: transparent
+}
+
+#ontology :visited {
+    color: var(--global-ontology-link-visited-color);
+    background: transparent
+}
+a:active { color: #C00; background: transparent }
+
+.hlist li {
+    display: inline-table;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+.hlist {
+    border: 1px solid grey;
+    padding: 5px;
+    background-color: #F4FFFF;
+}
+
+.entity {
+    border: 1px solid var(--global-ontology-border-color);
+    margin:5px 0px 5px 0px;
+    padding: 5px;
+}
+
+.type-c {
+    cursor:help;
+    color:orange;
+}
+
+.type-op {
+    cursor:help;
+    color:navy;
+}
+
+.type-dp {
+    cursor:help;
+    color:green;
+}
+
+.type-ap {
+    cursor:help;
+    color:maroon;
+}
+
+.type-ni {
+    cursor:help;
+    color:brown;
+}
+
+.logic {
+    color:purple;
+    font-weight:bold;
+}
+
+h3 {
+    margin-top: 3px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--global-ontology-border-color);
+}
+
+h2 {
+    margin-top:40px;
+}
+
+.dotted {
+    border-bottom: 1px dotted gray;
+}
+
+dt {
+    margin-top:5px;
+}
+
+.description {
+    border-top: 1px dashed gray;
+    border-bottom: 1px dashed gray;
+    background-color: var(--global-ontology-background-color);
+    margin-top:5px;
+    padding-bottom:5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.description dl {
+    background-color: var(--global-ontology-background-color);
+}
+
+.description dt {
+    color: #000000;
+}
+
+.description dd {
+    color: #000000;
+}
+
+.description ul {
+    padding-left: 12px;
+    margin-top: 0;
+}
+
+.description span {
+    color: #000000 !important;
+}
+
+.backlink {
+    font-size:10pt;
+    text-align:right;
+    float:right;
+    color: #000000 !important;
+    padding: 2px;
+    border: 1px dotted var(--global-ontology-border-color);
+    background-color: var(--global-ontology-inner-background-color);
+}
+
+.imageblock {
+    text-align: center;
+}
+
+.imageblock img {
+    border:1px solid gray;
+}
+
+.endnote {
+    margin-top: 40px;
+    border-top: 1px solid gray;
+    padding-top: 10px;
+    text-align: center;
+    color:gray;
+    font-size:70%;
+}
+
+.literal {
+    color:green;
+    font-style:italic;
+}
+
+/** Start Override yasgui styles **/
+.CodeMirror-gutters {
+    width: 50px !important;
+    left: 0 !important;
+}
+
+.CodeMirror-gutter-wrapper {
+    left: -55px !important;
+}
+
+.CodeMirror-line {
+    text-align: left;
+}
+
+
+
+/** End Override yasgui styles **/
+
+/*# sourceMappingURL=main.css.map */
