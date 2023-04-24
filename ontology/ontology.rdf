@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://nubbe-kg.aksw.org/ontology#"
-     xml:base="http://nubbe-kg.aksw.org/ontology"
+<rdf:RDF xmlns="http://nubbeKG.aksw.org/ontology#"
+     xml:base="http://nubbeKG.aksw.org/ontology"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
@@ -8,13 +8,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://nubbe-kg.aksw.org/ontology#">
+    <owl:Ontology rdf:about="http://nubbeKG.aksw.org/ontology#">
         <terms:creator>Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy</terms:creator>
         <terms:description xml:lang="en">The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.</terms:description>
         <terms:rights xml:lang="en">Copyright © 2023 ChemNet</terms:rights>
         <terms:title xml:lang="en">nubbe: The data model for nubbeDB Knowledge Graph</terms:title>
         <vann:preferredNamespacePrefix>nubbe</vann:preferredNamespacePrefix>
-        <vann:preferredNamespaceUri>http://nubbe-kg.aksw.org/ontology#</vann:preferredNamespaceUri>
+        <vann:preferredNamespaceUri>http://nubbeKG.aksw.org/ontology#</vann:preferredNamespaceUri>
         <rdfs:comment xml:lang="en">The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.</rdfs:comment>
         <rdfs:label xml:lang="en">nubbe: The data model for nubbeDB Knowledge Graph</rdfs:label>
         <owl:versionInfo>SNAPSHOT</owl:versionInfo>
@@ -107,72 +107,72 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#hasBioactivityData -->
+    <!-- http://nubbeKG.aksw.org/ontology#hasBioactivityData -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#hasBioactivityData">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#hasBioactivityData">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">A chemical compound has bioactivity data.</rdfs:comment>
         <rdfs:label xml:lang="en">has bioactivity data</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#hasDescriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#hasDescriptors -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#hasDescriptors">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#hasDescriptors">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Descriptors"/>
         <rdfs:comment xml:lang="en">A chemical compound has various descriptors.</rdfs:comment>
         <rdfs:label xml:lang="en">has descriptors</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#hasIsolationData -->
+    <!-- http://nubbeKG.aksw.org/ontology#hasIsolationData -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#hasIsolationData">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#Isolation"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#hasIsolationData">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Isolation"/>
         <rdfs:comment xml:lang="en">A chemical compound has data about it&apos;s isolation site and origin.</rdfs:comment>
         <rdfs:label xml:lang="en">has isolation data</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#isClassifiedBy -->
+    <!-- http://nubbeKG.aksw.org/ontology#isClassifiedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#isClassifiedBy">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#isClassifiedBy">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:comment xml:lang="en">A chemical compound is classified by a biological taxonomy.</rdfs:comment>
         <rdfs:label xml:lang="en">is classified by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#isIdentifiedBy -->
+    <!-- http://nubbeKG.aksw.org/ontology#isIdentifiedBy -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#isIdentifiedBy">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#isIdentifiedBy">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:comment xml:lang="en">A chemical compound is identified by it&apos;s unique identifiers.</rdfs:comment>
         <rdfs:label xml:lang="en">is identified by</rdfs:label>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#wasMentionedIn -->
+    <!-- http://nubbeKG.aksw.org/ontology#wasMentionedIn -->
 
 
-    <owl:ObjectProperty rdf:about="http://nubbe-kg.aksw.org/ontology#wasMentionedIn">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#wasMentionedIn">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:comment xml:lang="en">A chemical compound was mentioned in a publication.</rdfs:comment>
         <rdfs:label xml:lang="en">was mentioned in</rdfs:label>
     </owl:ObjectProperty>
@@ -191,11 +191,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Class -->
+    <!-- http://nubbeKG.aksw.org/ontology#Class -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#Class">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Class">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The Class of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Class</rdfs:label>
@@ -203,19 +203,19 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Gt -->
+    <!-- http://nubbeKG.aksw.org/ontology#Gt -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#Gt">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mic"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Gt">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">GT TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">GT</rdfs:label>
@@ -223,19 +223,19 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Lt -->
+    <!-- http://nubbeKG.aksw.org/ontology#Lt -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#Lt">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mic"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Lt">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">Lt TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">LT</rdfs:label>
@@ -243,19 +243,19 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Sd -->
+    <!-- http://nubbeKG.aksw.org/ontology#Sd -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#Sd">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mic"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Sd">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Standard deviation of the method.</rdfs:comment>
         <rdfs:label xml:lang="en">SD</rdfs:label>
@@ -263,11 +263,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#activityId -->
+    <!-- http://nubbeKG.aksw.org/ontology#activityId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#activityId">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#activityId">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">The identification number of the bioactivity.</rdfs:comment>
         <rdfs:label xml:lang="en">Activity ID</rdfs:label>
@@ -275,23 +275,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#automaticCode -->
+    <!-- http://nubbeKG.aksw.org/ontology#city -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#automaticCode">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Automatic code of a chemical compound.</rdfs:comment>
-        <rdfs:label xml:lang="en">Automatic code</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbe-kg.aksw.org/ontology#city -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#city">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Isolation"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#city">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Isolation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The city in which the chemical compound has been extracted.</rdfs:comment>
         <rdfs:label xml:lang="en">Isolation city</rdfs:label>
@@ -299,23 +287,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#clogp -->
+    <!-- http://nubbeKG.aksw.org/ontology#code -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#clogp">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">Prediction of clogP.</rdfs:comment>
-        <rdfs:label xml:lang="en">clogP</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbe-kg.aksw.org/ontology#code -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#code">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#code">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Bioactivity Code TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">Code</rdfs:label>
@@ -323,11 +299,23 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#concentration -->
+    <!-- http://nubbeKG.aksw.org/ontology#commonName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#concentration">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#commonName">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Given common name of a chemical compound.</rdfs:comment>
+        <rdfs:label xml:lang="en">Common name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#concentration -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#concentration">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Bioactivity concentration? TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">Concentration</rdfs:label>
@@ -335,11 +323,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#extraInformation -->
+    <!-- http://nubbeKG.aksw.org/ontology#extraInformation -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#extraInformation">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#extraInformation">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Additional information about the bioactivity analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">Extra Information</rdfs:label>
@@ -347,11 +335,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#family -->
+    <!-- http://nubbeKG.aksw.org/ontology#family -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#family">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#family">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The family of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Family</rdfs:label>
@@ -359,11 +347,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#gender -->
+    <!-- http://nubbeKG.aksw.org/ontology#gender -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#gender">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#gender">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The gender of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Gender</rdfs:label>
@@ -371,11 +359,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount -->
+    <!-- http://nubbeKG.aksw.org/ontology#hBondAcceptorCount -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#hBondAcceptorCount">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#ElectronicDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond.</rdfs:comment>
         <rdfs:label xml:lang="en">hydrogen bond acceptor count</rdfs:label>
@@ -383,11 +371,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#hBondDonorCount -->
+    <!-- http://nubbeKG.aksw.org/ontology#hBondDonorCount -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#hBondDonorCount">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#hBondDonorCount">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#ElectronicDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Donor count is the sum of the atoms in the molecule which have H donor property.</rdfs:comment>
         <rdfs:label xml:lang="en">hydrogen bond donor count</rdfs:label>
@@ -395,11 +383,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#inchi -->
+    <!-- http://nubbeKG.aksw.org/ontology#inchi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#inchi">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#inchi">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">International Chemical Identifier.</rdfs:comment>
         <rdfs:label xml:lang="en">inchi</rdfs:label>
@@ -407,11 +395,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#inchikey -->
+    <!-- http://nubbeKG.aksw.org/ontology#inchikey -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#inchikey">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#inchikey">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">International Chemical Identifier key.</rdfs:comment>
         <rdfs:label xml:lang="en">inchikey</rdfs:label>
@@ -419,23 +407,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#isolationType -->
+    <!-- http://nubbeKG.aksw.org/ontology#iupacName -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#isolationType">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Isolation"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The entity from which the chemical compound has been extracted.</rdfs:comment>
-        <rdfs:label xml:lang="en">Isolation type</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbe-kg.aksw.org/ontology#iupacName -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#iupacName">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#iupacName">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Name within the International Union of Pure and Applied Chemistry.</rdfs:comment>
         <rdfs:label xml:lang="en">IUPAC Name</rdfs:label>
@@ -443,11 +419,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures -->
+    <!-- http://nubbeKG.aksw.org/ontology#lipinskiRuleOf5Failures -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#lipinskiRuleOf5Failures">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Lipinski rule of 5 failures</rdfs:label>
@@ -455,19 +431,31 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#methodResults -->
+    <!-- http://nubbeKG.aksw.org/ontology#logpCoefficient -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#methodResults">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Mic"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#logpCoefficient">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Prediction of the logP Coefficient.</rdfs:comment>
+        <rdfs:label xml:lang="en">logP Coefficient</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#methodResults -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#methodResults">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Method result.</rdfs:comment>
         <rdfs:label xml:lang="en">methodResults</rdfs:label>
@@ -475,23 +463,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#molarMass -->
+    <!-- http://nubbeKG.aksw.org/ontology#molecularFormula -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#molarMass">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">Molar mass of a chemical compound.</rdfs:comment>
-        <rdfs:label xml:lang="en">Molar mass</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbe-kg.aksw.org/ontology#molecularFormula -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#molecularFormula">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#molecularFormula">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Molecular formula of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular formula</rdfs:label>
@@ -499,11 +475,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#molecularVolume -->
+    <!-- http://nubbeKG.aksw.org/ontology#molecularVolume -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#molecularVolume">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#molecularVolume">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Molecular volume of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular volume</rdfs:label>
@@ -511,23 +487,35 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#name -->
+    <!-- http://nubbeKG.aksw.org/ontology#molecularWeight -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#name">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Compound"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Given name of a chemical compound.</rdfs:comment>
-        <rdfs:label xml:lang="en">Name</rdfs:label>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#molecularWeight">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MolecularDescriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Molecular weight of a chemical compound.</rdfs:comment>
+        <rdfs:label xml:lang="en">Molecular weight</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#nrotb -->
+    <!-- http://nubbeKG.aksw.org/ontology#monoisotopicMass -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#nrotb">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#MolecularDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#monoisotopicMass">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MolecularDescriptors"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment xml:lang="en">Monoisotopic mass of a chemical compound.</rdfs:comment>
+        <rdfs:label xml:lang="en">Monoisotopic mass</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#nrotb -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#nrotb">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MolecularDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Number of rotatable bonds of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">nRotB</rdfs:label>
@@ -535,11 +523,23 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#observation -->
+    <!-- http://nubbeKG.aksw.org/ontology#nubbeId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#observation">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#nubbeId">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The numeric identifier a chemical compound has in the NubbeDB database.</rdfs:comment>
+        <rdfs:label xml:lang="en">NUBBE ID</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#observation -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#observation">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Observation information about the bioactivity analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
@@ -547,11 +547,23 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#positionActivity -->
+    <!-- http://nubbeKG.aksw.org/ontology#obtentionMethod -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#positionActivity">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#obtentionMethod">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Isolation"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Explains in what way the chemical compound has been extracted.</rdfs:comment>
+        <rdfs:label xml:lang="en">Isolation type</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#positionActivity -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#positionActivity">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">positionActivity TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">Position activity</rdfs:label>
@@ -559,11 +571,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationAgency -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationAgency -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationAgency">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationAgency">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The agency which published the publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication agency</rdfs:label>
@@ -571,11 +583,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationCitationExtra -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationCitationExtra -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationCitationExtra">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationCitationExtra">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Extra informations on citations of the publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications citation extra information</rdfs:label>
@@ -583,11 +595,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationDoi -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationDoi -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationDoi">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationDoi">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The digital object identifier of a compounds publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication DOI</rdfs:label>
@@ -595,11 +607,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationEvent -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationEvent -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationEvent">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationEvent">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Any event where the publication has been a topic.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications events</rdfs:label>
@@ -607,11 +619,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationId -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationId">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationId">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">The publication Id of a compounds publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication ID</rdfs:label>
@@ -619,11 +631,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationLocal -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationLocal -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationLocal">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationLocal">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The local publication medium in which the publication appeared.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications local publishments</rdfs:label>
@@ -631,11 +643,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationPages -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationPages -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationPages">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationPages">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The page numbers of the mediium the publication was published.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication page numbers</rdfs:label>
@@ -643,11 +655,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationPeriodic -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationPeriodic -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationPeriodic">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationPeriodic">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The periodic magazine in which the publication appeared.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications periodic magazine</rdfs:label>
@@ -655,11 +667,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationProcess -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationProcess -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationProcess">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationProcess">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The Process TODO in which the publication appeared.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications process</rdfs:label>
@@ -667,11 +679,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationPublisher -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationPublisher -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationPublisher">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationPublisher">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The publisher of a publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publications publisher</rdfs:label>
@@ -679,11 +691,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationTitle -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationTitle -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationTitle">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationTitle">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The title of a compounds publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication title</rdfs:label>
@@ -691,11 +703,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationType -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationType -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationType">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationType">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The type of a compounds publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication type</rdfs:label>
@@ -703,11 +715,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationVolume -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationVolume -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationVolume">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationVolume">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The volume in which the publication was published.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication volume</rdfs:label>
@@ -715,11 +727,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#publicationYear -->
+    <!-- http://nubbeKG.aksw.org/ontology#publicationYear -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#publicationYear">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#publicationYear">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">The year of the publication was published.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication year</rdfs:label>
@@ -727,11 +739,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#result -->
+    <!-- http://nubbeKG.aksw.org/ontology#result -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#result">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#result">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">A one word description of the observed properties during bioactivity analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">Results</rdfs:label>
@@ -739,23 +751,23 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#smiles -->
+    <!-- http://nubbeKG.aksw.org/ontology#smiles -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#smiles">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#smiles">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Simplified Molecular Input Line Entry Specification.</rdfs:comment>
-        <rdfs:label xml:lang="en">smiles</rdfs:label>
+        <rdfs:label xml:lang="en">SMILES</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#species -->
+    <!-- http://nubbeKG.aksw.org/ontology#species -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#species">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#species">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The species of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Species</rdfs:label>
@@ -763,23 +775,23 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#state -->
+    <!-- http://nubbeKG.aksw.org/ontology#state -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#state">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Isolation"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#state">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Isolation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The state in which the chemical compound has been extracted, usually jsut by it&apos;s short code.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The state in which the chemical compound has been extracted, usually just by it&apos;s short code.</rdfs:comment>
         <rdfs:label xml:lang="en">Isolation state</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#subClass -->
+    <!-- http://nubbeKG.aksw.org/ontology#subClass -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#subClass">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#subClass">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The Subclass of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Subclass</rdfs:label>
@@ -787,11 +799,11 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#subpubId -->
+    <!-- http://nubbeKG.aksw.org/ontology#subpubId -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#subpubId">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#Publication"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#subpubId">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Publication"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
         <rdfs:comment xml:lang="en">The sub-publication Id of a compounds publication.</rdfs:comment>
         <rdfs:label xml:lang="en">Sub-Pub ID</rdfs:label>
@@ -799,14 +811,14 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#tpsa -->
+    <!-- http://nubbeKG.aksw.org/ontology#tpsa -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbe-kg.aksw.org/ontology#tpsa">
-        <rdfs:domain rdf:resource="http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#tpsa">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#TopologicalDescriptors"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
         <rdfs:comment xml:lang="en">Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43).</rdfs:comment>
-        <rdfs:label xml:lang="en">tPSA</rdfs:label>
+        <rdfs:label xml:lang="en">TPSA</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -823,213 +835,213 @@
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Bioactivity -->
+    <!-- http://nubbeKG.aksw.org/ontology#Bioactivity -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Bioactivity">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Bioactivity">
         <rdfs:comment xml:lang="en">Bioactivity data of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Bioactivity data</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Compound -->
+    <!-- http://nubbeKG.aksw.org/ontology#Compound -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Compound">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Compound">
         <rdfs:comment xml:lang="en">A chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Compound</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Descriptors"/>
         <rdfs:comment xml:lang="en">Constitutional descriptors of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Constitutional descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Descriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#Descriptors -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Descriptors">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Descriptors">
         <rdfs:comment xml:lang="en">Descriptors chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Dl -->
+    <!-- http://nubbeKG.aksw.org/ontology#Dl -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Dl">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Dl">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">DL TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">DL</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Ec50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#Ec50 -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Ec50">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ec50">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">The EC50 is the concentration of a drug that gives half-maximal response.</rdfs:comment>
         <rdfs:label xml:lang="en">EC 50</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Ed -->
+    <!-- http://nubbeKG.aksw.org/ontology#Ed -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Ed">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ed">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">ED TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">ED</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#ElectronicDescriptors -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#ElectronicDescriptors">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Descriptors"/>
         <rdfs:comment xml:lang="en">Electronic descriptors of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Electronic descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Ic12 -->
+    <!-- http://nubbeKG.aksw.org/ontology#Ic12 -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Ic12">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ic12">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%.</rdfs:comment>
         <rdfs:label xml:lang="en">IC12</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Ic50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#Ic50 -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Ic50">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ic50">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%.</rdfs:comment>
         <rdfs:label xml:lang="en">IC50</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Inhibition -->
+    <!-- http://nubbeKG.aksw.org/ontology#Inhibition -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Inhibition">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Inhibition">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">Inhibition TODO.</rdfs:comment>
         <rdfs:label xml:lang="en">Inhibition</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Isolation -->
+    <!-- http://nubbeKG.aksw.org/ontology#Isolation -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Isolation">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Isolation">
         <rdfs:comment xml:lang="en">Information on where and from what the chemical compound has been isolated.</rdfs:comment>
         <rdfs:label xml:lang="en">Isolation</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Ld50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#Ld50 -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Ld50">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ld50">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals.</rdfs:comment>
         <rdfs:label xml:lang="en">Ld 50</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Mfc -->
+    <!-- http://nubbeKG.aksw.org/ontology#Mfc -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Mfc">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Mfc">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth.</rdfs:comment>
         <rdfs:label xml:lang="en">MFC</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Mic -->
+    <!-- http://nubbeKG.aksw.org/ontology#Mic -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Mic">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Bioactivity"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Mic">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:comment xml:lang="en">The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
         <rdfs:label xml:lang="en">MIC</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#MolecularDescriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#MolecularDescriptors -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#MolecularDescriptors">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MolecularDescriptors">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Descriptors"/>
         <rdfs:comment xml:lang="en">Molecular descriptors of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Molecular descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Publication -->
+    <!-- http://nubbeKG.aksw.org/ontology#Publication -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Publication">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Publication">
         <rdfs:comment xml:lang="en">A publication in which a chemical compound was mentioned in.</rdfs:comment>
         <rdfs:label xml:lang="en">Publication</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#Taxonomy -->
+    <!-- http://nubbeKG.aksw.org/ontology#Taxonomy -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#Taxonomy">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Taxonomy">
         <rdfs:comment xml:lang="en">The biological taxonomy of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Taxonomy</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors -->
+    <!-- http://nubbeKG.aksw.org/ontology#TopologicalDescriptors -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors">
-        <rdfs:subClassOf rdf:resource="http://nubbe-kg.aksw.org/ontology#Descriptors"/>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#TopologicalDescriptors">
+        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Descriptors"/>
         <rdfs:comment xml:lang="en">Topological descriptors of a chemical compound.</rdfs:comment>
         <rdfs:label xml:lang="en">Topological descriptors</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers -->
+    <!-- http://nubbeKG.aksw.org/ontology#UniqueIdentifiers -->
 
 
-    <owl:Class rdf:about="http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers">
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers">
         <rdfs:comment xml:lang="en">Unique identifiers of a chemical compound like smiles and inchikeys.</rdfs:comment>
         <rdfs:label xml:lang="en">Unique identifiers</rdfs:label>
     </owl:Class>

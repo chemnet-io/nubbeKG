@@ -1,5 +1,5 @@
 [ {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#",
+  "@id" : "http://nubbeKG.aksw.org/ontology#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
   "http://purl.org/dc/terms/creator" : [ {
     "@value" : "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"
@@ -20,7 +20,7 @@
     "@value" : "nubbe"
   } ],
   "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
-    "@value" : "http://nubbe-kg.aksw.org/ontology#"
+    "@value" : "http://nubbeKG.aksw.org/ontology#"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -34,7 +34,7 @@
     "@value" : "SNAPSHOT"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -45,14 +45,14 @@
     "@value" : "Bioactivity data"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Class",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Class",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The Class of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -62,7 +62,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Compound",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Compound",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -73,7 +73,7 @@
     "@value" : "Compound"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -84,10 +84,10 @@
     "@value" : "Constitutional descriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -98,7 +98,7 @@
     "@value" : "Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Dl",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Dl",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -109,10 +109,10 @@
     "@value" : "DL"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Ec50",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Ec50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -123,10 +123,10 @@
     "@value" : "EC 50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Ed",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Ed",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -137,10 +137,10 @@
     "@value" : "ED"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#ElectronicDescriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -151,33 +151,33 @@
     "@value" : "Electronic descriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Gt",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Gt",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "GT TODO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Dl"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ec50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ed"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic12"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Inhibition"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ld50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mfc"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mic"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -187,7 +187,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Ic12",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Ic12",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -198,10 +198,10 @@
     "@value" : "IC12"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Ic50",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Ic50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -212,10 +212,10 @@
     "@value" : "IC50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Inhibition",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -226,10 +226,10 @@
     "@value" : "Inhibition"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Isolation",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Isolation",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -240,7 +240,7 @@
     "@value" : "Isolation"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Ld50",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Ld50",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -251,33 +251,33 @@
     "@value" : "Ld 50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Lt",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Lt",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Lt TODO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Dl"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ec50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ed"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic12"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Inhibition"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ld50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mfc"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mic"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -287,7 +287,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Mfc",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Mfc",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -298,10 +298,10 @@
     "@value" : "MFC"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Mic",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Mic",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -312,10 +312,10 @@
     "@value" : "MIC"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#MolecularDescriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -326,10 +326,10 @@
     "@value" : "Molecular descriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Publication",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Publication",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -340,30 +340,30 @@
     "@value" : "Publication"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Sd",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Sd",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Standard deviation of the method."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Dl"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ec50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ed"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic12"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Inhibition"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ld50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mfc"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mic"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -373,7 +373,7 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy",
+  "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -384,7 +384,7 @@
     "@value" : "Taxonomy"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#TopologicalDescriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -395,10 +395,10 @@
     "@value" : "Topological descriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers",
+  "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
@@ -409,14 +409,14 @@
     "@value" : "Unique identifiers"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#activityId",
+  "@id" : "http://nubbeKG.aksw.org/ontology#activityId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The identification number of the bioactivity."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -426,31 +426,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#automaticCode",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Automatic code of a chemical compound."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Automatic code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#city",
+  "@id" : "http://nubbeKG.aksw.org/ontology#city",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The city in which the chemical compound has been extracted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Isolation"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Isolation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -460,31 +443,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#clogp",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Prediction of clogP."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "clogP"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#code",
+  "@id" : "http://nubbeKG.aksw.org/ontology#code",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Bioactivity Code TODO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -494,14 +460,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#concentration",
+  "@id" : "http://nubbeKG.aksw.org/ontology#commonName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Given common name of a chemical compound."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Common name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#concentration",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Bioactivity concentration? TODO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -511,14 +494,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#extraInformation",
+  "@id" : "http://nubbeKG.aksw.org/ontology#extraInformation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Additional information about the bioactivity analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -528,14 +511,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#family",
+  "@id" : "http://nubbeKG.aksw.org/ontology#family",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The family of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -545,14 +528,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#gender",
+  "@id" : "http://nubbeKG.aksw.org/ontology#gender",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The gender of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -562,14 +545,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#hBondAcceptorCount",
+  "@id" : "http://nubbeKG.aksw.org/ontology#hBondAcceptorCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#ElectronicDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -579,14 +562,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#hBondDonorCount",
+  "@id" : "http://nubbeKG.aksw.org/ontology#hBondDonorCount",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Donor count is the sum of the atoms in the molecule which have H donor property."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#ElectronicDescriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#ElectronicDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -596,65 +579,65 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#hasBioactivityData",
+  "@id" : "http://nubbeKG.aksw.org/ontology#hasBioactivityData",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound has bioactivity data."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has bioactivity data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#hasDescriptors",
+  "@id" : "http://nubbeKG.aksw.org/ontology#hasDescriptors",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound has various descriptors."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has descriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#hasIsolationData",
+  "@id" : "http://nubbeKG.aksw.org/ontology#hasIsolationData",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound has data about it's isolation site and origin."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "has isolation data"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Isolation"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Isolation"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#inchi",
+  "@id" : "http://nubbeKG.aksw.org/ontology#inchi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "International Chemical Identifier."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -664,14 +647,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#inchikey",
+  "@id" : "http://nubbeKG.aksw.org/ontology#inchikey",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "International Chemical Identifier key."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -681,65 +664,48 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#isClassifiedBy",
+  "@id" : "http://nubbeKG.aksw.org/ontology#isClassifiedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound is classified by a biological taxonomy."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is classified by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#isIdentifiedBy",
+  "@id" : "http://nubbeKG.aksw.org/ontology#isIdentifiedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound is identified by it's unique identifiers."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "is identified by"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#isolationType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The entity from which the chemical compound has been extracted."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Isolation"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Isolation type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#iupacName",
+  "@id" : "http://nubbeKG.aksw.org/ontology#iupacName",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Name within the International Union of Pure and Applied Chemistry."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -749,14 +715,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#lipinskiRuleOf5Failures",
+  "@id" : "http://nubbeKG.aksw.org/ontology#lipinskiRuleOf5Failures",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#ConstitutionalDescriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -766,30 +732,47 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#methodResults",
+  "@id" : "http://nubbeKG.aksw.org/ontology#logpCoefficient",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Prediction of the logP Coefficient."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#ConstitutionalDescriptors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "logP Coefficient"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#methodResults",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Method result."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Dl"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ec50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ed"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic12"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ic50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Inhibition"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Ld50"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mfc"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
   }, {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Mic"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -799,31 +782,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#molarMass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Molar mass of a chemical compound."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Molar mass"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#molecularFormula",
+  "@id" : "http://nubbeKG.aksw.org/ontology#molecularFormula",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Molecular formula of a chemical compound."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -833,14 +799,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#molecularVolume",
+  "@id" : "http://nubbeKG.aksw.org/ontology#molecularVolume",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Molecular volume of a chemical compound."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Descriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -850,31 +816,48 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#name",
+  "@id" : "http://nubbeKG.aksw.org/ontology#molecularWeight",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Given name of a chemical compound."
+    "@value" : "Molecular weight of a chemical compound."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Name"
+    "@value" : "Molecular weight"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#nrotb",
+  "@id" : "http://nubbeKG.aksw.org/ontology#monoisotopicMass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Monoisotopic mass of a chemical compound."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Monoisotopic mass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#float"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#nrotb",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Number of rotatable bonds of a chemical compound."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#MolecularDescriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -884,14 +867,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#observation",
+  "@id" : "http://nubbeKG.aksw.org/ontology#nubbeId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The numeric identifier a chemical compound has in the NubbeDB database."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "NUBBE ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#observation",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Observation information about the bioactivity analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -901,14 +901,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#positionActivity",
+  "@id" : "http://nubbeKG.aksw.org/ontology#obtentionMethod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Explains in what way the chemical compound has been extracted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Isolation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Isolation type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#positionActivity",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "positionActivity TODO."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -918,14 +935,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationAgency",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationAgency",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The agency which published the publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -935,14 +952,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationCitationExtra",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationCitationExtra",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Extra informations on citations of the publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -952,14 +969,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationDoi",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationDoi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The digital object identifier of a compounds publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -969,14 +986,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationEvent",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Any event where the publication has been a topic."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -986,14 +1003,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationId",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The publication Id of a compounds publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1003,14 +1020,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationLocal",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationLocal",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The local publication medium in which the publication appeared."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1020,14 +1037,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationPages",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationPages",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The page numbers of the mediium the publication was published."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1037,14 +1054,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationPeriodic",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationPeriodic",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The periodic magazine in which the publication appeared."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1054,14 +1071,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationProcess",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationProcess",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The Process TODO in which the publication appeared."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1071,14 +1088,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationPublisher",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationPublisher",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The publisher of a publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1088,14 +1105,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationTitle",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationTitle",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The title of a compounds publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1105,14 +1122,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationType",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationType",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The type of a compounds publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1122,14 +1139,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationVolume",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationVolume",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The volume in which the publication was published."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1139,14 +1156,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#publicationYear",
+  "@id" : "http://nubbeKG.aksw.org/ontology#publicationYear",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The year of the publication was published."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1156,14 +1173,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#result",
+  "@id" : "http://nubbeKG.aksw.org/ontology#result",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A one word description of the observed properties during bioactivity analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1173,31 +1190,31 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#smiles",
+  "@id" : "http://nubbeKG.aksw.org/ontology#smiles",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Simplified Molecular Input Line Entry Specification."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#UniqueIdentifiers"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "smiles"
+    "@value" : "SMILES"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#species",
+  "@id" : "http://nubbeKG.aksw.org/ontology#species",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The species of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1207,14 +1224,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#state",
+  "@id" : "http://nubbeKG.aksw.org/ontology#state",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The state in which the chemical compound has been extracted, usually jsut by it's short code."
+    "@value" : "The state in which the chemical compound has been extracted, usually just by it's short code."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Isolation"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Isolation"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1224,14 +1241,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#subClass",
+  "@id" : "http://nubbeKG.aksw.org/ontology#subClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The Subclass of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1241,14 +1258,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#subpubId",
+  "@id" : "http://nubbeKG.aksw.org/ontology#subpubId",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The sub-publication Id of a compounds publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1258,38 +1275,38 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#tpsa",
+  "@id" : "http://nubbeKG.aksw.org/ontology#tpsa",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#TopologicalDescriptors"
+    "@id" : "http://nubbeKG.aksw.org/ontology#TopologicalDescriptors"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "tPSA"
+    "@value" : "TPSA"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
   } ]
 }, {
-  "@id" : "http://nubbe-kg.aksw.org/ontology#wasMentionedIn",
+  "@id" : "http://nubbeKG.aksw.org/ontology#wasMentionedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "A chemical compound was mentioned in a publication."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "was mentioned in"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbe-kg.aksw.org/ontology#Publication"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Publication"
   } ]
 }, {
   "@id" : "http://purl.org/dc/terms/creator",
