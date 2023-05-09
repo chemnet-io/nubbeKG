@@ -64,6 +64,11 @@ class IndexHeader extends HTMLElement {
               contact
             </a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about/index.html">
+              docs
+            </a>
+          </li>
           <li><button id="light-toggle"></button></li>
         </ul>
       </div>
@@ -147,6 +152,11 @@ class SubPageHeader extends HTMLElement {
               contact
             </a>
           </li>
+          <li id="docs-page" class="nav-item">
+            <a class="nav-link" href="../about/index.html">
+              docs
+            </a>
+          </li>
           <li>
           <button id="light-toggle"></button>
         </li>
@@ -192,6 +202,9 @@ class SubPageHeader extends HTMLElement {
             case 'ontology':
                 document.getElementById('ontology-page').classList.add('active');
                 break;
+            case 'docs':
+                document.getElementById('docs-page').classList.add('active');
+                break;
             default: console.log('something went wrong')
         }
     }
@@ -206,7 +219,7 @@ class Footer extends HTMLElement {
         <!-- Footer -->
 <footer class="fixed-bottom">
     <div class="container mt-0">
-        © Copyright 2022 NuBBE[KG]
+        © Copyright 2023 NuBBE[KG]
     </div>
 </footer>
       `

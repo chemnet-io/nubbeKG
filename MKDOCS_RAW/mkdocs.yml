@@ -1,0 +1,12 @@
+site_name: nubbe[KG] Docs
+site_url: https://nubbeKG.aksw.org/
+extra:
+  homepage: https://nubbeKG.aksw.org/
+
+theme:
+  icon:
+    logo: material/arrow-left
+  name: material
+  palette:
+    primary: green
+    accent: green

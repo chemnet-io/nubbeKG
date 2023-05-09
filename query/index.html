@@ -47,7 +47,7 @@
     <script>
         let yasgui = new Yasgui(document.getElementById("yasgui"), {
             nonSslDomain:"http://yasgui.triply.cc",
-            requestConfig: { endpoint: "http://nubbe-kg.aksw.org/sparql" },
+            requestConfig: { endpoint: "https://nubbe-kg.aksw.org/sparql" },
             copyEndpointOnNewTab: false,
             yasqe: {
                 createShortLink: function(yasqe, longString) {
@@ -61,7 +61,7 @@
             }
         });
 
-        querya = "PREFIX nubbe:  <http://nubbe-kg.aksw.org/ontology#>" ;
+        querya = "PREFIX nubbe:  <http://nubbeKG.aksw.org/ontology#>" ;
         queryb = "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" ;
         queryc = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" ;
         queryd = "PREFIX owl:  <http://www.w3.org/2002/07/owl#>" ;
@@ -70,13 +70,12 @@
         queryf = "SELECT DISTINCT ?formula ?name ?family ?city ?exinfo ?doi WHERE {" ;
         queryg = "?compound a nubbe:Compound ." ;
         queryh = "?compound nubbe:molecularFormula ?formula ." ;
-        queryi = "?compound nubbe:name ?name ." ;
+        queryi = "?compound nubbe:commonName ?name ." ;
 
         queryj = "?compound nubbe:isClassifiedBy ?taxon ." ;
         queryk = "?taxon nubbe:family ?family ." ;
 
         queryl = "?compound nubbe:hasIsolationData ?isolation ." ;
-        querym = "?isolation nubbe:city ?city ." ;
         queryn = "?isolation nubbe:isolationType ?exinfo ." ;
 
         queryo = "?compound nubbe:wasMentionedIn ?publication ." ;
