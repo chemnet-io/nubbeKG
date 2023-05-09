@@ -320,61 +320,12 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "Extra informations on citations of the publication."@en ;
                 rdfs:label "Publications citation extra information"@en .
 
-###  http://nubbeKG.aksw.org/ontology#Sd
-:Sd rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:float ;
-                rdfs:comment "Standard deviation of the method."@en ;
-                rdfs:label "SD"@en .
-
-###  http://nubbeKG.aksw.org/ontology#Gt
-:Gt rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:boolean ;
-                rdfs:comment "GT TODO."@en ;
-                rdfs:label "GT"@en .
-
-###  http://nubbeKG.aksw.org/ontology#Lt
-:Lt rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:boolean ;
-                rdfs:comment "Lt TODO."@en ;
-                rdfs:label "LT"@en .
-
-###  http://nubbeKG.aksw.org/ontology#methodResults
-:methodResults rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Ic50 , :Ic12 , :Ld50 , :Ec50 , :Mic , :Mfc , :Ed , :Dl, :Inhibition ;
-                rdfs:range xsd:float ;
-                rdfs:comment "Method result."@en ;
-                rdfs:label "methodResults"@en .
-
-###  http://nubbeKG.aksw.org/ontology#acitivityId
-:activityId rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Bioactivity ;
-                rdfs:range xsd:int ;
-                rdfs:comment "The identification number of the bioactivity."@en ;
-                rdfs:label "Activity ID"@en .
-
-###  http://nubbeKG.aksw.org/ontology#extraInformation
-:extraInformation rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Bioactivity ;
-                rdfs:range xsd:string ;
-                rdfs:comment "Additional information about the bioactivity analysis."@en ;
-                rdfs:label "Extra Information"@en .
-
 ###  http://nubbeKG.aksw.org/ontology#observation
 :observation rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Bioactivity ;
                 rdfs:range xsd:string ;
                 rdfs:comment "Observation information about the bioactivity analysis."@en ;
                 rdfs:label "Observation"@en .
-
-###  http://nubbeKG.aksw.org/ontology#code
-:code rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Bioactivity ;
-                rdfs:range xsd:int ;
-                rdfs:comment "Bioactivity Code TODO."@en ;
-                rdfs:label "Code"@en .
 
 ###  http://nubbeKG.aksw.org/ontology#concentration
 :concentration rdf:type owl:DatatypeProperty ;
@@ -401,22 +352,22 @@ xsd:date rdf:type rdfs:Datatype .
 :species rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Taxonomy ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The species of which a chemical compound is part of."@en ;
+                rdfs:comment "The species of which a biological entity is part of."@en ;
                 rdfs:label "Species"@en .
 
 ###  http://nubbeKG.aksw.org/ontology#family
 :family rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Taxonomy ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The family of which a chemical compound is part of."@en ;
+                rdfs:comment "The family of which a biological entity is part of."@en ;
                 rdfs:label "Family"@en .
 
-###  http://nubbeKG.aksw.org/ontology#gender
-:gender rdf:type owl:DatatypeProperty ;
+###  http://nubbeKG.aksw.org/ontology#genus
+:genus rdf:type owl:DatatypeProperty ;
                 rdfs:domain :Taxonomy ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The gender of which a chemical compound is part of."@en ;
-                rdfs:label "Gender"@en .
+                rdfs:comment "The genus of which a biological entity is part of."@en ;
+                rdfs:label "Genus"@en .
 
 ###  http://nubbeKG.aksw.org/ontology#subClass
 :subClass rdf:type owl:DatatypeProperty ;
@@ -562,7 +513,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#Taxonomy
 :Taxonomy rdf:type owl:Class ;
-          rdfs:comment "The biological taxonomy of a chemical compound."@en ;
+          rdfs:comment "The metabolic taxonomy of a chemical compound as well as the biological taxonomy of the entity it has been extracted."@en ;
           rdfs:label "Taxonomy"@en .
 
 ###  http://nubbeKG.aksw.org/ontology#Isolation
