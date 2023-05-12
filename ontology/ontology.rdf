@@ -753,6 +753,16 @@
     
 
 
+    <!-- http://nubbeKG.aksw.org/ontology#testedAs -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#testedAs">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://nubbeKG.aksw.org/ontology#tpsa -->
 
 
@@ -960,6 +970,13 @@
     
 
 
+    <!-- http://nubbeKG.aksw.org/ontology#testedAs -->
+
+
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#testedAs"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -996,6 +1013,10 @@
     <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#MIC">
         <rdfs:comment xml:lang="en">The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
         <rdfs:label xml:lang="en">MIC</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#testedAs">
+        <rdfs:comment xml:lang="en">The type of matter the actual bioactivity testing is performed on.</rdfs:comment>
+        <rdfs:label xml:lang="en">tested as</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
