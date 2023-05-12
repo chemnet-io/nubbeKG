@@ -1,108 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <title>NuBBE[KG] | Ontology</title>
-    <!-- SCHEMA.ORG METADATA -->
-    <script type="application/ld+json">{
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "url": "http://nubbe-kg.aksw.org/ontology#",
-        "image": "http://vowl.visualdataweb.org/webvowl/#iri=http://nubbe-kg.aksw.org/ontology#",
-        "name": "nubbe: The data model for nubbeDB Knowledge Graph",
-        "headline": "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.",
-        "datePublished": "Fri Mar 10 14:20:35 CET 2023",
-        "version": "SNAPSHOT",
-        "author": [
-            {
-                "@type": "Person",
-                "name": "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"
-            }
-        ]
-    }</script>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+ <link rel="stylesheet" href="resources/primer.css" media="screen" />    <link rel="stylesheet" href="resources/rec.css" media="screen" />    <link rel="stylesheet" href="resources/extra.css" media="screen" />    <link rel="stylesheet" href="resources/owl.css" media="screen" />    <title>nubbe: The data model for nubbeDB Knowledge Graph</title>
 
-    <script src="resources/jquery.js"></script>
-    <script src="resources/marked.min.js"></script>
-    <script>
-        function loadHash() {
-            jQuery(".markdown").each(function (el) {
-                jQuery(this).after(marked(jQuery(this).text())).remove()
-            });
-            var hash = location.hash;
-            if ($(hash).offset() != null) {
-                $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
-            }
-            loadTOC();
-        }
 
-        function loadTOC() {
-            //process toc dynamically
-            var t = '<h2>Table of contents</h2><ul>';
-            i = 1;
-            j = 0;
-            jQuery(".list").each(function () {
-                if (jQuery(this).is('h2')) {
-                    if (j > 0) {
-                        t += '</ul>';
-                        j = 0;
-                    }
-                    t += '<li>' + i + '. <a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
-                    i++;
-                }
-                if (jQuery(this).is('h3')) {
-                    if (j == 0) {
-                        t += '<ul>';
-                    }
-                    j++;
-                    t += '<li>' + (i - 1) + '.' + j + '. ' + '<a href=#' + jQuery(this).attr('id') + '>' + jQuery(this).ignore("span").text() + '</a></li>';
-                }
-            });
-            t += '</ul>';
-            $("#toc").html(t);
-        }
+<!-- SCHEMA.ORG METADATA -->
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://nubbeKG.aksw.org/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://nubbeKG.aksw.org/ontology#","name":"nubbe: The data model for nubbeDB Knowledge Graph", "headline":"The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.", "datePublished":"Fri May 12 13:12:46 CEST 2023", "version":"SNAPSHOT", "author":[{"@type":"Person","name":"Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"}]}</script>
 
-        $(function () {
-            loadHash();
-        });
-        $.fn.ignore = function (sel) {
-            return this.clone().find(sel || ">*").remove().end();
-        };
-    </script>
+<script src="resources/jquery.js"></script> 
+<script src="resources/marked.min.js"></script> 
+    <script> 
+function loadHash() {
+  jQuery(".markdown").each(function(el){jQuery(this).after(marked(jQuery(this).text())).remove()});
+	var hash = location.hash;
+	if($(hash).offset()!=null){
+	  $('html, body').animate({scrollTop: $(hash).offset().top}, 0);
+}
+	loadTOC();
+}
+function loadTOC(){
+	//process toc dynamically
+	  var t='<h2>Table of contents</h2><ul>';i = 1;j=0;
+	  jQuery(".list").each(function(){
+		if(jQuery(this).is('h2')){
+			if(j>0){
+				t+='</ul>';
+				j=0;
+			}
+			t+= '<li>'+i+'. <a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+			i++;
+		}
+		if(jQuery(this).is('h3')){
+			if(j==0){
+				t+='<ul>';
+			}
+			j++;
+			t+= '<li>'+(i-1)+'.'+j+'. '+'<a href=#'+ jQuery(this).attr('id')+'>'+ jQuery(this).ignore("span").text()+'</a></li>';
+		}
+	  });
+	  t+='</ul>';
+	  $("#toc").html(t); 
+}
+$(function(){
+    loadHash();
+}); $.fn.ignore = function(sel){
+        return this.clone().find(sel||">*").remove().end();
+ }; 
+   </script> 
+  </head> 
 
-    <link href="../assets/css/main.css" rel="stylesheet">
-   <!-- Bootstrap & MDB -->
-   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
-         crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css"
-         integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q=="
-         crossorigin="anonymous"/>
-   <!-- Fonts & Icons -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
-         crossorigin="anonymous">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css"
-         integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg=="
-         crossorigin="anonymous">
-   <link rel="stylesheet" type="text/css"
-         href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
-   <!-- Code Syntax Highlighting -->
-   <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css"/>
-   <!-- Styles -->
-   <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/ce/Emojione_1F331.svg">
-   <link rel="canonical" href="./ontology/">
-
-    <script src="../assets/js/theme.js"></script>
-    <script src="../assets/js/dark_mode.js"></script>
-    <!-- load header & footer component -->
-    <script src="../index.js"></script>
-
-</head>
-
-<body class="fixed-top-nav " data-new-gr-c-s-check-loaded="14.1041.0" data-gr-ext-installed="">
-<sub-header></sub-header>
-
-<main class="container mt-5" id="ontology">
+<body>
+<div class="container">
 <div class="head">
 <div style="float:right">language <a href="index-en.html"><b>en</b></a> </div>
 <h1>nubbe: The data model for nubbeDB Knowledge Graph</h1>
@@ -131,7 +80,7 @@
 </div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
 The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.</span>
 </div>
-<div id="toc"></div>
+<div id="toc"></div> 
 
 <!--INTRODUCTION SECTION-->
     <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -157,7 +106,7 @@ This is a place holder text for the introduction. The introduction should briefl
 </div>
 </div>
 </div>
-
+  
 
 <!--OVERVIEW SECTION-->
     <div id="overview"><h2 id="overv" class="list">nubbe: The data model for nubbeDB Knowledge Graph: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -408,9 +357,9 @@ This ontology has the following classes and properties.</span>
    <li>
       <a href="#tpsa" title="http://nubbeKG.aksw.org/ontology#tpsa">TPSA</a>
    </li>
-</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
 </div>
-
+  
 
 <!--DESCRIPTION SECTION-->
     <div id="description"><h2 id="desc" class="list">nubbe: The data model for nubbeDB Knowledge Graph: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -418,7 +367,7 @@ This ontology has the following classes and properties.</span>
 This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
 
 </div>
-
+   
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for nubbe: The data model for nubbeDB Knowledge Graph classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -2484,7 +2433,7 @@ This section provides details for each class and property defined by nubbe: The 
 </div>
 </div>
 </div>
-
+    
 
 <!--REFERENCES SECTION-->
   <div id="references">
@@ -2500,8 +2449,6 @@ The authors would like to thank <a href="http://www.essepuntato.it/">Silvio Pero
 </div>
 
 
-</main>
-
-<main-footer></main-footer>
+</div>
 </body>
 </html>

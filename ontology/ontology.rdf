@@ -143,13 +143,37 @@
     
 
 
+    <!-- http://nubbeKG.aksw.org/ontology#iisMetabolic -->
+
+
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#iisMetabolic">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"/>
+        <rdfs:comment xml:lang="en">A chemical compound is classified by a metabolic taxonomy.</rdfs:comment>
+        <rdfs:label xml:lang="en">is metabolic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#isBiologic -->
+
+
+    <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#isBiologic">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"/>
+        <rdfs:comment xml:lang="en">A entity from which chemical compounds are extracted from are classified by a biological taxonomy.</rdfs:comment>
+        <rdfs:label xml:lang="en">is biologic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://nubbeKG.aksw.org/ontology#isClassifiedBy -->
 
 
     <owl:ObjectProperty rdf:about="http://nubbeKG.aksw.org/ontology#isClassifiedBy">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
         <rdfs:range rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
-        <rdfs:comment xml:lang="en">A chemical compound is classified by a biological taxonomy.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A chemical compound is classified by a metabolic taxonomy, and the entity it has been extracted from by a biological taxonomy.</rdfs:comment>
         <rdfs:label xml:lang="en">is classified by</rdfs:label>
     </owl:ObjectProperty>
     
@@ -195,82 +219,80 @@
 
 
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Class">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The Class of which a chemical compound is part of.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The metabolic class of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Class</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Gt -->
+    <!-- http://nubbeKG.aksw.org/ontology#EC50 -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Gt">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">GT TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">GT</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#Lt -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Lt">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:comment xml:lang="en">Lt TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">LT</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#Sd -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#Sd">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">Standard deviation of the method.</rdfs:comment>
-        <rdfs:label xml:lang="en">SD</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#activityId -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#activityId">
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#EC50">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment xml:lang="en">The identification number of the bioactivity.</rdfs:comment>
-        <rdfs:label xml:lang="en">Activity ID</rdfs:label>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#ED50 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#ED50">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#IC12 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#IC12">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#IC50 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#IC50">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#LD50 -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#LD50">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#MFC -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#MFC">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#MIC -->
+
+
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#MIC">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -287,18 +309,6 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#code -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#code">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment xml:lang="en">Bioactivity Code TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">Code</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#commonName -->
 
 
@@ -311,50 +321,26 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#concentration -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#concentration">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Bioactivity concentration? TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">Concentration</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#extraInformation -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#extraInformation">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Additional information about the bioactivity analysis.</rdfs:comment>
-        <rdfs:label xml:lang="en">Extra Information</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#family -->
 
 
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#family">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The family of which a chemical compound is part of.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The family of which a biological entity is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Family</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#gender -->
+    <!-- http://nubbeKG.aksw.org/ontology#genus -->
 
 
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#gender">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#genus">
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The gender of which a chemical compound is part of.</rdfs:comment>
-        <rdfs:label xml:lang="en">Gender</rdfs:label>
+        <rdfs:comment xml:lang="en">The genus of which a biological entity is part of.</rdfs:comment>
+        <rdfs:label xml:lang="en">Genus</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -443,26 +429,6 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#methodResults -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#methodResults">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Dl"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ec50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ed"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic12"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ic50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Inhibition"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Ld50"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mfc"/>
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Mic"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
-        <rdfs:comment xml:lang="en">Method result.</rdfs:comment>
-        <rdfs:label xml:lang="en">methodResults</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#molecularFormula -->
 
 
@@ -527,7 +493,7 @@
 
 
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#nubbeId">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Compound"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">The numeric identifier a chemical compound has in the NubbeDB database.</rdfs:comment>
         <rdfs:label xml:lang="en">NUBBE ID</rdfs:label>
@@ -541,7 +507,7 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#observation">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">Observation information about the bioactivity analysis.</rdfs:comment>
+        <rdfs:comment xml:lang="en">A one word description of the observed properties during bioactivity analysis.</rdfs:comment>
         <rdfs:label xml:lang="en">Observation</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -555,18 +521,6 @@
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
         <rdfs:comment xml:lang="en">Explains in what way the chemical compound has been extracted.</rdfs:comment>
         <rdfs:label xml:lang="en">Isolation type</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#positionActivity -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#positionActivity">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-        <rdfs:comment xml:lang="en">positionActivity TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">Position activity</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -739,18 +693,6 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#result -->
-
-
-    <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#result">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">A one word description of the observed properties during bioactivity analysis.</rdfs:comment>
-        <rdfs:label xml:lang="en">Results</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#smiles -->
 
 
@@ -767,9 +709,9 @@
 
 
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#species">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The species of which a chemical compound is part of.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The species of which a biological entity is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Species</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -791,9 +733,9 @@
 
 
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#subClass">
-        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Taxonomy"/>
+        <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:comment xml:lang="en">The Subclass of which a chemical compound is part of.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The metabolic subclass of which a chemical compound is part of.</rdfs:comment>
         <rdfs:label xml:lang="en">Subclass</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -845,6 +787,16 @@
     
 
 
+    <!-- http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy -->
+
+
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy">
+        <rdfs:comment xml:lang="en">The biological taxonomy of a entity from which a chemical compound has been extracted.</rdfs:comment>
+        <rdfs:label xml:lang="en">BiologicalTaxonomy</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://nubbeKG.aksw.org/ontology#Compound -->
 
 
@@ -876,36 +828,17 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Dl -->
+    <!-- http://nubbeKG.aksw.org/ontology#EC50 -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Dl">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">DL TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">DL</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#EC50"/>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Ec50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#ED50 -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ec50">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">The EC50 is the concentration of a drug that gives half-maximal response.</rdfs:comment>
-        <rdfs:label xml:lang="en">EC 50</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#Ed -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ed">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">ED TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">ED</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#ED50"/>
     
 
 
@@ -920,36 +853,17 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Ic12 -->
+    <!-- http://nubbeKG.aksw.org/ontology#IC12 -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ic12">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%.</rdfs:comment>
-        <rdfs:label xml:lang="en">IC12</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#IC12"/>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Ic50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#IC50 -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ic50">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%.</rdfs:comment>
-        <rdfs:label xml:lang="en">IC50</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#Inhibition -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Inhibition">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">Inhibition TODO.</rdfs:comment>
-        <rdfs:label xml:lang="en">Inhibition</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#IC50"/>
     
 
 
@@ -963,35 +877,33 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Ld50 -->
+    <!-- http://nubbeKG.aksw.org/ontology#LD50 -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Ld50">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals.</rdfs:comment>
-        <rdfs:label xml:lang="en">Ld 50</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#LD50"/>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Mfc -->
+    <!-- http://nubbeKG.aksw.org/ontology#MFC -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Mfc">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth.</rdfs:comment>
-        <rdfs:label xml:lang="en">MFC</rdfs:label>
-    </owl:Class>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MFC"/>
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#Mic -->
+    <!-- http://nubbeKG.aksw.org/ontology#MIC -->
 
 
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Mic">
-        <rdfs:subClassOf rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
-        <rdfs:comment xml:lang="en">The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
-        <rdfs:label xml:lang="en">MIC</rdfs:label>
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MIC"/>
+    
+
+
+    <!-- http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy -->
+
+
+    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy">
+        <rdfs:comment xml:lang="en">The metabolic taxonomy of a chemical compound.</rdfs:comment>
+        <rdfs:label xml:lang="en">MetabolicTaxonomy</rdfs:label>
     </owl:Class>
     
 
@@ -1021,7 +933,7 @@
 
 
     <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#Taxonomy">
-        <rdfs:comment xml:lang="en">The biological taxonomy of a chemical compound.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The metabolic taxonomy of a chemical compound as well as the biological taxonomy of the entity it has been extracted.</rdfs:comment>
         <rdfs:label xml:lang="en">Taxonomy</rdfs:label>
     </owl:Class>
     
@@ -1045,6 +957,46 @@
         <rdfs:comment xml:lang="en">Unique identifiers of a chemical compound like smiles and inchikeys.</rdfs:comment>
         <rdfs:label xml:lang="en">Unique identifiers</rdfs:label>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#EC50">
+        <rdfs:comment xml:lang="en">The effective concentration of a drug that gives half-maximal response.</rdfs:comment>
+        <rdfs:label xml:lang="en">EC50</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#ED50">
+        <rdfs:comment xml:lang="en">The effective dose of a drug that gives half-maximal response.</rdfs:comment>
+        <rdfs:label xml:lang="en">ED50</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#IC12">
+        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%.</rdfs:comment>
+        <rdfs:label xml:lang="en">IC12</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#IC50">
+        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%.</rdfs:comment>
+        <rdfs:label xml:lang="en">IC50</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#LD50">
+        <rdfs:comment xml:lang="en">The amount of a material, given all at once, which causes the death of 50% of a group of test animals.</rdfs:comment>
+        <rdfs:label xml:lang="en">LD50</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#MFC">
+        <rdfs:comment xml:lang="en">The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth.</rdfs:comment>
+        <rdfs:label xml:lang="en">MFC</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#MIC">
+        <rdfs:comment xml:lang="en">The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
+        <rdfs:label xml:lang="en">MIC</rdfs:label>
+    </rdf:Description>
 </rdf:RDF>
 
 

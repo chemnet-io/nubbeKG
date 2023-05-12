@@ -81,11 +81,27 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "has isolation data"@en .
 
 
+###  http://nubbeKG.aksw.org/ontology#iisMetabolic
+:iisMetabolic rdf:type owl:ObjectProperty ;
+              rdfs:domain :Taxonomy ;
+              rdfs:range :MetabolicTaxonomy ;
+              rdfs:comment "A chemical compound is classified by a metabolic taxonomy."@en ;
+              rdfs:label "is metabolic"@en .
+
+
+###  http://nubbeKG.aksw.org/ontology#isBiologic
+:isBiologic rdf:type owl:ObjectProperty ;
+            rdfs:domain :Taxonomy ;
+            rdfs:range :BiologicalTaxonomy ;
+            rdfs:comment "A entity from which chemical compounds are extracted from are classified by a biological taxonomy."@en ;
+            rdfs:label "is biologic"@en .
+
+
 ###  http://nubbeKG.aksw.org/ontology#isClassifiedBy
 :isClassifiedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :Compound ;
                 rdfs:range :Taxonomy ;
-                rdfs:comment "A chemical compound is classified by a biological taxonomy."@en ;
+                rdfs:comment "A chemical compound is classified by a metabolic taxonomy, and the entity it has been extracted from by a biological taxonomy."@en ;
                 rdfs:label "is classified by"@en .
 
 
@@ -111,66 +127,52 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#Class
 :Class rdf:type owl:DatatypeProperty ;
-       rdfs:domain :Taxonomy ;
+       rdfs:domain :MetabolicTaxonomy ;
        rdfs:range xsd:string ;
-       rdfs:comment "The Class of which a chemical compound is part of."@en ;
+       rdfs:comment "The metabolic class of which a chemical compound is part of."@en ;
        rdfs:label "Class"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#Gt
-:Gt rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Dl ,
-                :Ec50 ,
-                :Ed ,
-                :Ic12 ,
-                :Ic50 ,
-                :Inhibition ,
-                :Ld50 ,
-                :Mfc ,
-                :Mic ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "GT TODO."@en ;
-    rdfs:label "GT"@en .
+###  http://nubbeKG.aksw.org/ontology#EC50
+:EC50 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Bioactivity ;
+      rdfs:range xsd:double .
 
 
-###  http://nubbeKG.aksw.org/ontology#Lt
-:Lt rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Dl ,
-                :Ec50 ,
-                :Ed ,
-                :Ic12 ,
-                :Ic50 ,
-                :Inhibition ,
-                :Ld50 ,
-                :Mfc ,
-                :Mic ;
-    rdfs:range xsd:boolean ;
-    rdfs:comment "Lt TODO."@en ;
-    rdfs:label "LT"@en .
+###  http://nubbeKG.aksw.org/ontology#ED50
+:ED50 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Bioactivity ;
+      rdfs:range xsd:double .
 
 
-###  http://nubbeKG.aksw.org/ontology#Sd
-:Sd rdf:type owl:DatatypeProperty ;
-    rdfs:domain :Dl ,
-                :Ec50 ,
-                :Ed ,
-                :Ic12 ,
-                :Ic50 ,
-                :Inhibition ,
-                :Ld50 ,
-                :Mfc ,
-                :Mic ;
-    rdfs:range xsd:float ;
-    rdfs:comment "Standard deviation of the method."@en ;
-    rdfs:label "SD"@en .
+###  http://nubbeKG.aksw.org/ontology#IC12
+:IC12 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Bioactivity ;
+      rdfs:range xsd:double .
 
 
-###  http://nubbeKG.aksw.org/ontology#activityId
-:activityId rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Bioactivity ;
-            rdfs:range xsd:int ;
-            rdfs:comment "The identification number of the bioactivity."@en ;
-            rdfs:label "Activity ID"@en .
+###  http://nubbeKG.aksw.org/ontology#IC50
+:IC50 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Bioactivity ;
+      rdfs:range xsd:double .
+
+
+###  http://nubbeKG.aksw.org/ontology#LD50
+:LD50 rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Bioactivity ;
+      rdfs:range xsd:double .
+
+
+###  http://nubbeKG.aksw.org/ontology#MFC
+:MFC rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Bioactivity ;
+     rdfs:range xsd:double .
+
+
+###  http://nubbeKG.aksw.org/ontology#MIC
+:MIC rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Bioactivity ;
+     rdfs:range xsd:double .
 
 
 ###  http://nubbeKG.aksw.org/ontology#city
@@ -181,14 +183,6 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:label "Isolation city"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#code
-:code rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
-      rdfs:range xsd:int ;
-      rdfs:comment "Bioactivity Code TODO."@en ;
-      rdfs:label "Code"@en .
-
-
 ###  http://nubbeKG.aksw.org/ontology#commonName
 :commonName rdf:type owl:DatatypeProperty ;
             rdfs:domain :Compound ;
@@ -197,36 +191,20 @@ xsd:date rdf:type rdfs:Datatype .
             rdfs:label "Common name"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#concentration
-:concentration rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Bioactivity ;
-               rdfs:range xsd:string ;
-               rdfs:comment "Bioactivity concentration? TODO."@en ;
-               rdfs:label "Concentration"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#extraInformation
-:extraInformation rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Bioactivity ;
-                  rdfs:range xsd:string ;
-                  rdfs:comment "Additional information about the bioactivity analysis."@en ;
-                  rdfs:label "Extra Information"@en .
-
-
 ###  http://nubbeKG.aksw.org/ontology#family
 :family rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Taxonomy ;
+        rdfs:domain :BiologicalTaxonomy ;
         rdfs:range xsd:string ;
-        rdfs:comment "The family of which a chemical compound is part of."@en ;
+        rdfs:comment "The family of which a biological entity is part of."@en ;
         rdfs:label "Family"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#gender
-:gender rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Taxonomy ;
-        rdfs:range xsd:string ;
-        rdfs:comment "The gender of which a chemical compound is part of."@en ;
-        rdfs:label "Gender"@en .
+###  http://nubbeKG.aksw.org/ontology#genus
+:genus rdf:type owl:DatatypeProperty ;
+       rdfs:domain :BiologicalTaxonomy ;
+       rdfs:range xsd:string ;
+       rdfs:comment "The genus of which a biological entity is part of."@en ;
+       rdfs:label "Genus"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#hBondAcceptorCount
@@ -285,22 +263,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "logP Coefficient"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#methodResults
-:methodResults rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Dl ,
-                           :Ec50 ,
-                           :Ed ,
-                           :Ic12 ,
-                           :Ic50 ,
-                           :Inhibition ,
-                           :Ld50 ,
-                           :Mfc ,
-                           :Mic ;
-               rdfs:range xsd:float ;
-               rdfs:comment "Method result."@en ;
-               rdfs:label "methodResults"@en .
-
-
 ###  http://nubbeKG.aksw.org/ontology#molecularFormula
 :molecularFormula rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Compound ;
@@ -343,7 +305,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#nubbeId
 :nubbeId rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Compound ;
+         rdfs:domain :UniqueIdentifiers ;
          rdfs:range xsd:string ;
          rdfs:comment "The numeric identifier a chemical compound has in the NubbeDB database."@en ;
          rdfs:label "NUBBE ID"@en .
@@ -353,7 +315,7 @@ xsd:date rdf:type rdfs:Datatype .
 :observation rdf:type owl:DatatypeProperty ;
              rdfs:domain :Bioactivity ;
              rdfs:range xsd:string ;
-             rdfs:comment "Observation information about the bioactivity analysis."@en ;
+             rdfs:comment "A one word description of the observed properties during bioactivity analysis."@en ;
              rdfs:label "Observation"@en .
 
 
@@ -363,14 +325,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:range xsd:string ;
                  rdfs:comment "Explains in what way the chemical compound has been extracted."@en ;
                  rdfs:label "Isolation type"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#positionActivity
-:positionActivity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Bioactivity ;
-                  rdfs:range xsd:int ;
-                  rdfs:comment "positionActivity TODO."@en ;
-                  rdfs:label "Position activity"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#publicationAgency
@@ -485,14 +439,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "Publication year"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#result
-:result rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Bioactivity ;
-        rdfs:range xsd:string ;
-        rdfs:comment "A one word description of the observed properties during bioactivity analysis."@en ;
-        rdfs:label "Results"@en .
-
-
 ###  http://nubbeKG.aksw.org/ontology#smiles
 :smiles rdf:type owl:DatatypeProperty ;
         rdfs:domain :UniqueIdentifiers ;
@@ -503,9 +449,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#species
 :species rdf:type owl:DatatypeProperty ;
-         rdfs:domain :Taxonomy ;
+         rdfs:domain :BiologicalTaxonomy ;
          rdfs:range xsd:string ;
-         rdfs:comment "The species of which a chemical compound is part of."@en ;
+         rdfs:comment "The species of which a biological entity is part of."@en ;
          rdfs:label "Species"@en .
 
 
@@ -519,9 +465,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#subClass
 :subClass rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Taxonomy ;
+          rdfs:domain :MetabolicTaxonomy ;
           rdfs:range xsd:string ;
-          rdfs:comment "The Subclass of which a chemical compound is part of."@en ;
+          rdfs:comment "The metabolic subclass of which a chemical compound is part of."@en ;
           rdfs:label "Subclass"@en .
 
 
@@ -551,6 +497,12 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "Bioactivity data"@en .
 
 
+###  http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy
+:BiologicalTaxonomy rdf:type owl:Class ;
+                    rdfs:comment "The biological taxonomy of a entity from which a chemical compound has been extracted."@en ;
+                    rdfs:label "BiologicalTaxonomy"@en .
+
+
 ###  http://nubbeKG.aksw.org/ontology#Compound
 :Compound rdf:type owl:Class ;
           rdfs:comment "A chemical compound."@en ;
@@ -570,25 +522,12 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "Descriptors"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#Dl
-:Dl rdf:type owl:Class ;
-    rdfs:subClassOf :Bioactivity ;
-    rdfs:comment "DL TODO."@en ;
-    rdfs:label "DL"@en .
+###  http://nubbeKG.aksw.org/ontology#EC50
+:EC50 rdf:type owl:Class .
 
 
-###  http://nubbeKG.aksw.org/ontology#Ec50
-:Ec50 rdf:type owl:Class ;
-      rdfs:subClassOf :Bioactivity ;
-      rdfs:comment "The EC50 is the concentration of a drug that gives half-maximal response."@en ;
-      rdfs:label "EC 50"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#Ed
-:Ed rdf:type owl:Class ;
-    rdfs:subClassOf :Bioactivity ;
-    rdfs:comment "ED TODO."@en ;
-    rdfs:label "ED"@en .
+###  http://nubbeKG.aksw.org/ontology#ED50
+:ED50 rdf:type owl:Class .
 
 
 ###  http://nubbeKG.aksw.org/ontology#ElectronicDescriptors
@@ -598,25 +537,12 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:label "Electronic descriptors"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#Ic12
-:Ic12 rdf:type owl:Class ;
-      rdfs:subClassOf :Bioactivity ;
-      rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
-      rdfs:label "IC12"@en .
+###  http://nubbeKG.aksw.org/ontology#IC12
+:IC12 rdf:type owl:Class .
 
 
-###  http://nubbeKG.aksw.org/ontology#Ic50
-:Ic50 rdf:type owl:Class ;
-      rdfs:subClassOf :Bioactivity ;
-      rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
-      rdfs:label "IC50"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#Inhibition
-:Inhibition rdf:type owl:Class ;
-            rdfs:subClassOf :Bioactivity ;
-            rdfs:comment "Inhibition TODO."@en ;
-            rdfs:label "Inhibition"@en .
+###  http://nubbeKG.aksw.org/ontology#IC50
+:IC50 rdf:type owl:Class .
 
 
 ###  http://nubbeKG.aksw.org/ontology#Isolation
@@ -625,25 +551,22 @@ xsd:date rdf:type rdfs:Datatype .
            rdfs:label "Isolation"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#Ld50
-:Ld50 rdf:type owl:Class ;
-      rdfs:subClassOf :Bioactivity ;
-      rdfs:comment "LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals."@en ;
-      rdfs:label "Ld 50"@en .
+###  http://nubbeKG.aksw.org/ontology#LD50
+:LD50 rdf:type owl:Class .
 
 
-###  http://nubbeKG.aksw.org/ontology#Mfc
-:Mfc rdf:type owl:Class ;
-     rdfs:subClassOf :Bioactivity ;
-     rdfs:comment "The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth."@en ;
-     rdfs:label "MFC"@en .
+###  http://nubbeKG.aksw.org/ontology#MFC
+:MFC rdf:type owl:Class .
 
 
-###  http://nubbeKG.aksw.org/ontology#Mic
-:Mic rdf:type owl:Class ;
-     rdfs:subClassOf :Bioactivity ;
-     rdfs:comment "The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
-     rdfs:label "MIC"@en .
+###  http://nubbeKG.aksw.org/ontology#MIC
+:MIC rdf:type owl:Class .
+
+
+###  http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy
+:MetabolicTaxonomy rdf:type owl:Class ;
+                   rdfs:comment "The metabolic taxonomy of a chemical compound."@en ;
+                   rdfs:label "MetabolicTaxonomy"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#MolecularDescriptors
@@ -661,7 +584,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbeKG.aksw.org/ontology#Taxonomy
 :Taxonomy rdf:type owl:Class ;
-          rdfs:comment "The biological taxonomy of a chemical compound."@en ;
+          rdfs:comment "The metabolic taxonomy of a chemical compound as well as the biological taxonomy of the entity it has been extracted."@en ;
           rdfs:label "Taxonomy"@en .
 
 
@@ -676,6 +599,38 @@ xsd:date rdf:type rdfs:Datatype .
 :UniqueIdentifiers rdf:type owl:Class ;
                    rdfs:comment "Unique identifiers of a chemical compound like smiles and inchikeys."@en ;
                    rdfs:label "Unique identifiers"@en .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:EC50 rdfs:comment "The effective concentration of a drug that gives half-maximal response."@en ;
+      rdfs:label "EC50"@en .
+
+
+:ED50 rdfs:comment "The effective dose of a drug that gives half-maximal response."@en ;
+      rdfs:label "ED50"@en .
+
+
+:IC12 rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
+      rdfs:label "IC12"@en .
+
+
+:IC50 rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
+      rdfs:label "IC50"@en .
+
+
+:LD50 rdfs:comment "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en ;
+      rdfs:label "LD50"@en .
+
+
+:MFC rdfs:comment "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en ;
+     rdfs:label "MFC"@en .
+
+
+:MIC rdfs:comment "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
+     rdfs:label "MIC"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

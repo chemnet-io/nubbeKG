@@ -45,14 +45,25 @@
     "@value" : "Bioactivity data"
   } ]
 }, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The biological taxonomy of a entity from which a chemical compound has been extracted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "BiologicalTaxonomy"
+  } ]
+}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#Class",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The Class of which a chemical compound is part of."
+    "@value" : "The metabolic class of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -98,46 +109,38 @@
     "@value" : "Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Dl",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#EC50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "DL TODO."
+    "@value" : "The effective concentration of a drug that gives half-maximal response."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "DL"
+    "@value" : "EC50"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Ec50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#ED50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The EC50 is the concentration of a drug that gives half-maximal response."
+    "@value" : "The effective dose of a drug that gives half-maximal response."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "EC 50"
+    "@value" : "ED50"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Ed",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "ED TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "ED"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#ElectronicDescriptors",
@@ -154,79 +157,38 @@
     "@id" : "http://nubbeKG.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Gt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "GT TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "GT"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Ic12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#IC12",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "IC12"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Ic50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#IC50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "IC50"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Inhibition TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Inhibition"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#Isolation",
@@ -240,79 +202,66 @@
     "@value" : "Isolation"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Ld50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#LD50",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "LD50 is the amount of a material, given all at once, which causes the death of 50% (one half) of a group of test animals."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Ld 50"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Lt",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Lt TODO."
+    "@value" : "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "LT"
+    "@value" : "LD50"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Mfc",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#MFC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The minimum fungicidal concentrations(MFC) was defined as the lowest concentration of drug showing no visible growth."
+    "@value" : "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MFC"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Mic",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "@id" : "http://nubbeKG.aksw.org/ontology#MIC",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The minimum inhibitory concentration (MIC) is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
+    "@value" : "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MIC"
   } ],
-  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ]
+}, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The metabolic taxonomy of a chemical compound."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "MetabolicTaxonomy"
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#MolecularDescriptors",
@@ -340,44 +289,11 @@
     "@value" : "Publication"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#Sd",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Standard deviation of the method."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "SD"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The biological taxonomy of a chemical compound."
+    "@value" : "The metabolic taxonomy of a chemical compound as well as the biological taxonomy of the entity it has been extracted."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -409,23 +325,6 @@
     "@value" : "Unique identifiers"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#activityId",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The identification number of the bioactivity."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Activity ID"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
-  } ]
-}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#city",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -441,23 +340,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#code",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Bioactivity Code TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Code"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#commonName",
@@ -477,48 +359,14 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#concentration",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Bioactivity concentration? TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Concentration"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#extraInformation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Additional information about the bioactivity analysis."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Extra Information"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#family",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The family of which a chemical compound is part of."
+    "@value" : "The family of which a biological entity is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -528,18 +376,18 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#gender",
+  "@id" : "http://nubbeKG.aksw.org/ontology#genus",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The gender of which a chemical compound is part of."
+    "@value" : "The genus of which a biological entity is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Gender"
+    "@value" : "Genus"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -630,6 +478,23 @@
     "@id" : "http://nubbeKG.aksw.org/ontology#Isolation"
   } ]
 }, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#iisMetabolic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A chemical compound is classified by a metabolic taxonomy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is metabolic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"
+  } ]
+}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#inchi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -664,11 +529,28 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
+  "@id" : "http://nubbeKG.aksw.org/ontology#isBiologic",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A entity from which chemical compounds are extracted from are classified by a biological taxonomy."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "is biologic"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"
+  } ]
+}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#isClassifiedBy",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A chemical compound is classified by a biological taxonomy."
+    "@value" : "A chemical compound is classified by a metabolic taxonomy, and the entity it has been extracted from by a biological taxonomy."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
@@ -744,39 +626,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "logP Coefficient"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#methodResults",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Method result."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Dl"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ec50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ed"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic12"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ic50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Inhibition"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Ld50"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mfc"
-  }, {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Mic"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "methodResults"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
@@ -874,7 +723,7 @@
     "@value" : "The numeric identifier a chemical compound has in the NubbeDB database."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Compound"
+    "@id" : "http://nubbeKG.aksw.org/ontology#UniqueIdentifiers"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -888,7 +737,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Observation information about the bioactivity analysis."
+    "@value" : "A one word description of the observed properties during bioactivity analysis."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
@@ -916,23 +765,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#positionActivity",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "positionActivity TODO."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Position activity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#publicationAgency",
@@ -1173,23 +1005,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbeKG.aksw.org/ontology#result",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A one word description of the observed properties during bioactivity analysis."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Bioactivity"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Results"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://nubbeKG.aksw.org/ontology#smiles",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1211,10 +1026,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The species of which a chemical compound is part of."
+    "@value" : "The species of which a biological entity is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#BiologicalTaxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1245,10 +1060,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The Subclass of which a chemical compound is part of."
+    "@value" : "The metabolic subclass of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbeKG.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
