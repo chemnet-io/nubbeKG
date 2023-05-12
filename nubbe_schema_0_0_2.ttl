@@ -446,7 +446,12 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:comment "The effective dose of a drug that gives half-maximal response."@en ;
                 rdfs:label "ED50"@en .
 
-
+###  http://nubbeKG.aksw.org/ontology#testedAs
+:testedAs rdf:type owl:Class ;
+                rdfs:domain :Bioactivity ;
+                rdfs:range xsd:string ;
+                rdfs:comment "The type of matter the actual bioactivity testing is performed on."@en ;
+                rdfs:label "tested as"@en .
 #################################################################
 #    Classes
 #################################################################
