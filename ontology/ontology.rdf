@@ -233,6 +233,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#EC50">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The effective concentration of a drug that gives half-maximal response.</rdfs:comment>
+        <rdfs:label xml:lang="en">EC50</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -243,6 +245,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#ED50">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The effective dose of a drug that gives half-maximal response.</rdfs:comment>
+        <rdfs:label xml:lang="en">ED50</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -253,6 +257,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#IC12">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%.</rdfs:comment>
+        <rdfs:label xml:lang="en">IC12</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -263,6 +269,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#IC50">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%.</rdfs:comment>
+        <rdfs:label xml:lang="en">IC50</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -273,6 +281,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#LD50">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The amount of a material, given all at once, which causes the death of 50% of a group of test animals.</rdfs:comment>
+        <rdfs:label xml:lang="en">LD50</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -283,6 +293,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#MFC">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth.</rdfs:comment>
+        <rdfs:label xml:lang="en">MFC</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -293,6 +305,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#MIC">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+        <rdfs:comment xml:lang="en">The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
+        <rdfs:label xml:lang="en">MIC</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -759,6 +773,8 @@
     <owl:DatatypeProperty rdf:about="http://nubbeKG.aksw.org/ontology#testedAs">
         <rdfs:domain rdf:resource="http://nubbeKG.aksw.org/ontology#Bioactivity"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The type of matter the actual bioactivity testing is performed on.</rdfs:comment>
+        <rdfs:label xml:lang="en">tested as</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -838,20 +854,6 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#EC50 -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#EC50"/>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#ED50 -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#ED50"/>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#ElectronicDescriptors -->
 
 
@@ -863,20 +865,6 @@
     
 
 
-    <!-- http://nubbeKG.aksw.org/ontology#IC12 -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#IC12"/>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#IC50 -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#IC50"/>
-    
-
-
     <!-- http://nubbeKG.aksw.org/ontology#Isolation -->
 
 
@@ -884,27 +872,6 @@
         <rdfs:comment xml:lang="en">Information on where and from what the chemical compound has been isolated.</rdfs:comment>
         <rdfs:label xml:lang="en">Isolation</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#LD50 -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#LD50"/>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#MFC -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MFC"/>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#MIC -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#MIC"/>
     
 
 
@@ -967,57 +934,6 @@
         <rdfs:comment xml:lang="en">Unique identifiers of a chemical compound like smiles and inchikeys.</rdfs:comment>
         <rdfs:label xml:lang="en">Unique identifiers</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://nubbeKG.aksw.org/ontology#testedAs -->
-
-
-    <owl:Class rdf:about="http://nubbeKG.aksw.org/ontology#testedAs"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#EC50">
-        <rdfs:comment xml:lang="en">The effective concentration of a drug that gives half-maximal response.</rdfs:comment>
-        <rdfs:label xml:lang="en">EC50</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#ED50">
-        <rdfs:comment xml:lang="en">The effective dose of a drug that gives half-maximal response.</rdfs:comment>
-        <rdfs:label xml:lang="en">ED50</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#IC12">
-        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%.</rdfs:comment>
-        <rdfs:label xml:lang="en">IC12</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#IC50">
-        <rdfs:comment xml:lang="en">The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%.</rdfs:comment>
-        <rdfs:label xml:lang="en">IC50</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#LD50">
-        <rdfs:comment xml:lang="en">The amount of a material, given all at once, which causes the death of 50% of a group of test animals.</rdfs:comment>
-        <rdfs:label xml:lang="en">LD50</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#MFC">
-        <rdfs:comment xml:lang="en">The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth.</rdfs:comment>
-        <rdfs:label xml:lang="en">MFC</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#MIC">
-        <rdfs:comment xml:lang="en">The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria.</rdfs:comment>
-        <rdfs:label xml:lang="en">MIC</rdfs:label>
-    </rdf:Description>
-    <rdf:Description rdf:about="http://nubbeKG.aksw.org/ontology#testedAs">
-        <rdfs:comment xml:lang="en">The type of matter the actual bioactivity testing is performed on.</rdfs:comment>
-        <rdfs:label xml:lang="en">tested as</rdfs:label>
-    </rdf:Description>
 </rdf:RDF>
 
 

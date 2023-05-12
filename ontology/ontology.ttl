@@ -136,43 +136,57 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://nubbeKG.aksw.org/ontology#EC50
 :EC50 rdf:type owl:DatatypeProperty ;
       rdfs:domain :Bioactivity ;
-      rdfs:range xsd:double .
+      rdfs:range xsd:double ;
+      rdfs:comment "The effective concentration of a drug that gives half-maximal response."@en ;
+      rdfs:label "EC50"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#ED50
 :ED50 rdf:type owl:DatatypeProperty ;
       rdfs:domain :Bioactivity ;
-      rdfs:range xsd:double .
+      rdfs:range xsd:double ;
+      rdfs:comment "The effective dose of a drug that gives half-maximal response."@en ;
+      rdfs:label "ED50"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#IC12
 :IC12 rdf:type owl:DatatypeProperty ;
       rdfs:domain :Bioactivity ;
-      rdfs:range xsd:double .
+      rdfs:range xsd:double ;
+      rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
+      rdfs:label "IC12"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#IC50
 :IC50 rdf:type owl:DatatypeProperty ;
       rdfs:domain :Bioactivity ;
-      rdfs:range xsd:double .
+      rdfs:range xsd:double ;
+      rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
+      rdfs:label "IC50"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#LD50
 :LD50 rdf:type owl:DatatypeProperty ;
       rdfs:domain :Bioactivity ;
-      rdfs:range xsd:double .
+      rdfs:range xsd:double ;
+      rdfs:comment "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en ;
+      rdfs:label "LD50"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#MFC
 :MFC rdf:type owl:DatatypeProperty ;
      rdfs:domain :Bioactivity ;
-     rdfs:range xsd:double .
+     rdfs:range xsd:double ;
+     rdfs:comment "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en ;
+     rdfs:label "MFC"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#MIC
 :MIC rdf:type owl:DatatypeProperty ;
      rdfs:domain :Bioactivity ;
-     rdfs:range xsd:double .
+     rdfs:range xsd:double ;
+     rdfs:comment "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
+     rdfs:label "MIC"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#city
@@ -482,7 +496,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://nubbeKG.aksw.org/ontology#testedAs
 :testedAs rdf:type owl:DatatypeProperty ;
           rdfs:domain :Bioactivity ;
-          rdfs:range xsd:string .
+          rdfs:range xsd:string ;
+          rdfs:comment "The type of matter the actual bioactivity testing is performed on."@en ;
+          rdfs:label "tested as"@en .
 
 
 ###  http://nubbeKG.aksw.org/ontology#tpsa
@@ -528,14 +544,6 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "Descriptors"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#EC50
-:EC50 rdf:type owl:Class .
-
-
-###  http://nubbeKG.aksw.org/ontology#ED50
-:ED50 rdf:type owl:Class .
-
-
 ###  http://nubbeKG.aksw.org/ontology#ElectronicDescriptors
 :ElectronicDescriptors rdf:type owl:Class ;
                        rdfs:subClassOf :Descriptors ;
@@ -543,30 +551,10 @@ xsd:date rdf:type rdfs:Datatype .
                        rdfs:label "Electronic descriptors"@en .
 
 
-###  http://nubbeKG.aksw.org/ontology#IC12
-:IC12 rdf:type owl:Class .
-
-
-###  http://nubbeKG.aksw.org/ontology#IC50
-:IC50 rdf:type owl:Class .
-
-
 ###  http://nubbeKG.aksw.org/ontology#Isolation
 :Isolation rdf:type owl:Class ;
            rdfs:comment "Information on where and from what the chemical compound has been isolated."@en ;
            rdfs:label "Isolation"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#LD50
-:LD50 rdf:type owl:Class .
-
-
-###  http://nubbeKG.aksw.org/ontology#MFC
-:MFC rdf:type owl:Class .
-
-
-###  http://nubbeKG.aksw.org/ontology#MIC
-:MIC rdf:type owl:Class .
 
 
 ###  http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy
@@ -605,46 +593,6 @@ xsd:date rdf:type rdfs:Datatype .
 :UniqueIdentifiers rdf:type owl:Class ;
                    rdfs:comment "Unique identifiers of a chemical compound like smiles and inchikeys."@en ;
                    rdfs:label "Unique identifiers"@en .
-
-
-###  http://nubbeKG.aksw.org/ontology#testedAs
-:testedAs rdf:type owl:Class .
-
-
-#################################################################
-#    Annotations
-#################################################################
-
-:EC50 rdfs:comment "The effective concentration of a drug that gives half-maximal response."@en ;
-      rdfs:label "EC50"@en .
-
-
-:ED50 rdfs:comment "The effective dose of a drug that gives half-maximal response."@en ;
-      rdfs:label "ED50"@en .
-
-
-:IC12 rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
-      rdfs:label "IC12"@en .
-
-
-:IC50 rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
-      rdfs:label "IC50"@en .
-
-
-:LD50 rdfs:comment "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en ;
-      rdfs:label "LD50"@en .
-
-
-:MFC rdfs:comment "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en ;
-     rdfs:label "MFC"@en .
-
-
-:MIC rdfs:comment "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
-     rdfs:label "MIC"@en .
-
-
-:testedAs rdfs:comment "The type of matter the actual bioactivity testing is performed on."@en ;
-          rdfs:label "tested as"@en .
 
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

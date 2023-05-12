@@ -132,36 +132,50 @@
 <http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#comment> "The effective concentration of a drug that gives half-maximal response."@en .
+<http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#label> "EC50"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#ED50
 <http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#comment> "The effective dose of a drug that gives half-maximal response."@en .
+<http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#label> "ED50"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#IC12
 <http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en .
+<http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#label> "IC12"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#IC50
 <http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en .
+<http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#label> "IC50"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#LD50
 <http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en .
+<http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#label> "LD50"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#MFC
 <http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en .
+<http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#label> "MFC"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#MIC
 <http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en .
+<http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#label> "MIC"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#city
 <http://nubbeKG.aksw.org/ontology#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -433,6 +447,8 @@
 <http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbeKG.aksw.org/ontology#Bioactivity> .
 <http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of matter the actual bioactivity testing is performed on."@en .
+<http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#label> "tested as"@en .
 # 
 # http://nubbeKG.aksw.org/ontology#tpsa
 <http://nubbeKG.aksw.org/ontology#tpsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -476,37 +492,16 @@
 <http://nubbeKG.aksw.org/ontology#Descriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Descriptors chemical compound."@en .
 <http://nubbeKG.aksw.org/ontology#Descriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Descriptors"@en .
 # 
-# http://nubbeKG.aksw.org/ontology#EC50
-<http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://nubbeKG.aksw.org/ontology#ED50
-<http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://nubbeKG.aksw.org/ontology#ElectronicDescriptors
 <http://nubbeKG.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://nubbeKG.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbeKG.aksw.org/ontology#Descriptors> .
 <http://nubbeKG.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic descriptors of a chemical compound."@en .
 <http://nubbeKG.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic descriptors"@en .
 # 
-# http://nubbeKG.aksw.org/ontology#IC12
-<http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://nubbeKG.aksw.org/ontology#IC50
-<http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
 # http://nubbeKG.aksw.org/ontology#Isolation
 <http://nubbeKG.aksw.org/ontology#Isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://nubbeKG.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information on where and from what the chemical compound has been isolated."@en .
 <http://nubbeKG.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation"@en .
-# 
-# http://nubbeKG.aksw.org/ontology#LD50
-<http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://nubbeKG.aksw.org/ontology#MFC
-<http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# http://nubbeKG.aksw.org/ontology#MIC
-<http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy
 <http://nubbeKG.aksw.org/ontology#MetabolicTaxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -539,41 +534,5 @@
 <http://nubbeKG.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://nubbeKG.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/2000/01/rdf-schema#comment> "Unique identifiers of a chemical compound like smiles and inchikeys."@en .
 <http://nubbeKG.aksw.org/ontology#UniqueIdentifiers> <http://www.w3.org/2000/01/rdf-schema#label> "Unique identifiers"@en .
-# 
-# http://nubbeKG.aksw.org/ontology#testedAs
-<http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-# 
-# 
-# 
-# #################################################################
-# #
-# #    Annotations
-# #
-# #################################################################
-# 
-# 
-<http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#comment> "The effective concentration of a drug that gives half-maximal response."@en .
-<http://nubbeKG.aksw.org/ontology#EC50> <http://www.w3.org/2000/01/rdf-schema#label> "EC50"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#comment> "The effective dose of a drug that gives half-maximal response."@en .
-<http://nubbeKG.aksw.org/ontology#ED50> <http://www.w3.org/2000/01/rdf-schema#label> "ED50"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en .
-<http://nubbeKG.aksw.org/ontology#IC12> <http://www.w3.org/2000/01/rdf-schema#label> "IC12"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#comment> "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en .
-<http://nubbeKG.aksw.org/ontology#IC50> <http://www.w3.org/2000/01/rdf-schema#label> "IC50"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#comment> "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en .
-<http://nubbeKG.aksw.org/ontology#LD50> <http://www.w3.org/2000/01/rdf-schema#label> "LD50"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en .
-<http://nubbeKG.aksw.org/ontology#MFC> <http://www.w3.org/2000/01/rdf-schema#label> "MFC"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en .
-<http://nubbeKG.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#label> "MIC"@en .
-# 
-<http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of matter the actual bioactivity testing is performed on."@en .
-<http://nubbeKG.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#label> "tested as"@en .
 # 
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

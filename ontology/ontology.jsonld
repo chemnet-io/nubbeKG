@@ -110,7 +110,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#EC50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The effective concentration of a drug that gives half-maximal response."
@@ -127,7 +127,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#ED50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The effective dose of a drug that gives half-maximal response."
@@ -158,7 +158,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#IC12",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."
@@ -175,7 +175,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#IC50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."
@@ -203,7 +203,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#LD50",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."
@@ -220,7 +220,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#MFC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."
@@ -237,7 +237,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#MIC",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
@@ -1091,7 +1091,7 @@
   } ]
 }, {
   "@id" : "http://nubbeKG.aksw.org/ontology#testedAs",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#Class" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
     "@value" : "The type of matter the actual bioactivity testing is performed on."
