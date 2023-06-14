@@ -55,7 +55,7 @@ class IndexHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://medium.com/@dinobbio" target="_blank">
+            <a class="nav-link" href="https://dinobbio.aksw.org/blog.html?lang=en" target="_blank">
               blog
             </a>
           </li>
@@ -143,7 +143,7 @@ class SubPageHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://medium.com/@dinobbio" target="_blank">
+            <a class="nav-link" href="https://dinobbio.aksw.org/blog.html?lang=en" target="_blank">
               blog
             </a>
           </li>
