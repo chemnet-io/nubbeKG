@@ -8,25 +8,27 @@
       
       
       
-        <link rel="canonical" href="https://nubbekg.aksw.org/">
+        <link rel="canonical" href="https://nubbekg.aksw.org/dataset/">
       
       
+        <link rel="prev" href="../extraction/">
       
-        <link rel="next" href="extraction/">
       
-      <link rel="icon" href="assets/images/favicon.png">
+        <link rel="next" href="../query/">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.11">
     
     
       
-        <title>nubbe[KG] Docs</title>
+        <title>Dataset statistics - nubbe[KG] Docs</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.85bb2934.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.85bb2934.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.a6bdf11c.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a6bdf11c.min.css">
       
       
 
@@ -42,7 +44,7 @@
       
     
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -65,6 +67,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#dataset-statistics" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -97,7 +104,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              About
+              Dataset statistics
             
           </span>
         </div>
@@ -183,19 +190,11 @@
 
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="." class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
         About
       </a>
-      
     </li>
   
 
@@ -208,7 +207,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extraction/" class="md-nav__link">
+      <a href="../extraction/" class="md-nav__link">
         Extraction process
       </a>
     </li>
@@ -221,11 +220,21 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="dataset/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Dataset statistics
       </a>
+      
     </li>
   
 
@@ -238,7 +247,7 @@
   
   
     <li class="md-nav__item">
-      <a href="query/" class="md-nav__link">
+      <a href="../query/" class="md-nav__link">
         How to query
       </a>
     </li>
@@ -253,7 +262,7 @@
   
   
     <li class="md-nav__item">
-      <a href="improve/" class="md-nav__link">
+      <a href="../improve/" class="md-nav__link">
         Planned improvements
       </a>
     </li>
@@ -277,6 +286,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -291,10 +302,38 @@
                   
 
 
-  <h1>About</h1>
+<h1 id="dataset-statistics">Dataset statistics</h1>
+<table>
+                        <tr>
+                            <td>triples</td>
+                            <td align="right">210849</td>
+                        </tr>
+                        <tr>
+                            <td>entities</td>
+                            <td align="right">2455</td>
+                        </tr>
+                        <tr>
+                            <td>object properties</td>
+                            <td align="right">7</td>
+                        </tr>
+                        <tr>
+                            <td>data properties</td>
+                            <td align="right">55</td>
+                        </tr>
+                        <tr>
+                            <td>classes</td>
+                            <td align="right">12</td>
+                        </tr>
+</table>
 
-<p>Welcome to nubbekg docs.</p>
-<p>Here you can find all the information about how the knowledge graph was created, the underlaying source database and how you may query it.</p>
+<p><strong>Triples</strong>: The data is stored as RDF triples. A triple consists of subject, predicate and object.</p>
+<p><strong>Entities</strong>: In this context, an entity is a chemical compound.</p>
+<p><strong>Object properties</strong>: Are used to connect classes. <em>nubbe:hasBioactivity</em> is an example for an object property.</p>
+<p><strong>Data properties</strong>: Are used to add attributes to classes. <em>nubbe:tpsa</em> is an example for a data property.</p>
+<p><strong>Classes</strong>: They are used to classify a resource. In nubbe[KG] <em>nubbe:Bioactivity</em> would be a class.</p>
+<hr />
+<p>Below is a table of all the data properties and their instances count in the dataset:</p>
+<object data="nubbeprop.svg" width="700" height="1100"> </object>
 
 
 
@@ -332,10 +371,10 @@
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.fac441b0.min.js"></script>
+      <script src="../assets/javascripts/bundle.fac441b0.min.js"></script>
       
     
   </body>
