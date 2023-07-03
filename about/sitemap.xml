@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://nubbekg.aksw.org/</loc>
-         <lastmod>2023-06-26</lastmod>
+         <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nubbekg.aksw.org/dataset/</loc>
-         <lastmod>2023-06-26</lastmod>
+         <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nubbekg.aksw.org/extraction/</loc>
-         <lastmod>2023-06-26</lastmod>
+         <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nubbekg.aksw.org/improve/</loc>
-         <lastmod>2023-06-26</lastmod>
+         <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://nubbekg.aksw.org/query/</loc>
-         <lastmod>2023-06-26</lastmod>
+         <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

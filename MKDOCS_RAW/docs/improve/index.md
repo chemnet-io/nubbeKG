@@ -7,6 +7,6 @@ Requests and ideas for improvement are recorded here.
 
 ## Planned future updates
 
- - With the help of catalogueoflife, get the complete taxonomy tree off mostly all compounds in the dataset.
- - With the help of classyfire(currently under maintenance), get the complete chemical classification off mostly all compounds in the dataset.
+ - With the help of [catalogueoflife](https://www.catalogueoflife.org), get the complete taxonomy tree off mostly all compounds in the dataset.
+ - With the help of [classyfire](http://classyfire.wishartlab.com/), get the complete chemical classification off mostly all compounds in the dataset.
  - Further improve the ontology with input from chemists and biologists.
