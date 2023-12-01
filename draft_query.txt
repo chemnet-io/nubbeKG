@@ -1,0 +1,100 @@
+SELECT DISTINCT  p.doi, p.titulo, s.nome, s.massa_molar FROM publicacao p
+	JOIN publicacao_substancia ps ON p.id=ps.publicacao_id
+	JOIN substancia s ON ps.substancia_id=s.id
+LIMIT 10;
+
+SELECT DISTINCT * FROM publicacao;
+
+SELECT DISTINCT  p.doi, p.titulo, s.nome, s.massa_molar, te.nome, tf.nome, tg.nome
+	FROM publicacao p
+	JOIN publicacao_substancia ps ON p.id=ps.publicacao_id
+	JOIN substancia s ON ps.substancia_id=s.id
+	JOIN publicacao_taxonomia pt ON pt.publicacao_id=p.id
+	JOIN taxonomia t ON t.id=pt.taxonomia_id
+	JOIN tax_especie te ON te.id=t.especie_id
+	JOIN tax_familia tf ON tf.id=t.familia_id
+	JOIN tax_genero tg ON tg.id=t.genero_id
+LIMIT 10;
+
+SELECT array_to_json(array_agg(row_to_json(s))) FROM substancia AS s
+
+SELECT DISTINCT spd.id AS subpub_id,
+                p.id AS publication_id, p.tipo AS publication_type, p.titulo AS title, p.doi,
+                s.id AS compound_id, s.codigo_auto AS compound_automatic_code, s.nome AS compound_name, s.classe AS compound_class, 
+                s.formula_molecular AS molecular_formula, s.smiles, s.atividade_biologica_extra AS bioactivity_extra, 
+                s.citacao_publicacao_extra AS citation_extra, s.observacoes AS observations, s.massa_molar AS molar_mass, s.logp, 
+                s.tpsa, s.nvlr, s.non, s.nohnh, s.nrotb,
+                s.molecular_vol, s.nome_iupac AS name_iupac, s.inchi, s.inchikey, s.massa_molar_exata AS exact_molar_mass,
+                sab.id AS compound_bioactivity_id, sab.ic50, sab.sd_ic50, sab.gt_ic50, sab.lt_ic50, 
+                sab.ic12, sab.sd_ic12, sab.gt_ic12, sab.lt_ic12,
+                sab.ld50, sab.sd_ld50, sab.gt_ld50, sab.lt_ld50,
+                sab.ec50, sab.sd_ec50, sab.gt_ec50, sab.lt_ec50,
+                sab.mic, sab.sd_mic, sab.gt_mic, sab.lt_mic,
+                sab.mfc, sab.sd_mfc, sab.gt_mfc, sab.lt_mfc,
+                sab.ed, sab.sd_ed, sab.gt_ed, sab.lt_ed,
+                sab.dl, sab.sd_dl, sab.gt_dl, sab.lt_dl,
+                sab.inhibition, sab.sd_inhibition, sab.gt_inhibition, sab.lt_inhibition,
+                sab.concentration, sab.observacao AS bioactivity_observation, sab.posicao_ativ AS position_activity,
+                ab.codigo AS bioactivity_code, ab.nome AS bioactivity,
+                te.nome AS species, tf.nome AS family, tg.nome AS gender,
+                sc.nome AS subclass, ti.nome AS isolation_type,
+                c.nome AS city, e.nome AS state
+    FROM substancia s
+    FULL JOIN subpub_data spd ON spd.substancia_id=s.id
+    FULL JOIN publicacao p ON spd.publicacao_id=p.id
+    FULL JOIN substancia_ativ_bio sab ON sab.substancia_id=s.id
+    FULL JOIN subpub_data_ativ_bio spdab ON spdab.subpub_data_id=spd.id
+    FULL JOIN atividade_biologica ab ON ab.id=spdab.atividade_biologica_id
+    FULL JOIN subpub_data_taxo spdt ON spdt.subpub_data_id=spd.id
+    FULL JOIN subpub_data_taxo_cidade spdtc ON spdtc.subpub_data_taxo_id=spdt.id
+    FULL JOIN cidade c ON c.id=spdtc.cidade_id
+    FULL JOIN estado e ON e.id=c.estado_id
+    FULL JOIN taxonomia t ON t.id=spdt.taxonomia_id
+	FULL JOIN tax_especie te ON te.id=t.especie_id
+	FULL JOIN tax_familia tf ON tf.id=t.familia_id
+	FULL JOIN tax_genero tg ON tg.id=t.genero_id
+    FULL JOIN substancia_subclasse ssc ON ssc.substancia_id=s.id
+    FULL JOIN subclasse sc ON sc.id=ssc.subclasse_id
+    FULL JOIN subpub_data_tipo spdti ON spdti.subpub_data_id=spd.id
+    FULL JOIN tipo ti ON ti.id=spdti.tipo;
+
+CREATE TABLE output_flat AS SELECT DISTINCT spd.id AS subpub_id,
+                p.id AS publication_id, p.tipo AS publication_type, p.titulo AS title, p.doi, p.ano AS year, p.volume, p.paginas AS pages,
+                p.agencia AS agency, p.periodico AS periodic, p.processo AS process, p.local, p.editora AS publisher, p.evento AS event,
+                s.id AS compound_id, s.codigo_auto AS compound_automatic_code, s.nome AS compound_name, s.classe AS compound_class, 
+                s.formula_molecular AS molecular_formula, s.smiles, s.atividade_biologica_extra AS bioactivity_extra, 
+                s.citacao_publicacao_extra AS citation_extra, s.observacoes AS observations, s.massa_molar AS molar_mass, s.logp, 
+                s.tpsa, s.nvlr, s.non, s.nohnh, s.nrotb,
+                s.molecular_vol, s.nome_iupac AS name_iupac, s.inchi, s.inchikey, s.massa_molar_exata AS exact_molar_mass,
+                sab.id AS compound_bioactivity_id, sab.ic50, sab.sd_ic50, sab.gt_ic50, sab.lt_ic50, 
+                sab.ic12, sab.sd_ic12, sab.gt_ic12, sab.lt_ic12,
+                sab.ld50, sab.sd_ld50, sab.gt_ld50, sab.lt_ld50,
+                sab.ec50, sab.sd_ec50, sab.gt_ec50, sab.lt_ec50,
+                sab.mic, sab.sd_mic, sab.gt_mic, sab.lt_mic,
+                sab.mfc, sab.sd_mfc, sab.gt_mfc, sab.lt_mfc,
+                sab.ed, sab.sd_ed, sab.gt_ed, sab.lt_ed,
+                sab.dl, sab.sd_dl, sab.gt_dl, sab.lt_dl,
+                sab.inhibition, sab.sd_inhibition, sab.gt_inhibition, sab.lt_inhibition,
+                sab.concentration, sab.observacao AS bioactivity_observation, sab.posicao_ativ AS position_activity,
+                ab.codigo AS bioactivity_code, ab.nome AS bioactivity,
+                te.nome AS species, tf.nome AS family, tg.nome AS gender,
+                sc.nome AS subclass, ti.nome AS isolation_type,
+                c.nome AS city, e.nome AS state
+    FROM subpub_data spd 
+    FULL JOIN substancia s ON s.id=spd.substancia_id
+    FULL JOIN publicacao p ON spd.publicacao_id=p.id
+    FULL JOIN substancia_ativ_bio sab ON sab.substancia_id=s.id
+    FULL JOIN subpub_data_ativ_bio spdab ON spdab.subpub_data_id=spd.id
+    FULL JOIN atividade_biologica ab ON ab.id=spdab.atividade_biologica_id
+    FULL JOIN subpub_data_taxo spdt ON spdt.subpub_data_id=spd.id
+    FULL JOIN subpub_data_taxo_cidade spdtc ON spdtc.subpub_data_taxo_id=spdt.id
+    FULL JOIN cidade c ON c.id=spdtc.cidade_id
+    FULL JOIN estado e ON e.id=c.estado_id
+    FULL JOIN taxonomia t ON t.id=spdt.taxonomia_id
+	FULL JOIN tax_especie te ON te.id=t.especie_id
+	FULL JOIN tax_familia tf ON tf.id=t.familia_id
+	FULL JOIN tax_genero tg ON tg.id=t.genero_id
+    FULL JOIN substancia_subclasse ssc ON ssc.substancia_id=s.id
+    FULL JOIN subclasse sc ON sc.id=ssc.subclasse_id
+    FULL JOIN subpub_data_tipo spdti ON spdti.subpub_data_id=spd.id
+    FULL JOIN tipo ti ON ti.id=spdti.tipo;
