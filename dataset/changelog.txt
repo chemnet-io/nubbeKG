@@ -1,0 +1,20 @@
+Schema-v0.0.1
+- Initial ontology of nubbe[KG]
+
+Schema-v0.0.2
+- Completely reforged the bioactivity data
+    - removed unneeded data properties(Code/ActivityID/ExtraInformation)
+    - remodeled the properties IC50,EC50,LD50,MIC,ED50,IC12 and MFC from classes to data properties
+- added NUBBE-ID as unique identifier
+- split the taxonomy into biological and metabolic class
+- rearranged some descriptors to be in the correct subClass(mol. Volume, Molar Mass)
+- removed automatic code as Compounds data property
+
+Schema-v1.0.0
+- moved SMILES to be a general Compound data property instead a unique identifier, as smiles might not be unique
+- remodelled the taxonomy area to only cover the biological taxonomy, prepare to get linked with Catalogue of Life
+- added the classyfire-class with properties about stuctural information of the compound, still a WIP
+
+Schema-v1.0.1 (in progress/coming soon)
+- remodelled the taxonomy class to just have a species-class, as this will be used to link with KGofLife
+- remodelled the Isolation-Class to have distinct classes for city/state insstead of just data properties, which will be subclasses to a new location-class to further link by location with other datasets
