@@ -55,7 +55,7 @@ class IndexHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./changelog/index.html" target="_blank">
+            <a class="nav-link" href="./changelog/index.html">
               changelog
             </a>
           </li>
@@ -143,7 +143,7 @@ class SubPageHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../changelog/index.html" target="_blank">
+            <a class="nav-link" href="../changelog/index.html">
               changelog
             </a>
           </li>
