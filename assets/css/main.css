@@ -1007,12 +1007,11 @@ dt {
     text-align: left;
 }
 
-
+.indent {
+    text-indent: 30px;
+}
 
 /** End Override yasgui styles **/
 
 /*# sourceMappingURL=main.css.map */
 
-.indent {
-    text-indent: 30px;
-}
