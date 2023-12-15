@@ -143,7 +143,7 @@ class SubPageHeader extends HTMLElement {
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://dinobbio.aksw.org/blog.html?lang=en" target="_blank">
+            <a class="nav-link" href="../changelog/index.html" target="_blank">
               blog
             </a>
           </li>
