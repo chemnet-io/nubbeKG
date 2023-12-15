@@ -56,7 +56,7 @@ class IndexHeader extends HTMLElement {
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://dinobbio.aksw.org/blog.html?lang=en" target="_blank">
-              blog
+              changelog
             </a>
           </li>
           <li class="nav-item">
