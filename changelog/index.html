@@ -4,8 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>NuBBE[KG]</title>
+        <title>NuBBE[KG] | License</title>
         <meta name="description" content="Discovering Natural Inspired Products from Brazilian Biodiversity.">
+        <!-- Open Graph -->
         <!-- Bootstrap & MDB -->
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"
               integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg=="
@@ -26,84 +27,57 @@
         <link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css"/>
         <!-- Styles -->
         <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/c/ce/Emojione_1F331.svg">
-        <link rel="stylesheet" href="./assets/css/main.css">
-        <link rel="canonical" href="./index.html">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel="canonical" href="../projects/index.html">
         <!-- Dark Mode -->
-        <script src="./assets/js/theme.js"></script>
-        <script src="./assets/js/dark_mode.js"></script>
-        <!-- load header & footer component -->
-        <script src="./index.js"></script>
+        <script src="../assets/js/theme.js"></script>
+        <script src="../assets/js/dark_mode.js"></script>
 
+        <!-- load header & footer component -->
+        <script src="../index.js"></script>
     </head>
 
-    <body class="fixed-top-nav">
+    <body class="fixed-top-nav ">
         <!-- Header -->
-        <main-header></main-header>
-
+        <sub-header></sub-header>
         <!-- Content -->
         <main class="container mt-5">
             <div class="post">
                 <div class="post-header">
-                    <h1 class="post-title">
-                        <span class="font-weight-bold">NuBBE[KG]</span>
-                    </h1>
-                    <p class="desc">Chemical Compounds from Brazilian Biodiversity</p>
+                    <h1 class="post-title">Changelog</h1>
+
+                    <p class="desc">
+                        <h4>Schema-v0.0.1</h4>
+                        <li>Initial ontology of nubbe[KG]</li>
+                    </p>      
+                    <p> 
+                        <h4>Schema-v0.0.2</h4>
+                        <li>Completely reforged the bioactivity data</li>
+                            <li class="indent">removed unneeded data properties(Code/ActivityID/ExtraInformation)</li>
+                            <li class="indent">remodeled the properties IC50,EC50,LD50,MIC,ED50,IC12 and MFC from classes to data properties</li> 
+                            
+                        <li>added NUBBE-ID as unique identifier</li>
+                        <li>split the taxonomy into biological and metabolic class</li>
+                        <li>some descriptors to be in the correct subClass(mol. Volume, Molar Mass)</li> 
+                        <li>removed automatic code as Compounds data property </li>  
+                    </p>
+                    <p>
+                        <h4>Schema-v1.0.0</h4>
+                        <li>moved SMILES to be a general Compound data property instead a unique identifier, as smiles might not be unique</li>
+                        <li>remodelled the taxonomy area to only cover the biological taxonomy, prepare to get linked with Catalogue of Life</li>
+                        <li>added the classyfire-class with properties about stuctural information of the compound, still a WIP  </li>
+                    </p>
+                    <p>
+                        <h4>Schema-v1.0.1 (in progress/coming soon)</h4>
+                        <li>remodelled the taxonomy class to just have a species-class, as this will be used to link with KGofLife</li>
+                        <li>remodelled the Isolation-Class to have distinct classes for city/state insstead of just data properties, which will be subclasses to a new location-class to further link by location with other datasets</li>
+                    </p>
                 </div>
                 <article>
-                    <div class="clearfix">
-                        <p>Schema-v0.0.1
-                          - Initial ontology of nubbe[KG]
-                          
-                          Schema-v0.0.2
-                          - Completely reforged the bioactivity data
-                              - removed unneeded data properties(Code/ActivityID/ExtraInformation)
-                              - remodeled the properties IC50,EC50,LD50,MIC,ED50,IC12 and MFC from classes to data properties
-                          - added NUBBE-ID as unique identifier
-                          - split the taxonomy into biological and metabolic class
-                          - rearranged some descriptors to be in the correct subClass(mol. Volume, Molar Mass)
-                          - removed automatic code as Compounds data property
-                          
-                          Schema-v1.0.0
-                          - moved SMILES to be a general Compound data property instead a unique identifier, as smiles might not be unique
-                          - remodelled the taxonomy area to only cover the biological taxonomy, prepare to get linked with Catalogue of Life
-                          - added the classyfire-class with properties about stuctural information of the compound, still a WIP
-                          
-                          Schema-v1.0.1 (in progress/coming soon)
-                          - remodelled the taxonomy class to just have a species-class, as this will be used to link with KGofLife
-                          - remodelled the Isolation-Class to have distinct classes for city/state insstead of just data properties, which will be subclasses to a new location-class to further link by location with other datasets</p>  
-                    </div>
-
-                    <div class="news">
-                    <h2>news</h2>
-                    <div class="table-responsive">
-                    <table class="table table-sm table-borderless">
-                        <tr>
-                        <th scope="row">June 14, 2023</th>
-                        <td>
-                            New DINOBBIO webpage launched! Check it out at https://dinobbio.aksw.org
-                        </td>
-                        </tr>
-                        <tr>
-                        <th scope="row">May 06, 2023</th>
-                        <td>
-                            Site layout changed, SSL certified and namespace changed to nubbeKG. Further improvements to ontology in progress!
-                        </td>
-                        </tr>
-
-                    </table>
-                    </div>
-                </div>
-
-                    <div class="social">
-                        <div class="contact-icons">
-                            <a href="https://twitter.com/dinobbio" title="twitter"><i class="fab fa-twitter-square"></i></a>
-                            <a href="https://medium.com/feed/@dinobbio" title="RSS Feed"><i class="fas fa-rss-square"></i></a>
-                        </div>
-                    </div>
+                 
                 </article>
             </div>
         </main>
-
         <!-- Footer -->
         <main-footer></main-footer>
     </body>
@@ -124,13 +98,13 @@
     <!-- Mansory & imagesLoaded -->
     <script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
-    <script defer src="./assets/js/mansory.js" type="text/javascript"></script>
+    <script defer src="../assets/js/mansory.js" type="text/javascript"></script>
     <!-- Medium Zoom JS -->
     <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js"
             integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
-    <script src="./assets/js/zoom.js"></script>
+    <script src="../assets/js/zoom.js"></script>
     <!-- Load Common JS -->
-    <script src="./assets/js/common.js"></script>
+    <script src="../assets/js/common.js"></script>
     <!-- MathJax -->
     <script type="text/javascript">
         window.MathJax = {

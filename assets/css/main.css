@@ -1012,3 +1012,7 @@ dt {
 /** End Override yasgui styles **/
 
 /*# sourceMappingURL=main.css.map */
+
+.indent {
+    text-indent: 30px;
+}

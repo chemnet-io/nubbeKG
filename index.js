@@ -142,7 +142,7 @@ class SubPageHeader extends HTMLElement {
               partners
             </a>
           </li>
-          <li class="nav-item">
+          <li class="changelog-page">
             <a class="nav-link" href="../changelog/index.html">
               changelog
             </a>
@@ -195,6 +195,9 @@ class SubPageHeader extends HTMLElement {
                 break;
             case 'partners':
                 document.getElementById('partners-page').classList.add('active');
+                break;
+            case 'changelog':
+                document.getElementById('changelog-page').classList.add('active');
                 break;
             case 'contact':
                 document.getElementById('contact-page').classList.add('active');
