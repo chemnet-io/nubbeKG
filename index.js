@@ -142,6 +142,7 @@ class SubPageHeader extends HTMLElement {
               partners
             </a>
           </li>
+          <li id="partners-page" class="nav-item ">
           <li class="changelog-page">
             <a class="nav-link" href="../changelog/index.html">
               changelog
