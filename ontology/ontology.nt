@@ -56,26 +56,12 @@
 # #################################################################
 # 
 # 
-# http://nubbekg.aksw.org/ontology#hasBioactivityData
-<http://nubbekg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://nubbekg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
-<http://nubbekg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Bioactivity> .
-<http://nubbekg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has bioactivity data."@en .
-<http://nubbekg.aksw.org/ontology#hasBioactivityData> <http://www.w3.org/2000/01/rdf-schema#label> "has bioactivity data"@en .
-# 
 # http://nubbekg.aksw.org/ontology#hasDescriptors
 <http://nubbekg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://nubbekg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
 <http://nubbekg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Descriptors> .
 <http://nubbekg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has various descriptors."@en .
 <http://nubbekg.aksw.org/ontology#hasDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "has descriptors"@en .
-# 
-# http://nubbekg.aksw.org/ontology#hasIsolationData
-<http://nubbekg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://nubbekg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
-<http://nubbekg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Isolation> .
-<http://nubbekg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound has data about it's isolation site and origin."@en .
-<http://nubbekg.aksw.org/ontology#hasIsolationData> <http://www.w3.org/2000/01/rdf-schema#label> "has isolation data"@en .
 # 
 # http://nubbekg.aksw.org/ontology#hasStructureInformation
 <http://nubbekg.aksw.org/ontology#hasStructureInformation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -98,12 +84,55 @@
 <http://nubbekg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound is identified by it's unique identifiers."@en .
 <http://nubbekg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is identified by"@en .
 # 
+# http://nubbekg.aksw.org/ontology#isLocatedIn
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#IsolationSite> .
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#City> .
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#State> .
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An isolation-site is located in a distinct city and state."@en .
+<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is located in"@en .
+# 
+# http://nubbekg.aksw.org/ontology#partOfSpecies
+<http://nubbekg.aksw.org/ontology#partOfSpecies> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
+<http://nubbekg.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Species> .
+<http://nubbekg.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#comment> "A compound is part of a species of life."@en .
+<http://nubbekg.aksw.org/ontology#partOfSpecies> <http://www.w3.org/2000/01/rdf-schema#label> "part of species"@en .
+# 
+# http://nubbekg.aksw.org/ontology#revealed
+<http://nubbekg.aksw.org/ontology#revealed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#revealed> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#BioactivityAnalysis> .
+<http://nubbekg.aksw.org/ontology#revealed> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Bioactivity> .
+<http://nubbekg.aksw.org/ontology#revealed> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity analysis revealed a specific bioactivity behaviour."@en .
+<http://nubbekg.aksw.org/ontology#revealed> <http://www.w3.org/2000/01/rdf-schema#label> "revealed"@en .
+# 
+# http://nubbekg.aksw.org/ontology#usedMatter
+<http://nubbekg.aksw.org/ontology#usedMatter> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#usedMatter> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#BioactivityAnalysis> .
+<http://nubbekg.aksw.org/ontology#usedMatter> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#MatterType> .
+<http://nubbekg.aksw.org/ontology#usedMatter> <http://www.w3.org/2000/01/rdf-schema#comment> "For bioactivity analysis a specific matter type was used."@en .
+<http://nubbekg.aksw.org/ontology#usedMatter> <http://www.w3.org/2000/01/rdf-schema#label> "used Matter"@en .
+# 
+# http://nubbekg.aksw.org/ontology#wasDiscoveredAt
+<http://nubbekg.aksw.org/ontology#wasDiscoveredAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#wasDiscoveredAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
+<http://nubbekg.aksw.org/ontology#wasDiscoveredAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#IsolationSite> .
+<http://nubbekg.aksw.org/ontology#wasDiscoveredAt> <http://www.w3.org/2000/01/rdf-schema#comment> "A compound was discovered in a distinct isolation site."@en .
+<http://nubbekg.aksw.org/ontology#wasDiscoveredAt> <http://www.w3.org/2000/01/rdf-schema#label> "was discovered at"@en .
+# 
 # http://nubbekg.aksw.org/ontology#wasMentionedIn
 <http://nubbekg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://nubbekg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
 <http://nubbekg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#Publication> .
 <http://nubbekg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound was mentioned in a publication."@en .
 <http://nubbekg.aksw.org/ontology#wasMentionedIn> <http://www.w3.org/2000/01/rdf-schema#label> "was mentioned in"@en .
+# 
+# http://nubbekg.aksw.org/ontology#wasSubjectedTo
+<http://nubbekg.aksw.org/ontology#wasSubjectedTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://nubbekg.aksw.org/ontology#wasSubjectedTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
+<http://nubbekg.aksw.org/ontology#wasSubjectedTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#BioactivityAnalysis> .
+<http://nubbekg.aksw.org/ontology#wasSubjectedTo> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound was subjected to bioactivity analysis."@en .
+<http://nubbekg.aksw.org/ontology#wasSubjectedTo> <http://www.w3.org/2000/01/rdf-schema#label> "was subjected to"@en .
 # 
 # 
 # 
@@ -163,47 +192,12 @@
 <http://nubbekg.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#comment> "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en .
 <http://nubbekg.aksw.org/ontology#MIC> <http://www.w3.org/2000/01/rdf-schema#label> "MIC"@en .
 # 
-# http://nubbekg.aksw.org/ontology#city
-<http://nubbekg.aksw.org/ontology#city> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Isolation> .
-<http://nubbekg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#comment> "The city in which the chemical compound has been extracted."@en .
-<http://nubbekg.aksw.org/ontology#city> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation city"@en .
-# 
-# http://nubbekg.aksw.org/ontology#class
-<http://nubbekg.aksw.org/ontology#class> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#class> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#class> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#class> <http://www.w3.org/2000/01/rdf-schema#comment> "The class of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#class> <http://www.w3.org/2000/01/rdf-schema#label> "Class"@en .
-# 
 # http://nubbekg.aksw.org/ontology#commonName
 <http://nubbekg.aksw.org/ontology#commonName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbekg.aksw.org/ontology#commonName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
 <http://nubbekg.aksw.org/ontology#commonName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://nubbekg.aksw.org/ontology#commonName> <http://www.w3.org/2000/01/rdf-schema#comment> "Given common name of a chemical compound."@en .
 <http://nubbekg.aksw.org/ontology#commonName> <http://www.w3.org/2000/01/rdf-schema#label> "Common name"@en .
-# 
-# http://nubbekg.aksw.org/ontology#domain
-<http://nubbekg.aksw.org/ontology#domain> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#domain> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#domain> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#domain> <http://www.w3.org/2000/01/rdf-schema#comment> "The domain of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#domain> <http://www.w3.org/2000/01/rdf-schema#label> "Domain"@en .
-# 
-# http://nubbekg.aksw.org/ontology#family
-<http://nubbekg.aksw.org/ontology#family> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#comment> "The family of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#family> <http://www.w3.org/2000/01/rdf-schema#label> "Family"@en .
-# 
-# http://nubbekg.aksw.org/ontology#genus
-<http://nubbekg.aksw.org/ontology#genus> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#genus> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#genus> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#genus> <http://www.w3.org/2000/01/rdf-schema#comment> "The genus of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#genus> <http://www.w3.org/2000/01/rdf-schema#label> "Genus"@en .
 # 
 # http://nubbekg.aksw.org/ontology#hBondAcceptorCount
 <http://nubbekg.aksw.org/ontology#hBondAcceptorCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -239,13 +233,6 @@
 <http://nubbekg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://nubbekg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name within the International Union of Pure and Applied Chemistry."@en .
 <http://nubbekg.aksw.org/ontology#iupacName> <http://www.w3.org/2000/01/rdf-schema#label> "IUPAC Name"@en .
-# 
-# http://nubbekg.aksw.org/ontology#kingdom
-<http://nubbekg.aksw.org/ontology#kingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#kingdom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#kingdom> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#kingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "The kingdom of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#kingdom> <http://www.w3.org/2000/01/rdf-schema#label> "Kingdom"@en .
 # 
 # http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures
 <http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -303,33 +290,12 @@
 <http://nubbekg.aksw.org/ontology#nubbeId> <http://www.w3.org/2000/01/rdf-schema#comment> "The numeric identifier a chemical compound has in the NubbeDB database."@en .
 <http://nubbekg.aksw.org/ontology#nubbeId> <http://www.w3.org/2000/01/rdf-schema#label> "NUBBE ID"@en .
 # 
-# http://nubbekg.aksw.org/ontology#observation
-<http://nubbekg.aksw.org/ontology#observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Bioactivity> .
-<http://nubbekg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#comment> "A one word description of the observed properties during bioactivity analysis."@en .
-<http://nubbekg.aksw.org/ontology#observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
-# 
 # http://nubbekg.aksw.org/ontology#obtentionMethod
 <http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Isolation> .
+<http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#IsolationSite> .
 <http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/2000/01/rdf-schema#comment> "Explains in what way the chemical compound has been extracted."@en .
 <http://nubbekg.aksw.org/ontology#obtentionMethod> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation type"@en .
-# 
-# http://nubbekg.aksw.org/ontology#order
-<http://nubbekg.aksw.org/ontology#order> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#order> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#order> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#order> <http://www.w3.org/2000/01/rdf-schema#comment> "The order of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#order> <http://www.w3.org/2000/01/rdf-schema#label> "Order"@en .
-# 
-# http://nubbekg.aksw.org/ontology#phylum
-<http://nubbekg.aksw.org/ontology#phylum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#phylum> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#phylum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#phylum> <http://www.w3.org/2000/01/rdf-schema#comment> "The phylum of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#phylum> <http://www.w3.org/2000/01/rdf-schema#label> "Phylum"@en .
 # 
 # http://nubbekg.aksw.org/ontology#publicationAgency
 <http://nubbekg.aksw.org/ontology#publicationAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -429,26 +395,19 @@
 <http://nubbekg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#comment> "The year of the publication was published."@en .
 <http://nubbekg.aksw.org/ontology#publicationYear> <http://www.w3.org/2000/01/rdf-schema#label> "Publication year"@en .
 # 
+# http://nubbekg.aksw.org/ontology#scientificName
+<http://nubbekg.aksw.org/ontology#scientificName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://nubbekg.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Species> .
+<http://nubbekg.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://nubbekg.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#comment> "The given scientific name of a taxonomic species."@en .
+<http://nubbekg.aksw.org/ontology#scientificName> <http://www.w3.org/2000/01/rdf-schema#label> "Scientific name"@en .
+# 
 # http://nubbekg.aksw.org/ontology#smiles
 <http://nubbekg.aksw.org/ontology#smiles> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbekg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
 <http://nubbekg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://nubbekg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#comment> "Simplified Molecular Input Line Entry Specification."@en .
 <http://nubbekg.aksw.org/ontology#smiles> <http://www.w3.org/2000/01/rdf-schema#label> "SMILES"@en .
-# 
-# http://nubbekg.aksw.org/ontology#species
-<http://nubbekg.aksw.org/ontology#species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Taxonomy> .
-<http://nubbekg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#comment> "The species of which a biological entity is part of."@en .
-<http://nubbekg.aksw.org/ontology#species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
-# 
-# http://nubbekg.aksw.org/ontology#state
-<http://nubbekg.aksw.org/ontology#state> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Isolation> .
-<http://nubbekg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which the chemical compound has been extracted, usually just by it's short code."@en .
-<http://nubbekg.aksw.org/ontology#state> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation state"@en .
 # 
 # http://nubbekg.aksw.org/ontology#strucClass
 <http://nubbekg.aksw.org/ontology#strucClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -485,13 +444,6 @@
 <http://nubbekg.aksw.org/ontology#superClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The superclass of which a chemical compound is part of."@en .
 <http://nubbekg.aksw.org/ontology#superClass> <http://www.w3.org/2000/01/rdf-schema#label> "structure superclass"@en .
 # 
-# http://nubbekg.aksw.org/ontology#testedAs
-<http://nubbekg.aksw.org/ontology#testedAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Bioactivity> .
-<http://nubbekg.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of matter the actual bioactivity testing is performed on."@en .
-<http://nubbekg.aksw.org/ontology#testedAs> <http://www.w3.org/2000/01/rdf-schema#label> "tested as"@en .
-# 
 # http://nubbekg.aksw.org/ontology#tpsa
 <http://nubbekg.aksw.org/ontology#tpsa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbekg.aksw.org/ontology#tpsa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#TopologicalDescriptors> .
@@ -510,8 +462,19 @@
 # 
 # http://nubbekg.aksw.org/ontology#Bioactivity
 <http://nubbekg.aksw.org/ontology#Bioactivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://nubbekg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity data of a chemical compound."@en .
-<http://nubbekg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#label> "Bioactivity data"@en .
+<http://nubbekg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#comment> "A description of the observed properties during bioactivity analysis."@en .
+<http://nubbekg.aksw.org/ontology#Bioactivity> <http://www.w3.org/2000/01/rdf-schema#label> "Bioactivity"@en .
+# 
+# http://nubbekg.aksw.org/ontology#BioactivityAnalysis
+<http://nubbekg.aksw.org/ontology#BioactivityAnalysis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#BioactivityAnalysis> <http://www.w3.org/2000/01/rdf-schema#comment> "Bioactivity analysis data of a chemical compound."@en .
+<http://nubbekg.aksw.org/ontology#BioactivityAnalysis> <http://www.w3.org/2000/01/rdf-schema#label> "Bioactivity analysis"@en .
+# 
+# http://nubbekg.aksw.org/ontology#City
+<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#Location> .
+<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#comment> "The city in which the chemical compound has been extracted."@en .
+<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
 # 
 # http://nubbekg.aksw.org/ontology#Classyfire
 <http://nubbekg.aksw.org/ontology#Classyfire> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -540,10 +503,20 @@
 <http://nubbekg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#comment> "Electronic descriptors of a chemical compound."@en .
 <http://nubbekg.aksw.org/ontology#ElectronicDescriptors> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic descriptors"@en .
 # 
-# http://nubbekg.aksw.org/ontology#Isolation
-<http://nubbekg.aksw.org/ontology#Isolation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://nubbekg.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#comment> "Information on where and from what entity the chemical compound has been isolated."@en .
-<http://nubbekg.aksw.org/ontology#Isolation> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation"@en .
+# http://nubbekg.aksw.org/ontology#IsolationSite
+<http://nubbekg.aksw.org/ontology#IsolationSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#IsolationSite> <http://www.w3.org/2000/01/rdf-schema#comment> "Information on where and from what entity the chemical compound has been isolated."@en .
+<http://nubbekg.aksw.org/ontology#IsolationSite> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation site"@en .
+# 
+# http://nubbekg.aksw.org/ontology#Location
+<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent location class, includes city and statecode."@en .
+<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
+# 
+# http://nubbekg.aksw.org/ontology#MatterType
+<http://nubbekg.aksw.org/ontology#MatterType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#MatterType> <http://www.w3.org/2000/01/rdf-schema#comment> "The type of matter the actual bioactivity testing is performed on."@en .
+<http://nubbekg.aksw.org/ontology#MatterType> <http://www.w3.org/2000/01/rdf-schema#label> "Matter type"@en .
 # 
 # http://nubbekg.aksw.org/ontology#MolecularDescriptors
 <http://nubbekg.aksw.org/ontology#MolecularDescriptors> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -555,6 +528,17 @@
 <http://nubbekg.aksw.org/ontology#Publication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://nubbekg.aksw.org/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#comment> "A publication in which a chemical compound was mentioned in."@en .
 <http://nubbekg.aksw.org/ontology#Publication> <http://www.w3.org/2000/01/rdf-schema#label> "Publication"@en .
+# 
+# http://nubbekg.aksw.org/ontology#Species
+<http://nubbekg.aksw.org/ontology#Species> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#Species> <http://www.w3.org/2000/01/rdf-schema#comment> "The species of which a biological entity is part of."@en .
+<http://nubbekg.aksw.org/ontology#Species> <http://www.w3.org/2000/01/rdf-schema#label> "Species"@en .
+# 
+# http://nubbekg.aksw.org/ontology#State
+<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#Location> .
+<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which the chemical compound has been extracted, usually just by it's short code."@en .
+<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
 # 
 # http://nubbekg.aksw.org/ontology#Taxonomy
 <http://nubbekg.aksw.org/ontology#Taxonomy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
