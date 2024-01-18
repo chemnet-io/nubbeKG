@@ -70,17 +70,6 @@
     "@id" : "http://nubbekg.aksw.org/ontology#Location"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#Classyfire",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The structural classification of a chemical compound, containing kingdom, superclass, class and subclass information."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Classyfire"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#Compound",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -124,7 +113,7 @@
     "@value" : "The effective concentration of a drug that gives half-maximal response."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -141,7 +130,7 @@
     "@value" : "The effective dose of a drug that gives half-maximal response."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -172,7 +161,7 @@
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -189,7 +178,7 @@
     "@value" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -210,6 +199,17 @@
     "@value" : "Isolation site"
   } ]
 }, {
+  "@id" : "http://nubbekg.aksw.org/ontology#IsolationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Explains in what way the chemical compound has been extracted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Isolation type"
+  } ]
+}, {
   "@id" : "http://nubbekg.aksw.org/ontology#LD50",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -217,7 +217,7 @@
     "@value" : "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -245,7 +245,7 @@
     "@value" : "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -262,7 +262,7 @@
     "@value" : "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
+    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -272,15 +272,26 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#MatterType",
+  "@id" : "http://nubbekg.aksw.org/ontology#MetabolicClass",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The type of matter the actual bioactivity testing is performed on."
+    "@value" : "The metabolic class of which a chemical compound is part of."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Matter type"
+    "@value" : "Metabolic class"
+  } ]
+}, {
+  "@id" : "http://nubbekg.aksw.org/ontology#MetabolicSubclass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The metabolic subclass of which a chemical compound is part of."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Metabolic subclass"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#MolecularDescriptors",
@@ -308,6 +319,17 @@
     "@value" : "Publication"
   } ]
 }, {
+  "@id" : "http://nubbekg.aksw.org/ontology#PublicationType",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The type of the publication medium."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Publication type"
+  } ]
+}, {
   "@id" : "http://nubbekg.aksw.org/ontology#Species",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -331,17 +353,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://nubbekg.aksw.org/ontology#Location"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#Taxonomy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The biological taxonomy of the entity a chemical compound has been extracted from."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Taxonomy"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#TopologicalDescriptors",
@@ -437,23 +448,6 @@
     "@id" : "http://nubbekg.aksw.org/ontology#Descriptors"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#hasStructureInformation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "A chemical compound has a structural classification."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "has structure information"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Classyfire"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#inchi",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -486,23 +480,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#isClassifiedBy",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The entity a chemical compound has been extracted from is classified by a biological taxonomy."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is classified by"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Taxonomy"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#isIdentifiedBy",
@@ -694,21 +671,21 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#obtentionMethod",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "@id" : "http://nubbekg.aksw.org/ontology#partOfClass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "Explains in what way the chemical compound has been extracted."
+    "@value" : "A compound is part of a metabolic class."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#IsolationSite"
+    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
-    "@value" : "Isolation type"
+    "@value" : "part of class"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+    "@id" : "http://nubbekg.aksw.org/ontology#MetabolicClass"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#partOfSpecies",
@@ -718,7 +695,7 @@
     "@value" : "A compound is part of a species of life."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Taxonomy"
+    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -726,6 +703,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://nubbekg.aksw.org/ontology#Species"
+  } ]
+}, {
+  "@id" : "http://nubbekg.aksw.org/ontology#partOfSubclass",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A compound is part of a metabolic subclass."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "part of subclass"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#MetabolicSubclass"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#publicationAgency",
@@ -915,23 +909,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#publicationType",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The type of a compounds publication."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Publication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Publication type"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#publicationVolume",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -983,23 +960,6 @@
     "@id" : "http://nubbekg.aksw.org/ontology#Bioactivity"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#scientificName",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The given scientific name of a taxonomic species."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Species"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Scientific name"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#smiles",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1012,57 +972,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "SMILES"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#strucClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The class of which a chemical compound is part of."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Classyfire"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "structure Class"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#strucKingdom",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The kingdom of which a chemical compound is part of."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Classyfire"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "structure Kingdom"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#subClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The subclass of which a chemical compound is part of."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Classyfire"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "structure Subclass"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
@@ -1085,23 +994,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#int"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#superClass",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The superclass of which a chemical compound is part of."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Classyfire"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "structure superclass"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#tpsa",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1117,23 +1009,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#float"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#usedMatter",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "For bioactivity analysis a specific matter type was used."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#BioactivityAnalysis"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "used Matter"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#MatterType"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#wasDiscoveredAt",
@@ -1153,6 +1028,23 @@
     "@id" : "http://nubbekg.aksw.org/ontology#IsolationSite"
   } ]
 }, {
+  "@id" : "http://nubbekg.aksw.org/ontology#wasIsolatedFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A compound was isolated from a specific host."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#Compound"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "was isolated from"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#IsolationType"
+  } ]
+}, {
   "@id" : "http://nubbekg.aksw.org/ontology#wasMentionedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1168,6 +1060,23 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://nubbekg.aksw.org/ontology#Publication"
+  } ]
+}, {
+  "@id" : "http://nubbekg.aksw.org/ontology#wasPublishedAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A publication was published as a certain medium type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#Publication"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "was published as"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://nubbekg.aksw.org/ontology#PublicationType"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#wasSubjectedTo",

@@ -176,9 +176,6 @@ This ontology has the following classes and properties.</span>
       <a href="#City" title="http://nubbekg.aksw.org/ontology#City">City</a>
    </li>
    <li>
-      <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-   </li>
-   <li>
       <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
    </li>
    <li>
@@ -196,10 +193,17 @@ This ontology has the following classes and properties.</span>
       <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
    </li>
    <li>
+      <a href="#IsolationType" title="http://nubbekg.aksw.org/ontology#IsolationType">Isolation type</a>
+   </li>
+   <li>
       <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
    </li>
    <li>
-      <a href="#MatterType" title="http://nubbekg.aksw.org/ontology#MatterType">Matter type</a>
+      <a href="#MetabolicClass" title="http://nubbekg.aksw.org/ontology#MetabolicClass">Metabolic class</a>
+   </li>
+   <li>
+      <a href="#MetabolicSubclass"
+         title="http://nubbekg.aksw.org/ontology#MetabolicSubclass">Metabolic subclass</a>
    </li>
    <li>
       <a href="#MolecularDescriptors"
@@ -209,13 +213,13 @@ This ontology has the following classes and properties.</span>
       <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
    </li>
    <li>
+      <a href="#PublicationType" title="http://nubbekg.aksw.org/ontology#PublicationType">Publication type</a>
+   </li>
+   <li>
       <a href="#Species" title="http://nubbekg.aksw.org/ontology#Species">Species</a>
    </li>
    <li>
       <a href="#State" title="http://nubbekg.aksw.org/ontology#State">State</a>
-   </li>
-   <li>
-      <a href="#Taxonomy" title="http://nubbekg.aksw.org/ontology#Taxonomy">Taxonomy</a>
    </li>
    <li>
       <a href="#TopologicalDescriptors"
@@ -230,32 +234,34 @@ This ontology has the following classes and properties.</span>
       <a href="#hasDescriptors" title="http://nubbekg.aksw.org/ontology#hasDescriptors">has descriptors</a>
    </li>
    <li>
-      <a href="#hasStructureInformation"
-         title="http://nubbekg.aksw.org/ontology#hasStructureInformation">has structure information</a>
-   </li>
-   <li>
-      <a href="#isClassifiedBy" title="http://nubbekg.aksw.org/ontology#isClassifiedBy">is classified by</a>
-   </li>
-   <li>
       <a href="#isIdentifiedBy" title="http://nubbekg.aksw.org/ontology#isIdentifiedBy">is identified by</a>
    </li>
    <li>
       <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
    </li>
    <li>
+      <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
+   </li>
+   <li>
       <a href="#partOfSpecies" title="http://nubbekg.aksw.org/ontology#partOfSpecies">part of species</a>
+   </li>
+   <li>
+      <a href="#partOfSubclass" title="http://nubbekg.aksw.org/ontology#partOfSubclass">part of subclass</a>
    </li>
    <li>
       <a href="#revealed" title="http://nubbekg.aksw.org/ontology#revealed">revealed</a>
    </li>
    <li>
-      <a href="#usedMatter" title="http://nubbekg.aksw.org/ontology#usedMatter">used Matter</a>
-   </li>
-   <li>
       <a href="#wasDiscoveredAt" title="http://nubbekg.aksw.org/ontology#wasDiscoveredAt">was discovered at</a>
    </li>
    <li>
+      <a href="#wasIsolatedFrom" title="http://nubbekg.aksw.org/ontology#wasIsolatedFrom">was isolated from</a>
+   </li>
+   <li>
       <a href="#wasMentionedIn" title="http://nubbekg.aksw.org/ontology#wasMentionedIn">was mentioned in</a>
+   </li>
+   <li>
+      <a href="#wasPublishedAs" title="http://nubbekg.aksw.org/ontology#wasPublishedAs">was published as</a>
    </li>
    <li>
       <a href="#wasSubjectedTo" title="http://nubbekg.aksw.org/ontology#wasSubjectedTo">was subjected to</a>
@@ -288,9 +294,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#inchikey" title="http://nubbekg.aksw.org/ontology#inchikey">inchikey</a>
-   </li>
-   <li>
-      <a href="#obtentionMethod" title="http://nubbekg.aksw.org/ontology#obtentionMethod">Isolation type</a>
    </li>
    <li>
       <a href="#iupacName" title="http://nubbekg.aksw.org/ontology#iupacName">IUPAC Name</a>
@@ -350,9 +353,6 @@ This ontology has the following classes and properties.</span>
          title="http://nubbekg.aksw.org/ontology#publicationTitle">Publication title</a>
    </li>
    <li>
-      <a href="#publicationType" title="http://nubbekg.aksw.org/ontology#publicationType">Publication type</a>
-   </li>
-   <li>
       <a href="#publicationVolume"
          title="http://nubbekg.aksw.org/ontology#publicationVolume">Publication volume</a>
    </li>
@@ -384,22 +384,7 @@ This ontology has the following classes and properties.</span>
          title="http://nubbekg.aksw.org/ontology#publicationPublisher">Publications publisher</a>
    </li>
    <li>
-      <a href="#scientificName" title="http://nubbekg.aksw.org/ontology#scientificName">Scientific name</a>
-   </li>
-   <li>
       <a href="#smiles" title="http://nubbekg.aksw.org/ontology#smiles">SMILES</a>
-   </li>
-   <li>
-      <a href="#strucClass" title="http://nubbekg.aksw.org/ontology#strucClass">structure Class</a>
-   </li>
-   <li>
-      <a href="#strucKingdom" title="http://nubbekg.aksw.org/ontology#strucKingdom">structure Kingdom</a>
-   </li>
-   <li>
-      <a href="#subClass" title="http://nubbekg.aksw.org/ontology#subClass">structure Subclass</a>
-   </li>
-   <li>
-      <a href="#superClass" title="http://nubbekg.aksw.org/ontology#superClass">structure superclass</a>
    </li>
    <li>
       <a href="#subpubId" title="http://nubbekg.aksw.org/ontology#subpubId">Sub-Pub ID</a>
@@ -436,9 +421,6 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#City" title="http://nubbekg.aksw.org/ontology#City">City</a>
       </li>
       <li>
-         <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-      </li>
-      <li>
          <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
       </li>
       <li>
@@ -456,10 +438,17 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
       </li>
       <li>
+         <a href="#IsolationType" title="http://nubbekg.aksw.org/ontology#IsolationType">Isolation type</a>
+      </li>
+      <li>
          <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
       </li>
       <li>
-         <a href="#MatterType" title="http://nubbekg.aksw.org/ontology#MatterType">Matter type</a>
+         <a href="#MetabolicClass" title="http://nubbekg.aksw.org/ontology#MetabolicClass">Metabolic class</a>
+      </li>
+      <li>
+         <a href="#MetabolicSubclass"
+            title="http://nubbekg.aksw.org/ontology#MetabolicSubclass">Metabolic subclass</a>
       </li>
       <li>
          <a href="#MolecularDescriptors"
@@ -469,13 +458,13 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
       </li>
       <li>
+         <a href="#PublicationType" title="http://nubbekg.aksw.org/ontology#PublicationType">Publication type</a>
+      </li>
+      <li>
          <a href="#Species" title="http://nubbekg.aksw.org/ontology#Species">Species</a>
       </li>
       <li>
          <a href="#State" title="http://nubbekg.aksw.org/ontology#State">State</a>
-      </li>
-      <li>
-         <a href="#Taxonomy" title="http://nubbekg.aksw.org/ontology#Taxonomy">Taxonomy</a>
       </li>
       <li>
          <a href="#TopologicalDescriptors"
@@ -497,17 +486,6 @@ This section provides details for each class and property defined by nubbe: The 
          <span class="markdown">A description of the observed properties during bioactivity analysis.</span>
       </div>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#EC50" title="http://nubbekg.aksw.org/ontology#EC50">EC50</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#ED50" title="http://nubbekg.aksw.org/ontology#ED50">ED50</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#IC12" title="http://nubbekg.aksw.org/ontology#IC12">IC12</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#IC50" title="http://nubbekg.aksw.org/ontology#IC50">IC50</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#LD50" title="http://nubbekg.aksw.org/ontology#LD50">LD50</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#MFC" title="http://nubbekg.aksw.org/ontology#MFC">MFC</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#MIC" title="http://nubbekg.aksw.org/ontology#MIC">MIC</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#revealed" title="http://nubbekg.aksw.org/ontology#revealed">revealed</a>
@@ -528,8 +506,14 @@ This section provides details for each class and property defined by nubbe: The 
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#revealed" title="http://nubbekg.aksw.org/ontology#revealed">revealed</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#usedMatter" title="http://nubbekg.aksw.org/ontology#usedMatter">used Matter</a>
+            <a href="#EC50" title="http://nubbekg.aksw.org/ontology#EC50">EC50</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#ED50" title="http://nubbekg.aksw.org/ontology#ED50">ED50</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#IC12" title="http://nubbekg.aksw.org/ontology#IC12">IC12</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#IC50" title="http://nubbekg.aksw.org/ontology#IC50">IC50</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#LD50" title="http://nubbekg.aksw.org/ontology#LD50">LD50</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#MFC" title="http://nubbekg.aksw.org/ontology#MFC">MFC</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#MIC" title="http://nubbekg.aksw.org/ontology#MIC">MIC</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#revealed" title="http://nubbekg.aksw.org/ontology#revealed">revealed</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
@@ -562,33 +546,6 @@ This section provides details for each class and property defined by nubbe: The 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="Classyfire">
-      <h3>Classyfire<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#Classyfire</p>
-      <div class="comment">
-         <span class="markdown">The structural classification of a chemical compound, containing kingdom, superclass, class and subclass information.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#strucClass" title="http://nubbekg.aksw.org/ontology#strucClass">structure Class</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#strucKingdom" title="http://nubbekg.aksw.org/ontology#strucKingdom">structure Kingdom</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#subClass" title="http://nubbekg.aksw.org/ontology#subClass">structure Subclass</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#superClass" title="http://nubbekg.aksw.org/ontology#superClass">structure superclass</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#hasStructureInformation"
-               title="http://nubbekg.aksw.org/ontology#hasStructureInformation">has structure information</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="Compound">
       <h3>Compound<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -607,11 +564,12 @@ This section provides details for each class and property defined by nubbe: The 
                title="http://nubbekg.aksw.org/ontology#molecularFormula">Molecular formula</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#smiles" title="http://nubbekg.aksw.org/ontology#smiles">SMILES</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#hasDescriptors" title="http://nubbekg.aksw.org/ontology#hasDescriptors">has descriptors</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasStructureInformation"
-               title="http://nubbekg.aksw.org/ontology#hasStructureInformation">has structure information</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#isClassifiedBy" title="http://nubbekg.aksw.org/ontology#isClassifiedBy">is classified by</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#isIdentifiedBy" title="http://nubbekg.aksw.org/ontology#isIdentifiedBy">is identified by</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partOfSpecies" title="http://nubbekg.aksw.org/ontology#partOfSpecies">part of species</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#partOfSubclass" title="http://nubbekg.aksw.org/ontology#partOfSubclass">part of subclass</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#wasDiscoveredAt" title="http://nubbekg.aksw.org/ontology#wasDiscoveredAt">was discovered at</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#wasIsolatedFrom" title="http://nubbekg.aksw.org/ontology#wasIsolatedFrom">was isolated from</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#wasMentionedIn" title="http://nubbekg.aksw.org/ontology#wasMentionedIn">was mentioned in</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#wasSubjectedTo" title="http://nubbekg.aksw.org/ontology#wasSubjectedTo">was subjected to</a>
             <sup class="type-op" title="object property">op</sup>
@@ -711,13 +669,30 @@ This section provides details for each class and property defined by nubbe: The 
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#obtentionMethod" title="http://nubbekg.aksw.org/ontology#obtentionMethod">Isolation type</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
+            <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#wasDiscoveredAt" title="http://nubbekg.aksw.org/ontology#wasDiscoveredAt">was discovered at</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="IsolationType">
+      <h3>Isolation type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#IsolationType</p>
+      <div class="comment">
+         <span class="markdown">Explains in what way the chemical compound has been extracted.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasIsolatedFrom" title="http://nubbekg.aksw.org/ontology#wasIsolatedFrom">was isolated from</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -741,20 +716,38 @@ This section provides details for each class and property defined by nubbe: The 
          </dd>
       </dl>
    </div>
-   <div class="entity" id="MatterType">
-      <h3>Matter type<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="MetabolicClass">
+      <h3>Metabolic class<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#MatterType</p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#MetabolicClass</p>
       <div class="comment">
-         <span class="markdown">The type of matter the actual bioactivity testing is performed on.</span>
+         <span class="markdown">The metabolic class of which a chemical compound is part of.</span>
       </div>
       <dl class="description">
          <dt>is in range of</dt>
          <dd>
-            <a href="#usedMatter" title="http://nubbekg.aksw.org/ontology#usedMatter">used Matter</a>
+            <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="MetabolicSubclass">
+      <h3>Metabolic subclass<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#MetabolicSubclass</p>
+      <div class="comment">
+         <span class="markdown">The metabolic subclass of which a chemical compound is part of.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#partOfSubclass" title="http://nubbekg.aksw.org/ontology#partOfSubclass">part of subclass</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -807,7 +800,6 @@ This section provides details for each class and property defined by nubbe: The 
                title="http://nubbekg.aksw.org/ontology#publicationPages">Publication page numbers</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationTitle"
                title="http://nubbekg.aksw.org/ontology#publicationTitle">Publication title</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationType" title="http://nubbekg.aksw.org/ontology#publicationType">Publication type</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationVolume"
                title="http://nubbekg.aksw.org/ontology#publicationVolume">Publication volume</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationYear" title="http://nubbekg.aksw.org/ontology#publicationYear">Publication year</a>
@@ -824,11 +816,30 @@ This section provides details for each class and property defined by nubbe: The 
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationPublisher"
                title="http://nubbekg.aksw.org/ontology#publicationPublisher">Publications publisher</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#subpubId" title="http://nubbekg.aksw.org/ontology#subpubId">Sub-Pub ID</a>
-            <sup class="type-dp" title="data property">dp</sup>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#wasPublishedAs" title="http://nubbekg.aksw.org/ontology#wasPublishedAs">was published as</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#wasMentionedIn" title="http://nubbekg.aksw.org/ontology#wasMentionedIn">was mentioned in</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PublicationType">
+      <h3>Publication type<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#PublicationType</p>
+      <div class="comment">
+         <span class="markdown">The type of the publication medium.</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#wasPublishedAs" title="http://nubbekg.aksw.org/ontology#wasPublishedAs">was published as</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -844,11 +855,6 @@ This section provides details for each class and property defined by nubbe: The 
          <span class="markdown">The species of which a biological entity is part of.</span>
       </div>
       <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#scientificName" title="http://nubbekg.aksw.org/ontology#scientificName">Scientific name</a>
-            <sup class="type-dp" title="data property">dp</sup>
-         </dd>
          <dt>is in range of</dt>
          <dd>
             <a href="#partOfSpecies" title="http://nubbekg.aksw.org/ontology#partOfSpecies">part of species</a>
@@ -875,29 +881,6 @@ This section provides details for each class and property defined by nubbe: The 
          <dt>is in range of</dt>
          <dd>
             <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Taxonomy">
-      <h3>Taxonomy<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#Taxonomy</p>
-      <div class="comment">
-         <span class="markdown">The biological taxonomy of the entity a chemical compound has been extracted from.</span>
-      </div>
-      <dl class="description">
-         <dt>is in domain of</dt>
-         <dd>
-            <a href="#partOfSpecies" title="http://nubbekg.aksw.org/ontology#partOfSpecies">part of species</a>
-            <sup class="type-op" title="object property">op</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#isClassifiedBy" title="http://nubbekg.aksw.org/ontology#isClassifiedBy">is classified by</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
@@ -958,32 +941,34 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#hasDescriptors" title="http://nubbekg.aksw.org/ontology#hasDescriptors">has descriptors</a>
       </li>
       <li>
-         <a href="#hasStructureInformation"
-            title="http://nubbekg.aksw.org/ontology#hasStructureInformation">has structure information</a>
-      </li>
-      <li>
-         <a href="#isClassifiedBy" title="http://nubbekg.aksw.org/ontology#isClassifiedBy">is classified by</a>
-      </li>
-      <li>
          <a href="#isIdentifiedBy" title="http://nubbekg.aksw.org/ontology#isIdentifiedBy">is identified by</a>
       </li>
       <li>
          <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
       </li>
       <li>
+         <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
+      </li>
+      <li>
          <a href="#partOfSpecies" title="http://nubbekg.aksw.org/ontology#partOfSpecies">part of species</a>
+      </li>
+      <li>
+         <a href="#partOfSubclass" title="http://nubbekg.aksw.org/ontology#partOfSubclass">part of subclass</a>
       </li>
       <li>
          <a href="#revealed" title="http://nubbekg.aksw.org/ontology#revealed">revealed</a>
       </li>
       <li>
-         <a href="#usedMatter" title="http://nubbekg.aksw.org/ontology#usedMatter">used Matter</a>
-      </li>
-      <li>
          <a href="#wasDiscoveredAt" title="http://nubbekg.aksw.org/ontology#wasDiscoveredAt">was discovered at</a>
       </li>
       <li>
+         <a href="#wasIsolatedFrom" title="http://nubbekg.aksw.org/ontology#wasIsolatedFrom">was isolated from</a>
+      </li>
+      <li>
          <a href="#wasMentionedIn" title="http://nubbekg.aksw.org/ontology#wasMentionedIn">was mentioned in</a>
+      </li>
+      <li>
+         <a href="#wasPublishedAs" title="http://nubbekg.aksw.org/ontology#wasPublishedAs">was published as</a>
       </li>
       <li>
          <a href="#wasSubjectedTo" title="http://nubbekg.aksw.org/ontology#wasSubjectedTo">was subjected to</a>
@@ -1009,56 +994,6 @@ This section provides details for each class and property defined by nubbe: The 
             <dt>has range</dt>
             <dd>
                <a href="#Descriptors" title="http://nubbekg.aksw.org/ontology#Descriptors">Descriptors</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="hasStructureInformation">
-      <h3>has structure information<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#hasStructureInformation</p>
-      <div class="comment">
-         <span class="markdown">A chemical compound has a structural classification.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isClassifiedBy">
-      <h3>is classified by<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#isClassifiedBy</p>
-      <div class="comment">
-         <span class="markdown">The entity a chemical compound has been extracted from is classified by a biological taxonomy.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#Taxonomy" title="http://nubbekg.aksw.org/ontology#Taxonomy">Taxonomy</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1119,6 +1054,31 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
+   <div class="entity" id="partOfClass">
+      <h3>part of class<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#partOfClass</p>
+      <div class="comment">
+         <span class="markdown">A compound is part of a metabolic class.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetabolicClass" title="http://nubbekg.aksw.org/ontology#MetabolicClass">Metabolic class</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="partOfSpecies">
       <h3>part of species<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1133,12 +1093,38 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Taxonomy" title="http://nubbekg.aksw.org/ontology#Taxonomy">Taxonomy</a>
+               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
                <a href="#Species" title="http://nubbekg.aksw.org/ontology#Species">Species</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="partOfSubclass">
+      <h3>part of subclass<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#partOfSubclass</p>
+      <div class="comment">
+         <span class="markdown">A compound is part of a metabolic subclass.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#MetabolicSubclass"
+                  title="http://nubbekg.aksw.org/ontology#MetabolicSubclass">Metabolic subclass</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1170,32 +1156,6 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
-   <div class="entity" id="usedMatter">
-      <h3>used Matter<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#usedMatter</p>
-      <div class="comment">
-         <span class="markdown">For bioactivity analysis a specific matter type was used.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#BioactivityAnalysis"
-                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#MatterType" title="http://nubbekg.aksw.org/ontology#MatterType">Matter type</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="wasDiscoveredAt">
       <h3>was discovered at<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1221,6 +1181,31 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
+   <div class="entity" id="wasIsolatedFrom">
+      <h3>was isolated from<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#wasIsolatedFrom</p>
+      <div class="comment">
+         <span class="markdown">A compound was isolated from a specific host.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#IsolationType" title="http://nubbekg.aksw.org/ontology#IsolationType">Isolation type</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="wasMentionedIn">
       <h3>was mentioned in<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1241,6 +1226,31 @@ This section provides details for each class and property defined by nubbe: The 
             <dt>has range</dt>
             <dd>
                <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="wasPublishedAs">
+      <h3>was published as<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#wasPublishedAs</p>
+      <div class="comment">
+         <span class="markdown">A publication was published as a certain medium type.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#PublicationType" title="http://nubbekg.aksw.org/ontology#PublicationType">Publication type</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1304,9 +1314,6 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#inchikey" title="http://nubbekg.aksw.org/ontology#inchikey">inchikey</a>
       </li>
       <li>
-         <a href="#obtentionMethod" title="http://nubbekg.aksw.org/ontology#obtentionMethod">Isolation type</a>
-      </li>
-      <li>
          <a href="#iupacName" title="http://nubbekg.aksw.org/ontology#iupacName">IUPAC Name</a>
       </li>
       <li>
@@ -1364,9 +1371,6 @@ This section provides details for each class and property defined by nubbe: The 
             title="http://nubbekg.aksw.org/ontology#publicationTitle">Publication title</a>
       </li>
       <li>
-         <a href="#publicationType" title="http://nubbekg.aksw.org/ontology#publicationType">Publication type</a>
-      </li>
-      <li>
          <a href="#publicationVolume"
             title="http://nubbekg.aksw.org/ontology#publicationVolume">Publication volume</a>
       </li>
@@ -1398,22 +1402,7 @@ This section provides details for each class and property defined by nubbe: The 
             title="http://nubbekg.aksw.org/ontology#publicationPublisher">Publications publisher</a>
       </li>
       <li>
-         <a href="#scientificName" title="http://nubbekg.aksw.org/ontology#scientificName">Scientific name</a>
-      </li>
-      <li>
          <a href="#smiles" title="http://nubbekg.aksw.org/ontology#smiles">SMILES</a>
-      </li>
-      <li>
-         <a href="#strucClass" title="http://nubbekg.aksw.org/ontology#strucClass">structure Class</a>
-      </li>
-      <li>
-         <a href="#strucKingdom" title="http://nubbekg.aksw.org/ontology#strucKingdom">structure Kingdom</a>
-      </li>
-      <li>
-         <a href="#subClass" title="http://nubbekg.aksw.org/ontology#subClass">structure Subclass</a>
-      </li>
-      <li>
-         <a href="#superClass" title="http://nubbekg.aksw.org/ontology#superClass">structure superclass</a>
       </li>
       <li>
          <a href="#subpubId" title="http://nubbekg.aksw.org/ontology#subpubId">Sub-Pub ID</a>
@@ -1462,7 +1451,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1488,7 +1478,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1568,7 +1559,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1594,7 +1586,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1660,32 +1653,6 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
-   <div class="entity" id="obtentionMethod">
-      <h3>Isolation type<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#obtentionMethod</p>
-      <div class="comment">
-         <span class="markdown">Explains in what way the chemical compound has been extracted.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="iupacName">
       <h3>IUPAC Name<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1727,7 +1694,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1807,7 +1775,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1833,7 +1802,8 @@ This section provides details for each class and property defined by nubbe: The 
          <dl>
             <dt>has domain</dt>
             <dd>
-               <a href="#Bioactivity" title="http://nubbekg.aksw.org/ontology#Bioactivity">Bioactivity</a>
+               <a href="#BioactivityAnalysis"
+                  title="http://nubbekg.aksw.org/ontology#BioactivityAnalysis">Bioactivity analysis</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2136,32 +2106,6 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
-   <div class="entity" id="publicationType">
-      <h3>Publication type<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#publicationType</p>
-      <div class="comment">
-         <span class="markdown">The type of a compounds publication.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="publicationVolume">
       <h3>Publication volume<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2370,32 +2314,6 @@ This section provides details for each class and property defined by nubbe: The 
          </dl>
       </div>
    </div>
-   <div class="entity" id="scientificName">
-      <h3>Scientific name<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#scientificName</p>
-      <div class="comment">
-         <span class="markdown">The given scientific name of a taxonomic species.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Species" title="http://nubbekg.aksw.org/ontology#Species">Species</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="smiles">
       <h3>SMILES<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -2411,110 +2329,6 @@ This section provides details for each class and property defined by nubbe: The 
             <dt>has domain</dt>
             <dd>
                <a href="#Compound" title="http://nubbekg.aksw.org/ontology#Compound">Compound</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="strucClass">
-      <h3>structure Class<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#strucClass</p>
-      <div class="comment">
-         <span class="markdown">The class of which a chemical compound is part of.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="strucKingdom">
-      <h3>structure Kingdom<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#strucKingdom</p>
-      <div class="comment">
-         <span class="markdown">The kingdom of which a chemical compound is part of.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="subClass">
-      <h3>structure Subclass<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#subClass</p>
-      <div class="comment">
-         <span class="markdown">The subclass of which a chemical compound is part of.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="superClass">
-      <h3>structure superclass<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#superClass</p>
-      <div class="comment">
-         <span class="markdown">The superclass of which a chemical compound is part of.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Classyfire" title="http://nubbekg.aksw.org/ontology#Classyfire">Classyfire</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>

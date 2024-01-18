@@ -65,22 +65,6 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "has descriptors"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#hasStructureInformation
-:hasStructureInformation rdf:type owl:ObjectProperty ;
-                         rdfs:domain :Compound ;
-                         rdfs:range :Classyfire ;
-                         rdfs:comment "A chemical compound has a structural classification."@en ;
-                         rdfs:label "has structure information"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#isClassifiedBy
-:isClassifiedBy rdf:type owl:ObjectProperty ;
-                rdfs:domain :Compound ;
-                rdfs:range :Taxonomy ;
-                rdfs:comment "The entity a chemical compound has been extracted from is classified by a biological taxonomy."@en ;
-                rdfs:label "is classified by"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#isIdentifiedBy
 :isIdentifiedBy rdf:type owl:ObjectProperty ;
                 rdfs:domain :Compound ;
@@ -98,12 +82,28 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "is located in"@en .
 
 
+###  http://nubbekg.aksw.org/ontology#partOfClass
+:partOfClass rdf:type owl:ObjectProperty ;
+             rdfs:domain :Compound ;
+             rdfs:range :MetabolicClass ;
+             rdfs:comment "A compound is part of a metabolic class."@en ;
+             rdfs:label "part of class"@en .
+
+
 ###  http://nubbekg.aksw.org/ontology#partOfSpecies
 :partOfSpecies rdf:type owl:ObjectProperty ;
-               rdfs:domain :Taxonomy ;
+               rdfs:domain :Compound ;
                rdfs:range :Species ;
                rdfs:comment "A compound is part of a species of life."@en ;
                rdfs:label "part of species"@en .
+
+
+###  http://nubbekg.aksw.org/ontology#partOfSubclass
+:partOfSubclass rdf:type owl:ObjectProperty ;
+                rdfs:domain :Compound ;
+                rdfs:range :MetabolicSubclass ;
+                rdfs:comment "A compound is part of a metabolic subclass."@en ;
+                rdfs:label "part of subclass"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#revealed
@@ -114,14 +114,6 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:label "revealed"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#usedMatter
-:usedMatter rdf:type owl:ObjectProperty ;
-            rdfs:domain :BioactivityAnalysis ;
-            rdfs:range :MatterType ;
-            rdfs:comment "For bioactivity analysis a specific matter type was used."@en ;
-            rdfs:label "used Matter"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#wasDiscoveredAt
 :wasDiscoveredAt rdf:type owl:ObjectProperty ;
                  rdfs:domain :Compound ;
@@ -130,12 +122,28 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "was discovered at"@en .
 
 
+###  http://nubbekg.aksw.org/ontology#wasIsolatedFrom
+:wasIsolatedFrom rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Compound ;
+                 rdfs:range :IsolationType ;
+                 rdfs:comment "A compound was isolated from a specific host."@en ;
+                 rdfs:label "was isolated from"@en .
+
+
 ###  http://nubbekg.aksw.org/ontology#wasMentionedIn
 :wasMentionedIn rdf:type owl:ObjectProperty ;
                 rdfs:domain :Compound ;
                 rdfs:range :Publication ;
                 rdfs:comment "A chemical compound was mentioned in a publication."@en ;
                 rdfs:label "was mentioned in"@en .
+
+
+###  http://nubbekg.aksw.org/ontology#wasPublishedAs
+:wasPublishedAs rdf:type owl:ObjectProperty ;
+                rdfs:domain :Publication ;
+                rdfs:range :PublicationType ;
+                rdfs:comment "A publication was published as a certain medium type."@en ;
+                rdfs:label "was published as"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#wasSubjectedTo
@@ -152,7 +160,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#EC50
 :EC50 rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
+      rdfs:domain :BioactivityAnalysis ;
       rdfs:range xsd:double ;
       rdfs:comment "The effective concentration of a drug that gives half-maximal response."@en ;
       rdfs:label "EC50"@en .
@@ -160,7 +168,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#ED50
 :ED50 rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
+      rdfs:domain :BioactivityAnalysis ;
       rdfs:range xsd:double ;
       rdfs:comment "The effective dose of a drug that gives half-maximal response."@en ;
       rdfs:label "ED50"@en .
@@ -168,7 +176,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#IC12
 :IC12 rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
+      rdfs:domain :BioactivityAnalysis ;
       rdfs:range xsd:double ;
       rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."@en ;
       rdfs:label "IC12"@en .
@@ -176,7 +184,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#IC50
 :IC50 rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
+      rdfs:domain :BioactivityAnalysis ;
       rdfs:range xsd:double ;
       rdfs:comment "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."@en ;
       rdfs:label "IC50"@en .
@@ -184,7 +192,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#LD50
 :LD50 rdf:type owl:DatatypeProperty ;
-      rdfs:domain :Bioactivity ;
+      rdfs:domain :BioactivityAnalysis ;
       rdfs:range xsd:double ;
       rdfs:comment "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."@en ;
       rdfs:label "LD50"@en .
@@ -192,7 +200,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#MFC
 :MFC rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Bioactivity ;
+     rdfs:domain :BioactivityAnalysis ;
      rdfs:range xsd:double ;
      rdfs:comment "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."@en ;
      rdfs:label "MFC"@en .
@@ -200,7 +208,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#MIC
 :MIC rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Bioactivity ;
+     rdfs:domain :BioactivityAnalysis ;
      rdfs:range xsd:double ;
      rdfs:comment "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."@en ;
      rdfs:label "MIC"@en .
@@ -318,14 +326,6 @@ xsd:date rdf:type rdfs:Datatype .
          rdfs:label "NUBBE ID"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#obtentionMethod
-:obtentionMethod rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :IsolationSite ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "Explains in what way the chemical compound has been extracted."@en ;
-                 rdfs:label "Isolation type"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#publicationAgency
 :publicationAgency rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Publication ;
@@ -414,14 +414,6 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:label "Publication title"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#publicationType
-:publicationType rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Publication ;
-                 rdfs:range xsd:string ;
-                 rdfs:comment "The type of a compounds publication."@en ;
-                 rdfs:label "Publication type"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#publicationVolume
 :publicationVolume rdf:type owl:DatatypeProperty ;
                    rdfs:domain :Publication ;
@@ -438,14 +430,6 @@ xsd:date rdf:type rdfs:Datatype .
                  rdfs:label "Publication year"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#scientificName
-:scientificName rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Species ;
-                rdfs:range xsd:string ;
-                rdfs:comment "The given scientific name of a taxonomic species."@en ;
-                rdfs:label "Scientific name"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#smiles
 :smiles rdf:type owl:DatatypeProperty ;
         rdfs:domain :Compound ;
@@ -454,44 +438,12 @@ xsd:date rdf:type rdfs:Datatype .
         rdfs:label "SMILES"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#strucClass
-:strucClass rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Classyfire ;
-            rdfs:range xsd:string ;
-            rdfs:comment "The class of which a chemical compound is part of."@en ;
-            rdfs:label "structure Class"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#strucKingdom
-:strucKingdom rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Classyfire ;
-              rdfs:range xsd:string ;
-              rdfs:comment "The kingdom of which a chemical compound is part of."@en ;
-              rdfs:label "structure Kingdom"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#subClass
-:subClass rdf:type owl:DatatypeProperty ;
-          rdfs:domain :Classyfire ;
-          rdfs:range xsd:string ;
-          rdfs:comment "The subclass of which a chemical compound is part of."@en ;
-          rdfs:label "structure Subclass"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#subpubId
 :subpubId rdf:type owl:DatatypeProperty ;
           rdfs:domain :Publication ;
           rdfs:range xsd:int ;
           rdfs:comment "The sub-publication Id of a compounds publication."@en ;
           rdfs:label "Sub-Pub ID"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#superClass
-:superClass rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Classyfire ;
-            rdfs:range xsd:string ;
-            rdfs:comment "The superclass of which a chemical compound is part of."@en ;
-            rdfs:label "structure superclass"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#tpsa
@@ -523,12 +475,6 @@ xsd:date rdf:type rdfs:Datatype .
       rdfs:subClassOf :Location ;
       rdfs:comment "The city in which the chemical compound has been extracted."@en ;
       rdfs:label "City"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#Classyfire
-:Classyfire rdf:type owl:Class ;
-            rdfs:comment "The structural classification of a chemical compound, containing kingdom, superclass, class and subclass information."@en ;
-            rdfs:label "Classyfire"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#Compound
@@ -563,16 +509,28 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "Isolation site"@en .
 
 
+###  http://nubbekg.aksw.org/ontology#IsolationType
+:IsolationType rdf:type owl:Class ;
+               rdfs:comment "Explains in what way the chemical compound has been extracted."@en ;
+               rdfs:label "Isolation type"@en .
+
+
 ###  http://nubbekg.aksw.org/ontology#Location
 :Location rdf:type owl:Class ;
           rdfs:comment "Parent location class, includes city and statecode."@en ;
           rdfs:label "Location"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#MatterType
-:MatterType rdf:type owl:Class ;
-            rdfs:comment "The type of matter the actual bioactivity testing is performed on."@en ;
-            rdfs:label "Matter type"@en .
+###  http://nubbekg.aksw.org/ontology#MetabolicClass
+:MetabolicClass rdf:type owl:Class ;
+                rdfs:comment "The metabolic class of which a chemical compound is part of."@en ;
+                rdfs:label "Metabolic class"@en .
+
+
+###  http://nubbekg.aksw.org/ontology#MetabolicSubclass
+:MetabolicSubclass rdf:type owl:Class ;
+                   rdfs:comment "The metabolic subclass of which a chemical compound is part of."@en ;
+                   rdfs:label "Metabolic subclass"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#MolecularDescriptors
@@ -588,6 +546,12 @@ xsd:date rdf:type rdfs:Datatype .
              rdfs:label "Publication"@en .
 
 
+###  http://nubbekg.aksw.org/ontology#PublicationType
+:PublicationType rdf:type owl:Class ;
+                 rdfs:comment "The type of the publication medium."@en ;
+                 rdfs:label "Publication type"@en .
+
+
 ###  http://nubbekg.aksw.org/ontology#Species
 :Species rdf:type owl:Class ;
          rdfs:comment "The species of which a biological entity is part of."@en ;
@@ -599,12 +563,6 @@ xsd:date rdf:type rdfs:Datatype .
        rdfs:subClassOf :Location ;
        rdfs:comment "The state in which the chemical compound has been extracted, usually just by it's short code."@en ;
        rdfs:label "State"@en .
-
-
-###  http://nubbekg.aksw.org/ontology#Taxonomy
-:Taxonomy rdf:type owl:Class ;
-          rdfs:comment "The biological taxonomy of the entity a chemical compound has been extracted from."@en ;
-          rdfs:label "Taxonomy"@en .
 
 
 ###  http://nubbekg.aksw.org/ontology#TopologicalDescriptors
