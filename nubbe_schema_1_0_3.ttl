@@ -139,7 +139,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:domain :Compound ;
                     rdfs:range :IsolationType ;
                     rdfs:comment "A compound was isolated from a specific host."@en ;
-                    rdfs:label "was published as"@en .
+                    rdfs:label "was isolated from"@en .
 
 #################################################################
 #    Data properties
