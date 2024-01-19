@@ -54,7 +54,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Object Properties
+#    Object Properties - 12
 #################################################################
 
 ###  http://nubbekg.aksw.org/ontology#hasDescriptors
@@ -142,7 +142,7 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:label "was isolated from"@en .
 
 #################################################################
-#    Data properties
+#    Data properties - 37
 #################################################################
 
 ###  http://nubbekg.aksw.org/ontology#commonName
@@ -406,7 +406,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
-#    Classes
+#    Classes - 19
 #################################################################
 
 
