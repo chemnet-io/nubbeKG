@@ -73,15 +73,6 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:label "is identified by"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#isLocatedIn
-:isLocatedIn rdf:type owl:ObjectProperty ;
-             rdfs:domain :IsolationSite ;
-             rdfs:range :City ,
-                        :State ;
-             rdfs:comment "An isolation-site is located in a distinct city and state."@en ;
-             rdfs:label "is located in"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#partOfClass
 :partOfClass rdf:type owl:ObjectProperty ;
              rdfs:domain :Compound ;
@@ -342,14 +333,6 @@ xsd:date rdf:type rdfs:Datatype .
                           rdfs:label "Publications citation extra information"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#publicationDoi
-:publicationDoi rdf:type owl:DatatypeProperty ;
-                rdfs:domain :Publication ;
-                rdfs:range xsd:string ;
-                rdfs:comment "The digital object identifier of a compounds publication."@en ;
-                rdfs:label "Publication DOI"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#publicationEvent
 :publicationEvent rdf:type owl:DatatypeProperty ;
                   rdfs:domain :Publication ;
@@ -472,7 +455,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#City
 :City rdf:type owl:Class ;
-      rdfs:subClassOf :Location ;
+      rdfs:subClassOf :IsolationSite ;
       rdfs:comment "The city in which the chemical compound has been extracted."@en ;
       rdfs:label "City"@en .
 
@@ -515,12 +498,6 @@ xsd:date rdf:type rdfs:Datatype .
                rdfs:label "Isolation type"@en .
 
 
-###  http://nubbekg.aksw.org/ontology#Location
-:Location rdf:type owl:Class ;
-          rdfs:comment "Parent location class, includes city and statecode."@en ;
-          rdfs:label "Location"@en .
-
-
 ###  http://nubbekg.aksw.org/ontology#MetabolicClass
 :MetabolicClass rdf:type owl:Class ;
                 rdfs:comment "The metabolic class of which a chemical compound is part of."@en ;
@@ -560,7 +537,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#State
 :State rdf:type owl:Class ;
-       rdfs:subClassOf :Location ;
+       rdfs:subClassOf :IsolationSite ;
        rdfs:comment "The state in which the chemical compound has been extracted, usually just by it's short code."@en ;
        rdfs:label "State"@en .
 

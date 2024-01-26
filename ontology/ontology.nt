@@ -70,14 +70,6 @@
 <http://nubbekg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A chemical compound is identified by it's unique identifiers."@en .
 <http://nubbekg.aksw.org/ontology#isIdentifiedBy> <http://www.w3.org/2000/01/rdf-schema#label> "is identified by"@en .
 # 
-# http://nubbekg.aksw.org/ontology#isLocatedIn
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#IsolationSite> .
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#City> .
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#range> <http://nubbekg.aksw.org/ontology#State> .
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#comment> "An isolation-site is located in a distinct city and state."@en .
-<http://nubbekg.aksw.org/ontology#isLocatedIn> <http://www.w3.org/2000/01/rdf-schema#label> "is located in"@en .
-# 
 # http://nubbekg.aksw.org/ontology#partOfClass
 <http://nubbekg.aksw.org/ontology#partOfClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <http://nubbekg.aksw.org/ontology#partOfClass> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Compound> .
@@ -311,13 +303,6 @@
 <http://nubbekg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#comment> "Extra informations on citations of the publication."@en .
 <http://nubbekg.aksw.org/ontology#publicationCitationExtra> <http://www.w3.org/2000/01/rdf-schema#label> "Publications citation extra information"@en .
 # 
-# http://nubbekg.aksw.org/ontology#publicationDoi
-<http://nubbekg.aksw.org/ontology#publicationDoi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<http://nubbekg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Publication> .
-<http://nubbekg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
-<http://nubbekg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#comment> "The digital object identifier of a compounds publication."@en .
-<http://nubbekg.aksw.org/ontology#publicationDoi> <http://www.w3.org/2000/01/rdf-schema#label> "Publication DOI"@en .
-# 
 # http://nubbekg.aksw.org/ontology#publicationEvent
 <http://nubbekg.aksw.org/ontology#publicationEvent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://nubbekg.aksw.org/ontology#publicationEvent> <http://www.w3.org/2000/01/rdf-schema#domain> <http://nubbekg.aksw.org/ontology#Publication> .
@@ -430,7 +415,7 @@
 # 
 # http://nubbekg.aksw.org/ontology#City
 <http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#Location> .
+<http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#IsolationSite> .
 <http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#comment> "The city in which the chemical compound has been extracted."@en .
 <http://nubbekg.aksw.org/ontology#City> <http://www.w3.org/2000/01/rdf-schema#label> "City"@en .
 # 
@@ -466,11 +451,6 @@
 <http://nubbekg.aksw.org/ontology#IsolationType> <http://www.w3.org/2000/01/rdf-schema#comment> "Explains in what way the chemical compound has been extracted."@en .
 <http://nubbekg.aksw.org/ontology#IsolationType> <http://www.w3.org/2000/01/rdf-schema#label> "Isolation type"@en .
 # 
-# http://nubbekg.aksw.org/ontology#Location
-<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Parent location class, includes city and statecode."@en .
-<http://nubbekg.aksw.org/ontology#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location"@en .
-# 
 # http://nubbekg.aksw.org/ontology#MetabolicClass
 <http://nubbekg.aksw.org/ontology#MetabolicClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://nubbekg.aksw.org/ontology#MetabolicClass> <http://www.w3.org/2000/01/rdf-schema#comment> "The metabolic class of which a chemical compound is part of."@en .
@@ -504,7 +484,7 @@
 # 
 # http://nubbekg.aksw.org/ontology#State
 <http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#Location> .
+<http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://nubbekg.aksw.org/ontology#IsolationSite> .
 <http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#comment> "The state in which the chemical compound has been extracted, usually just by it's short code."@en .
 <http://nubbekg.aksw.org/ontology#State> <http://www.w3.org/2000/01/rdf-schema#label> "State"@en .
 # 

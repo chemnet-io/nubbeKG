@@ -65,28 +65,34 @@
     "id" : "1",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "5",
+    "id" : "2",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
+    "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "14",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "17",
+    "id" : "15",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "12",
+    "id" : "9",
     "type" : "owl:Class"
   }, {
-    "id" : "20",
+    "id" : "18",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "24",
+    "id" : "22",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "23",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "25",
@@ -98,26 +104,26 @@
     "id" : "27",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "28",
+    "id" : "31",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "29",
+    "id" : "34",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "33",
+    "id" : "35",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "36",
     "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
   }, {
     "id" : "37",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "38",
     "type" : "rdfs:Datatype"
-  }, {
-    "id" : "7",
-    "type" : "owl:Class"
   }, {
     "id" : "39",
     "type" : "rdfs:Datatype"
@@ -128,106 +134,91 @@
     "id" : "41",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "42",
+    "id" : "44",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "43",
-    "type" : "rdfs:Datatype"
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "49",
+    "type" : "owl:Class"
   }, {
     "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "22",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
-    "type" : "owl:Class"
-  }, {
-    "id" : "69",
+    "id" : "62",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "4",
+    "id" : "6",
     "type" : "owl:Class"
   }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "76",
+    "id" : "72",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
-    "id" : "77",
+    "id" : "73",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "78",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "10",
+    "id" : "7",
     "type" : "owl:Class"
   }, {
-    "id" : "67",
+    "id" : "74",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "59",
+    "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "15",
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
     "type" : "owl:Class"
   }, {
     "id" : "58",
     "type" : "owl:Class"
   }, {
-    "id" : "83",
+    "id" : "82",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
     "type" : "owl:Class"
   }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "3",
-    "type" : "owl:Class"
-  }, {
-    "id" : "61",
-    "type" : "owl:Class"
-  }, {
-    "id" : "86",
+    "id" : "93",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "19",
+    "id" : "10",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "75",
+    "id" : "94",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "45",
-    "type" : "owl:Class"
-  }, {
-    "id" : "97",
+    "id" : "60",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "13",
+    "id" : "33",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "98",
+    "id" : "77",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "65",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "35",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "81",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "100",
+    "id" : "96",
     "type" : "rdfs:Datatype"
   } ],
   "classAttribute" : [ {
@@ -260,7 +251,7 @@
     "comment" : {
       "en" : "The type of the publication medium."
     },
-    "id" : "5"
+    "id" : "2"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#Descriptors",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -269,22 +260,22 @@
       "IRI-based" : "Descriptors",
       "en" : "Descriptors"
     },
-    "subClasses" : [ "7", "8", "9", "10" ],
+    "subClasses" : [ "4", "5", "6", "7" ],
     "comment" : {
       "en" : "Descriptors chemical compound."
     },
-    "id" : "6"
+    "id" : "3"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "16",
+    "id" : "14",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "17",
+    "id" : "15",
     "label" : {
       "IRI-based" : "string"
     }
@@ -299,25 +290,39 @@
     "comment" : {
       "en" : "Bioactivity analysis data of a chemical compound."
     },
-    "id" : "12"
+    "id" : "9"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "20",
+    "id" : "22",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "24",
+    "id" : "23",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "23",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
     "label" : {
       "IRI-based" : "string"
     }
@@ -343,23 +348,23 @@
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "28",
+    "id" : "31",
     "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "29",
-    "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "float"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "33",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#float",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
     "label" : {
       "IRI-based" : "float"
     }
@@ -367,20 +372,6 @@
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "36",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "37",
-    "label" : {
-      "IRI-based" : "float"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#float",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "38",
     "label" : {
       "IRI-based" : "float"
     }
@@ -395,21 +386,35 @@
     "comment" : {
       "en" : "Molecular descriptors of a chemical compound."
     },
-    "id" : "7",
-    "superClasses" : [ "6" ]
+    "id" : "4",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "39",
+    "id" : "37",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
+    "id" : "38",
     "label" : {
       "IRI-based" : "float"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
@@ -421,21 +426,7 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "42",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "43",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "46",
+    "id" : "44",
     "label" : {
       "IRI-based" : "string"
     }
@@ -450,7 +441,7 @@
     "comment" : {
       "en" : "A publication in which a chemical compound was mentioned in."
     },
-    "id" : "22"
+    "id" : "20"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#Bioactivity",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -462,7 +453,7 @@
     "comment" : {
       "en" : "A description of the observed properties during bioactivity analysis."
     },
-    "id" : "51"
+    "id" : "49"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#UniqueIdentifiers",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -474,26 +465,14 @@
     "comment" : {
       "en" : "Unique identifiers of a chemical compound like IUPAC-name and inchikey."
     },
-    "id" : "48"
+    "id" : "46"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#float",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
+    "id" : "66",
     "label" : {
       "IRI-based" : "float"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
-    "label" : {
-      "IRI-based" : "int"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "61", "58" ],
-    "attributes" : [ "union", "anonymous" ],
-    "id" : "4"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#ElectronicDescriptors",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -505,14 +484,14 @@
     "comment" : {
       "en" : "Electronic descriptors of a chemical compound."
     },
-    "id" : "8",
-    "superClasses" : [ "6" ]
+    "id" : "5",
+    "superClasses" : [ "3" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "76",
+    "id" : "62",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "int"
     }
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#TopologicalDescriptors",
@@ -525,21 +504,21 @@
     "comment" : {
       "en" : "Topological descriptors of a chemical compound."
     },
-    "id" : "9",
-    "superClasses" : [ "6" ]
+    "id" : "6",
+    "superClasses" : [ "3" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
+    "id" : "72",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "78",
+    "id" : "73",
     "label" : {
-      "IRI-based" : "string"
+      "IRI-based" : "int"
     }
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#ConstitutionalDescriptors",
@@ -552,28 +531,15 @@
     "comment" : {
       "en" : "Constitutional descriptors of a chemical compound."
     },
-    "id" : "10",
-    "superClasses" : [ "6" ]
+    "id" : "7",
+    "superClasses" : [ "3" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#int",
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
+    "id" : "74",
     "label" : {
-      "IRI-based" : "int"
+      "IRI-based" : "string"
     }
-  }, {
-    "iri" : "http://nubbekg.aksw.org/ontology#Location",
-    "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Location",
-      "en" : "Location"
-    },
-    "subClasses" : [ "61", "58" ],
-    "comment" : {
-      "en" : "Parent location class, includes city and statecode."
-    },
-    "id" : "59"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#Compound",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -585,7 +551,7 @@
     "comment" : {
       "en" : "A chemical compound."
     },
-    "id" : "15"
+    "id" : "12"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#State",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -597,8 +563,8 @@
     "comment" : {
       "en" : "The state in which the chemical compound has been extracted, usually just by it's short code."
     },
-    "id" : "58",
-    "superClasses" : [ "59" ]
+    "id" : "56",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#Species",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -610,7 +576,7 @@
     "comment" : {
       "en" : "The species of which a biological entity is part of."
     },
-    "id" : "83"
+    "id" : "79"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#IsolationType",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -622,7 +588,7 @@
     "comment" : {
       "en" : "Explains in what way the chemical compound has been extracted."
     },
-    "id" : "31"
+    "id" : "29"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#IsolationSite",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -631,10 +597,11 @@
       "IRI-based" : "IsolationSite",
       "en" : "Isolation site"
     },
+    "subClasses" : [ "58", "56" ],
     "comment" : {
       "en" : "Information on where and from what entity the chemical compound has been isolated."
     },
-    "id" : "3"
+    "id" : "13"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#City",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -646,26 +613,26 @@
     "comment" : {
       "en" : "The city in which the chemical compound has been extracted."
     },
-    "id" : "61",
-    "superClasses" : [ "59" ]
+    "id" : "58",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "86",
+    "id" : "82",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
+    "id" : "17",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "75",
+    "id" : "71",
     "label" : {
       "IRI-based" : "double"
     }
@@ -680,92 +647,95 @@
     "comment" : {
       "en" : "The metabolic subclass of which a chemical compound is part of."
     },
-    "id" : "45"
+    "id" : "43"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "97",
+    "id" : "93",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "13",
+    "id" : "10",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#string",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "98",
+    "id" : "94",
     "label" : {
       "IRI-based" : "string"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "65",
+    "id" : "60",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#int",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "35",
+    "id" : "33",
     "label" : {
       "IRI-based" : "int"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "81",
+    "id" : "77",
     "label" : {
       "IRI-based" : "double"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#double",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "100",
+    "id" : "96",
     "label" : {
       "IRI-based" : "double"
     }
   } ],
   "property" : [ {
-    "id" : "2",
-    "type" : "owl:objectProperty"
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "11",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "14",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "18",
+    "id" : "16",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "21",
+    "id" : "19",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "30",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "32",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "34",
-    "type" : "owl:datatypeProperty"
+    "id" : "42",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "44",
+    "id" : "45",
     "type" : "owl:objectProperty"
   }, {
     "id" : "47",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "49",
+    "id" : "48",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "52",
@@ -775,54 +745,57 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "54",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "55",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "56",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "57",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "60",
-    "type" : "rdfs:SubClassOf"
+    "id" : "59",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "62",
-    "type" : "rdfs:SubClassOf"
+    "id" : "61",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "63",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "64",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
+    "id" : "67",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "68",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "69",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "72",
-    "type" : "rdfs:SubClassOf"
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "73",
+    "id" : "76",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "74",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "79",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "80",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "82",
+    "id" : "81",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "83",
     "type" : "owl:objectProperty"
   }, {
     "id" : "84",
@@ -831,8 +804,11 @@
     "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
     "id" : "87",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "88",
     "type" : "owl:datatypeProperty"
@@ -841,7 +817,7 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "90",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "91",
     "type" : "owl:datatypeProperty"
@@ -849,23 +825,23 @@
     "id" : "92",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "93",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "94",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "95",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "96",
+    "id" : "97",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "98",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "101",
+    "id" : "100",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "102",
     "type" : "owl:datatypeProperty"
@@ -880,655 +856,612 @@
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "106",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "107",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "108",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "109",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "110",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "111",
     "type" : "owl:datatypeProperty"
   } ],
   "propertyAttribute" : [ {
-    "iri" : "http://nubbekg.aksw.org/ontology#isLocatedIn",
-    "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "4",
-    "label" : {
-      "IRI-based" : "isLocatedIn",
-      "en" : "is located in"
-    },
-    "domain" : "3",
-    "comment" : {
-      "en" : "An isolation-site is located in a distinct city and state."
-    },
-    "attributes" : [ "object" ],
-    "id" : "2"
-  }, {
     "iri" : "http://nubbekg.aksw.org/ontology#MIC",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "13",
+    "range" : "10",
     "label" : {
       "IRI-based" : "MIC",
       "en" : "MIC"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The minimum inhibitory concentration is the lowest concentration of a chemical, usually a drug, which prevents visible growth of a bacterium or bacteria."
     },
     "attributes" : [ "datatype" ],
-    "id" : "11"
+    "id" : "8"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#wasDiscoveredAt",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "3",
+    "range" : "13",
     "label" : {
       "IRI-based" : "wasDiscoveredAt",
       "en" : "was discovered at"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A compound was discovered in a distinct isolation site."
     },
     "attributes" : [ "object" ],
-    "id" : "14"
+    "id" : "11"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#IC50",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "19",
+    "range" : "17",
     "label" : {
       "IRI-based" : "IC50",
       "en" : "IC50"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 50%."
     },
     "attributes" : [ "datatype" ],
-    "id" : "18"
+    "id" : "16"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationPages",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "23",
+    "range" : "21",
     "label" : {
       "IRI-based" : "publicationPages",
       "en" : "Publication page numbers"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The page numbers of the mediium the publication was published."
     },
     "attributes" : [ "datatype" ],
-    "id" : "21"
+    "id" : "19"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#wasIsolatedFrom",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "31",
+    "range" : "29",
     "label" : {
       "IRI-based" : "wasIsolatedFrom",
       "en" : "was isolated from"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A compound was isolated from a specific host."
     },
     "attributes" : [ "object" ],
-    "id" : "30"
+    "id" : "28"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationCitationExtra",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "29",
+    "range" : "27",
     "label" : {
       "IRI-based" : "publicationCitationExtra",
       "en" : "Publications citation extra information"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "Extra informations on citations of the publication."
     },
     "attributes" : [ "datatype" ],
-    "id" : "32"
+    "id" : "30"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#hBondDonorCount",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "35",
+    "range" : "33",
     "label" : {
       "IRI-based" : "hBondDonorCount",
       "en" : "hydrogen bond donor count"
     },
-    "domain" : "8",
+    "domain" : "5",
     "comment" : {
       "en" : "Donor count is the sum of the atoms in the molecule which have H donor property."
     },
     "attributes" : [ "datatype" ],
-    "id" : "34"
+    "id" : "32"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#partOfSubclass",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "45",
+    "range" : "43",
     "label" : {
       "IRI-based" : "partOfSubclass",
       "en" : "part of subclass"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A compound is part of a metabolic subclass."
     },
     "attributes" : [ "object" ],
-    "id" : "44"
+    "id" : "42"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#isIdentifiedBy",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "48",
+    "range" : "46",
     "label" : {
       "IRI-based" : "isIdentifiedBy",
       "en" : "is identified by"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A chemical compound is identified by it's unique identifiers."
     },
     "attributes" : [ "object" ],
-    "id" : "47"
+    "id" : "45"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationLocal",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "25",
+    "range" : "18",
     "label" : {
       "IRI-based" : "publicationLocal",
       "en" : "Publications local publishments"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The local publication medium in which the publication appeared."
     },
     "attributes" : [ "datatype" ],
-    "id" : "49"
+    "id" : "47"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationProcess",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "16",
+    "range" : "15",
     "label" : {
       "IRI-based" : "publicationProcess",
       "en" : "Publications process"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The Process TODO in which the publication appeared."
     },
     "attributes" : [ "datatype" ],
-    "id" : "50"
+    "id" : "48"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#wasSubjectedTo",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "12",
+    "range" : "9",
     "label" : {
       "IRI-based" : "wasSubjectedTo",
       "en" : "was subjected to"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A chemical compound was subjected to bioactivity analysis."
     },
     "attributes" : [ "object" ],
-    "id" : "52"
+    "id" : "50"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationEvent",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "24",
+    "range" : "26",
     "label" : {
       "IRI-based" : "publicationEvent",
       "en" : "Publications events"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "Any event where the publication has been a topic."
     },
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "51"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#revealed",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "51",
+    "range" : "49",
     "label" : {
       "IRI-based" : "revealed",
       "en" : "revealed"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "Bioactivity analysis revealed a specific bioactivity behaviour."
     },
     "attributes" : [ "object" ],
-    "id" : "54"
+    "id" : "52"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationPeriodic",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "17",
+    "range" : "23",
     "label" : {
       "IRI-based" : "publicationPeriodic",
       "en" : "Publications periodic magazine"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The periodic magazine in which the publication appeared."
     },
     "attributes" : [ "datatype" ],
-    "id" : "55"
+    "id" : "53"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#inchi",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "42",
+    "range" : "40",
     "label" : {
       "IRI-based" : "inchi",
       "en" : "inchi"
     },
-    "domain" : "48",
+    "domain" : "46",
     "comment" : {
       "en" : "International Chemical Identifier."
     },
     "attributes" : [ "datatype" ],
-    "id" : "56"
+    "id" : "54"
   }, {
-    "range" : "59",
+    "range" : "13",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "55"
+  }, {
+    "range" : "13",
     "domain" : "58",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "57"
-  }, {
-    "range" : "59",
-    "domain" : "61",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "60"
-  }, {
-    "range" : "6",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "62"
-  }, {
-    "range" : "6",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#hBondAcceptorCount",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "65",
+    "range" : "60",
     "label" : {
       "IRI-based" : "hBondAcceptorCount",
       "en" : "hydrogen bond acceptor count"
     },
-    "domain" : "8",
+    "domain" : "5",
     "comment" : {
       "en" : "Acceptor count is the sum of the acceptor atoms. An acceptor atom always has a lone electron pair/lone electron pairs that is capable of establishing a H bond."
     },
     "attributes" : [ "datatype" ],
-    "id" : "64"
+    "id" : "59"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationYear",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "67",
+    "range" : "62",
     "label" : {
       "IRI-based" : "publicationYear",
       "en" : "Publication year"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The year of the publication was published."
     },
     "attributes" : [ "datatype" ],
-    "id" : "66"
+    "id" : "61"
   }, {
-    "range" : "6",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "68"
+    "range" : "3",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "3",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "64"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#monoisotopicMass",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "33",
+    "range" : "31",
     "label" : {
       "IRI-based" : "monoisotopicMass",
       "en" : "Monoisotopic mass"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "Monoisotopic mass of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "70"
+    "id" : "65"
   }, {
-    "range" : "6",
-    "domain" : "7",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "72"
+    "range" : "3",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "67"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#wasMentionedIn",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "22",
+    "range" : "20",
     "label" : {
       "IRI-based" : "wasMentionedIn",
       "en" : "was mentioned in"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A chemical compound was mentioned in a publication."
     },
     "attributes" : [ "object" ],
-    "id" : "73"
+    "id" : "68"
+  }, {
+    "range" : "3",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#LD50",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "75",
+    "range" : "71",
     "label" : {
       "IRI-based" : "LD50",
       "en" : "LD50"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The amount of a material, given all at once, which causes the death of 50% of a group of test animals."
     },
     "attributes" : [ "datatype" ],
-    "id" : "74"
+    "id" : "70"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#molecularVolume",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "40",
+    "range" : "38",
     "label" : {
       "IRI-based" : "molecularVolume",
       "en" : "Molecular volume"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "Molecular volume of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "79"
+    "id" : "75"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#EC50",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "81",
+    "range" : "77",
     "label" : {
       "IRI-based" : "EC50",
       "en" : "EC50"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The effective concentration of a drug that gives half-maximal response."
     },
     "attributes" : [ "datatype" ],
-    "id" : "80"
+    "id" : "76"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#partOfSpecies",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "83",
+    "range" : "79",
     "label" : {
       "IRI-based" : "partOfSpecies",
       "en" : "part of species"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A compound is part of a species of life."
     },
     "attributes" : [ "object" ],
-    "id" : "82"
+    "id" : "78"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#nrotb",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "37",
+    "range" : "35",
     "label" : {
       "IRI-based" : "nrotb",
       "en" : "nRotB"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "Number of rotatable bonds of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "84"
+    "id" : "80"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#IC12",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "86",
+    "range" : "82",
     "label" : {
       "IRI-based" : "IC12",
       "en" : "IC12"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The concentration of a drug or inhibitor needed to inhibit a biological process or response by 12,5%."
     },
     "attributes" : [ "datatype" ],
-    "id" : "85"
+    "id" : "81"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#hasDescriptors",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "6",
+    "range" : "3",
     "label" : {
       "IRI-based" : "hasDescriptors",
       "en" : "has descriptors"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A chemical compound has various descriptors."
     },
     "attributes" : [ "object" ],
-    "id" : "87"
+    "id" : "83"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationVolume",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "76",
+    "range" : "72",
     "label" : {
       "IRI-based" : "publicationVolume",
       "en" : "Publication volume"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The volume in which the publication was published."
     },
     "attributes" : [ "datatype" ],
-    "id" : "88"
+    "id" : "84"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#logpCoefficient",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "38",
+    "range" : "36",
     "label" : {
       "IRI-based" : "logpCoefficient",
       "en" : "logP Coefficient"
     },
-    "domain" : "10",
+    "domain" : "7",
     "comment" : {
       "en" : "Prediction of the logP Coefficient."
     },
     "attributes" : [ "datatype" ],
-    "id" : "89"
+    "id" : "85"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "39",
+    "range" : "37",
     "label" : {
       "IRI-based" : "lipinskiRuleOf5Failures",
       "en" : "Lipinski rule of 5 failures"
     },
-    "domain" : "10",
+    "domain" : "7",
     "comment" : {
       "en" : "Number of failures in the Lipinski rule of five. The Rule of Five is a rule of thumb for the oral bioavailability of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "90"
+    "id" : "86"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#tpsa",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "69",
+    "range" : "66",
     "label" : {
       "IRI-based" : "tpsa",
       "en" : "TPSA"
     },
-    "domain" : "9",
+    "domain" : "6",
     "comment" : {
       "en" : "Calculation of topological polar surface area based on fragment contributions (TPSA) (Ertl, P. et. al.. J.Med. Chem.. 2000. 43)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "91"
+    "id" : "87"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#nubbeId",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "27",
+    "range" : "25",
     "label" : {
       "IRI-based" : "nubbeId",
       "en" : "NUBBE ID"
     },
-    "domain" : "48",
+    "domain" : "46",
     "comment" : {
       "en" : "The numeric identifier a chemical compound has in the NubbeDB database."
     },
     "attributes" : [ "datatype" ],
-    "id" : "92"
+    "id" : "88"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#iupacName",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "43",
+    "range" : "41",
     "label" : {
       "IRI-based" : "iupacName",
       "en" : "IUPAC Name"
     },
-    "domain" : "48",
+    "domain" : "46",
     "comment" : {
       "en" : "Name within the International Union of Pure and Applied Chemistry."
     },
     "attributes" : [ "datatype" ],
-    "id" : "93"
+    "id" : "89"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#wasPublishedAs",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "5",
+    "range" : "2",
     "label" : {
       "IRI-based" : "wasPublishedAs",
       "en" : "was published as"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "A publication was published as a certain medium type."
     },
     "attributes" : [ "object" ],
-    "id" : "94"
+    "id" : "90"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationTitle",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "77",
+    "range" : "1",
     "label" : {
       "IRI-based" : "publicationTitle",
       "en" : "Publication title"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The title of a compounds publication."
     },
     "attributes" : [ "datatype" ],
-    "id" : "95"
+    "id" : "91"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#molecularWeight",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "36",
+    "range" : "34",
     "label" : {
       "IRI-based" : "molecularWeight",
       "en" : "Molecular weight"
     },
-    "domain" : "7",
+    "domain" : "4",
     "comment" : {
       "en" : "Molecular weight of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "96"
+    "id" : "92"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#ED50",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "100",
+    "range" : "96",
     "label" : {
       "IRI-based" : "ED50",
       "en" : "ED50"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The effective dose of a drug that gives half-maximal response."
     },
     "attributes" : [ "datatype" ],
-    "id" : "99"
+    "id" : "95"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#smiles",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "78",
+    "range" : "74",
     "label" : {
       "IRI-based" : "smiles",
       "en" : "SMILES"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "Simplified Molecular Input Line Entry Specification."
     },
     "attributes" : [ "datatype" ],
-    "id" : "101"
+    "id" : "97"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#molecularFormula",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "41",
+    "range" : "39",
     "label" : {
       "IRI-based" : "molecularFormula",
       "en" : "Molecular formula"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "Molecular formula of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "102"
-  }, {
-    "iri" : "http://nubbekg.aksw.org/ontology#publicationDoi",
-    "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "28",
-    "label" : {
-      "IRI-based" : "publicationDoi",
-      "en" : "Publication DOI"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "The digital object identifier of a compounds publication."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "103"
+    "id" : "98"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationId",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "20",
+    "range" : "22",
     "label" : {
       "IRI-based" : "publicationId",
       "en" : "Publication ID"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The publication Id of a compounds publication."
     },
     "attributes" : [ "datatype" ],
-    "id" : "104"
+    "id" : "99"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#MFC",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "97",
+    "range" : "93",
     "label" : {
       "IRI-based" : "MFC",
       "en" : "MFC"
     },
-    "domain" : "12",
+    "domain" : "9",
     "comment" : {
       "en" : "The minimum fungicidal concentrations was defined as the lowest concentration of drug showing no visible growth."
     },
     "attributes" : [ "datatype" ],
-    "id" : "105"
+    "id" : "100"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#partOfClass",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
@@ -1537,81 +1470,81 @@
       "IRI-based" : "partOfClass",
       "en" : "part of class"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "A compound is part of a metabolic class."
     },
     "attributes" : [ "object" ],
-    "id" : "106"
+    "id" : "101"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationAgency",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "26",
+    "range" : "24",
     "label" : {
       "IRI-based" : "publicationAgency",
       "en" : "Publication agency"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The agency which published the publication."
     },
     "attributes" : [ "datatype" ],
-    "id" : "107"
-  }, {
-    "iri" : "http://nubbekg.aksw.org/ontology#subpubId",
-    "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "71",
-    "label" : {
-      "IRI-based" : "subpubId",
-      "en" : "Sub-Pub ID"
-    },
-    "domain" : "22",
-    "comment" : {
-      "en" : "The sub-publication Id of a compounds publication."
-    },
-    "attributes" : [ "datatype" ],
-    "id" : "108"
+    "id" : "102"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#inchikey",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "46",
+    "range" : "44",
     "label" : {
       "IRI-based" : "inchikey",
       "en" : "inchikey"
     },
-    "domain" : "48",
+    "domain" : "46",
     "comment" : {
       "en" : "International Chemical Identifier key."
     },
     "attributes" : [ "datatype" ],
-    "id" : "109"
+    "id" : "103"
+  }, {
+    "iri" : "http://nubbekg.aksw.org/ontology#subpubId",
+    "baseIri" : "http://nubbekg.aksw.org/ontology",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "subpubId",
+      "en" : "Sub-Pub ID"
+    },
+    "domain" : "20",
+    "comment" : {
+      "en" : "The sub-publication Id of a compounds publication."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "104"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#publicationPublisher",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "1",
+    "range" : "14",
     "label" : {
       "IRI-based" : "publicationPublisher",
       "en" : "Publications publisher"
     },
-    "domain" : "22",
+    "domain" : "20",
     "comment" : {
       "en" : "The publisher of a publication."
     },
     "attributes" : [ "datatype" ],
-    "id" : "110"
+    "id" : "105"
   }, {
     "iri" : "http://nubbekg.aksw.org/ontology#commonName",
     "baseIri" : "http://nubbekg.aksw.org/ontology",
-    "range" : "98",
+    "range" : "94",
     "label" : {
       "IRI-based" : "commonName",
       "en" : "Common name"
     },
-    "domain" : "15",
+    "domain" : "12",
     "comment" : {
       "en" : "Given common name of a chemical compound."
     },
     "attributes" : [ "datatype" ],
-    "id" : "111"
+    "id" : "106"
   } ]
 }

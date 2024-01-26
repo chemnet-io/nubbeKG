@@ -3,23 +3,9 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <title>NuBBE[KG] | Ontology</title>
-    <!-- SCHEMA.ORG METADATA -->
-    <script type="application/ld+json">{
-        "@context": "https://schema.org",
-        "@type": "TechArticle",
-        "url": "http://nubbe-kg.aksw.org/ontology#",
-        "image": "http://vowl.visualdataweb.org/webvowl/#iri=http://nubbe-kg.aksw.org/ontology#",
-        "name": "nubbe: The data model for nubbeDB Knowledge Graph",
-        "headline": "The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.",
-        "datePublished": "Fri Mar 10 14:20:35 CET 2023",
-        "version": "SNAPSHOT",
-        "author": [
-            {
-                "@type": "Person",
-                "name": "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"
-            }
-        ]
-    }</script>
+
+   <!-- SCHEMA.ORG METADATA -->
+   <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://nubbekg.aksw.org/ontology#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://nubbekg.aksw.org/ontology#","name":"nubbe: The data model for nubbeDB Knowledge Graph", "headline":"The nubbe Ontology contains the data model of nubbeDB Knowledge Graph. It facilitates the knowledge graph data manipulation and consumption through concepts such as natural products, molecules, and their respective properties.", "datePublished":"Fri Jan 26 14:14:02 CET 2024", "version":"SNAPSHOT", "author":[{"@type":"Person","name":"Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy"}]}</script>
 
     <script src="resources/jquery.js"></script>
     <script src="resources/marked.min.js"></script>
@@ -196,9 +182,6 @@ This ontology has the following classes and properties.</span>
       <a href="#IsolationType" title="http://nubbekg.aksw.org/ontology#IsolationType">Isolation type</a>
    </li>
    <li>
-      <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
-   </li>
-   <li>
       <a href="#MetabolicClass" title="http://nubbekg.aksw.org/ontology#MetabolicClass">Metabolic class</a>
    </li>
    <li>
@@ -235,9 +218,6 @@ This ontology has the following classes and properties.</span>
    </li>
    <li>
       <a href="#isIdentifiedBy" title="http://nubbekg.aksw.org/ontology#isIdentifiedBy">is identified by</a>
-   </li>
-   <li>
-      <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
    </li>
    <li>
       <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
@@ -339,9 +319,6 @@ This ontology has the following classes and properties.</span>
          title="http://nubbekg.aksw.org/ontology#publicationAgency">Publication agency</a>
    </li>
    <li>
-      <a href="#publicationDoi" title="http://nubbekg.aksw.org/ontology#publicationDoi">Publication DOI</a>
-   </li>
-   <li>
       <a href="#publicationId" title="http://nubbekg.aksw.org/ontology#publicationId">Publication ID</a>
    </li>
    <li>
@@ -441,9 +418,6 @@ This section provides details for each class and property defined by nubbe: The 
          <a href="#IsolationType" title="http://nubbekg.aksw.org/ontology#IsolationType">Isolation type</a>
       </li>
       <li>
-         <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
-      </li>
-      <li>
          <a href="#MetabolicClass" title="http://nubbekg.aksw.org/ontology#MetabolicClass">Metabolic class</a>
       </li>
       <li>
@@ -536,13 +510,8 @@ This section provides details for each class and property defined by nubbe: The 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
+            <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -667,10 +636,11 @@ This section provides details for each class and property defined by nubbe: The 
          <span class="markdown">Information on where and from what entity the chemical compound has been isolated.</span>
       </div>
       <dl class="description">
-         <dt>is in domain of</dt>
+         <dt>has sub-classes</dt>
          <dd>
-            <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
-            <sup class="type-op" title="object property">op</sup>
+            <a href="#City" title="http://nubbekg.aksw.org/ontology#City">City</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#State" title="http://nubbekg.aksw.org/ontology#State">State</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -694,25 +664,6 @@ This section provides details for each class and property defined by nubbe: The 
          <dd>
             <a href="#wasIsolatedFrom" title="http://nubbekg.aksw.org/ontology#wasIsolatedFrom">was isolated from</a>
             <sup class="type-op" title="object property">op</sup>
-         </dd>
-      </dl>
-   </div>
-   <div class="entity" id="Location">
-      <h3>Location<sup class="type-c" title="class">c</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#Location</p>
-      <div class="comment">
-         <span class="markdown">Parent location class, includes city and statecode.</span>
-      </div>
-      <dl class="description">
-         <dt>has sub-classes</dt>
-         <dd>
-            <a href="#City" title="http://nubbekg.aksw.org/ontology#City">City</a>
-            <sup class="type-c" title="class">c</sup>, <a href="#State" title="http://nubbekg.aksw.org/ontology#State">State</a>
-            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -792,8 +743,7 @@ This section provides details for each class and property defined by nubbe: The 
       <dl class="description">
          <dt>is in domain of</dt>
          <dd>
-            <a href="#publicationDoi" title="http://nubbekg.aksw.org/ontology#publicationDoi">Publication DOI</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationId" title="http://nubbekg.aksw.org/ontology#publicationId">Publication ID</a>
+            <a href="#publicationId" title="http://nubbekg.aksw.org/ontology#publicationId">Publication ID</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationAgency"
                title="http://nubbekg.aksw.org/ontology#publicationAgency">Publication agency</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#publicationPages"
@@ -875,13 +825,8 @@ This section provides details for each class and property defined by nubbe: The 
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
-            <a href="#Location" title="http://nubbekg.aksw.org/ontology#Location">Location</a>
+            <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
             <sup class="type-c" title="class">c</sup>
-         </dd>
-         <dt>is in range of</dt>
-         <dd>
-            <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
-            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -942,9 +887,6 @@ This section provides details for each class and property defined by nubbe: The 
       </li>
       <li>
          <a href="#isIdentifiedBy" title="http://nubbekg.aksw.org/ontology#isIdentifiedBy">is identified by</a>
-      </li>
-      <li>
-         <a href="#isLocatedIn" title="http://nubbekg.aksw.org/ontology#isLocatedIn">is located in</a>
       </li>
       <li>
          <a href="#partOfClass" title="http://nubbekg.aksw.org/ontology#partOfClass">part of class</a>
@@ -1020,35 +962,6 @@ This section provides details for each class and property defined by nubbe: The 
             <dd>
                <a href="#UniqueIdentifiers"
                   title="http://nubbekg.aksw.org/ontology#UniqueIdentifiers">Unique identifiers</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="isLocatedIn">
-      <h3>is located in<sup class="type-op" title="object property">op</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#isLocatedIn</p>
-      <div class="comment">
-         <span class="markdown">An isolation-site is located in a distinct city and state.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#IsolationSite" title="http://nubbekg.aksw.org/ontology#IsolationSite">Isolation site</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="#City" title="http://nubbekg.aksw.org/ontology#City">City</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dd>
-               <a href="#State" title="http://nubbekg.aksw.org/ontology#State">State</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1355,9 +1268,6 @@ This section provides details for each class and property defined by nubbe: The 
       <li>
          <a href="#publicationAgency"
             title="http://nubbekg.aksw.org/ontology#publicationAgency">Publication agency</a>
-      </li>
-      <li>
-         <a href="#publicationDoi" title="http://nubbekg.aksw.org/ontology#publicationDoi">Publication DOI</a>
       </li>
       <li>
          <a href="#publicationId" title="http://nubbekg.aksw.org/ontology#publicationId">Publication ID</a>
@@ -1985,32 +1895,6 @@ This section provides details for each class and property defined by nubbe: The 
          <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#publicationAgency</p>
       <div class="comment">
          <span class="markdown">The agency which published the publication.</span>
-      </div>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#Publication" title="http://nubbekg.aksw.org/ontology#Publication">Publication</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <a href="http://www.w3.org/2001/XMLSchema#string"
-                  target="_blank"
-                  title="http://www.w3.org/2001/XMLSchema#string">string</a>
-            </dd>
-         </dl>
-      </div>
-   </div>
-   <div class="entity" id="publicationDoi">
-      <h3>Publication DOI<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://nubbekg.aksw.org/ontology#publicationDoi</p>
-      <div class="comment">
-         <span class="markdown">The digital object identifier of a compounds publication.</span>
       </div>
       <div class="description">
          <dl>

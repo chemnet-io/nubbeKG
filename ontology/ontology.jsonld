@@ -67,7 +67,7 @@
     "@value" : "City"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Location"
+    "@id" : "http://nubbekg.aksw.org/ontology#IsolationSite"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#Compound",
@@ -227,17 +227,6 @@
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
 }, {
-  "@id" : "http://nubbekg.aksw.org/ontology#Location",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "Parent location class, includes city and statecode."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Location"
-  } ]
-}, {
   "@id" : "http://nubbekg.aksw.org/ontology#MFC",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -352,7 +341,7 @@
     "@value" : "State"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Location"
+    "@id" : "http://nubbekg.aksw.org/ontology#IsolationSite"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#TopologicalDescriptors",
@@ -497,25 +486,6 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://nubbekg.aksw.org/ontology#UniqueIdentifiers"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#isLocatedIn",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "An isolation-site is located in a distinct city and state."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#IsolationSite"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "is located in"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#City"
-  }, {
-    "@id" : "http://nubbekg.aksw.org/ontology#State"
   } ]
 }, {
   "@id" : "http://nubbekg.aksw.org/ontology#iupacName",
@@ -751,23 +721,6 @@
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Publications citation extra information"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://www.w3.org/2001/XMLSchema#string"
-  } ]
-}, {
-  "@id" : "http://nubbekg.aksw.org/ontology#publicationDoi",
-  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@language" : "en",
-    "@value" : "The digital object identifier of a compounds publication."
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://nubbekg.aksw.org/ontology#Publication"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@language" : "en",
-    "@value" : "Publication DOI"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#string"
