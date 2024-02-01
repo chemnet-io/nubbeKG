@@ -67,21 +67,23 @@
         queryd = "PREFIX owl:  <http://www.w3.org/2002/07/owl#>" ;
         querye = "PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>" ;
 
-        queryf = "SELECT DISTINCT ?formula ?name ?smiles ?species ?city ?exinfo WHERE {" ;
+        queryinfo = "#Get the Name, Smiles, molecular formula, species and bioactivity of the first 100 compounds"
+
+        queryf = "SELECT DISTINCT ?formula ?name ?smiles ?labelSpecies ?labelBioactivity WHERE {" ;
         queryg = "?compound a nubbe:Compound ." ;
         queryh = "?compound nubbe:molecularFormula ?formula ." ;
         queryi = "?compound nubbe:commonName ?name ." ;
         queryj = "?compound nubbe:smiles ?smiles ." ;
 
-        queryk = "?compound nubbe:hasIsolationData ?isolation ." ;
-        queryl = "?isolation nubbe:obtentionMethod ?exinfo ." ;
-        querym = "?isolation nubbe:city ?city ." ;
+        queryk = "?compound nubbe:wasSubjectedTo ?bio ." ;
+        queryl = "?bioanalysis nubbe:revealed ?bioactivity ." ;
+        querym = "?bioactivity rdfs:label ?labelBioactivity ." ;
 
-        queryn = "?compound nubbe:isClassifiedBy ?taxa .";
-        queryo = "?taxa nubbe:species ?species .}" ;
+        queryn = "?compound nubbe:partOfSpecies ?species .";
+        queryo = "?species rdfs:label ?labelSpecies .}" ;
 
-        queryp = "LIMIT 10" ;
-        query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryf+"\n\n"+queryg+"\n"+queryh+"\n"+queryi+"\n"+queryj+"\n\n"+queryk+"\n"+queryl+"\n"+querym+"\n\n"+queryn+"\n"+queryo+"\n\n"+queryp ;
+        queryp = "LIMIT 100" ;
+        query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryinfo+"\n\n"+queryf+"\n\n"+queryg+"\n"+queryh+"\n"+queryi+"\n"+queryj+"\n\n"+queryk+"\n"+queryl+"\n"+querym+"\n\n"+queryn+"\n"+queryo+"\n\n"+queryp ;
 
         yasgui.getTab().yasqe.setValue(query);
 

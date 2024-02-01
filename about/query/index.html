@@ -452,21 +452,21 @@ sparql.setQuery(
     PREFIX owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
     PREFIX xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-    SELECT DISTINCT ?formula ?name ?smiles ?species ?city ?exinfo WHERE {
+    SELECT DISTINCT ?formula ?name ?smiles ?labelSpecies ?labelBioactivity WHERE {
 
     ?compound a nubbe:Compound .
     ?compound nubbe:molecularFormula ?formula .
     ?compound nubbe:commonName ?name .
     ?compound nubbe:smiles ?smiles .
 
-    ?compound nubbe:hasIsolationData ?isolation .
-    ?isolation nubbe:obtentionMethod ?exinfo .
-    ?isolation nubbe:city ?city .
+    ?compound nubbe:wasSubjectedTo ?bio .
+    ?bioanalysis nubbe:revealed ?bioactivity .
+    ?bioactivity rdfs:label ?labelBioactivity .
 
-    ?compound nubbe:isClassifiedBy ?taxa .
-    ?taxa nubbe:species ?species .}
+    ?compound nubbe:partOfSpecies ?species .
+    ?species rdfs:label ?labelSpecies .}
 
-    LIMIT 10
+    LIMIT 100
     &quot;&quot;&quot;
 )
 
