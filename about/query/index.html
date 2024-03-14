@@ -411,8 +411,7 @@ SELECT DISTINCT ?formula ?name ?smiles ?weight WHERE {
 ?compound nubbe:smiles ?smiles .
 
 ?compound nubbe:hasDescriptors ?descr .
-?molecdescr rdfs:subClassOf ?descr .
-?molecdescr nubbe:molecularWeight ?weight .}
+?descr nubbe:molecularWeight ?weight .}
 
 LIMIT 100
 </code></pre>
@@ -429,8 +428,7 @@ SELECT DISTINCT ?formula ?name ?smiles ?weight WHERE {
 ?compound nubbe:molecularFormula ?formula .
 
 ?compound nubbe:hasDescriptors ?descr .
-?molecdescr rdfs:subClassOf ?descr .
-?molecdescr nubbe:molecularWeight ?weight .
+?descr nubbe:molecularWeight ?weight .
 
 FILTER (?weight &gt; 320.00 &amp;&amp; ?weight &lt; 340.00) .
 }
