@@ -60,29 +60,25 @@
             }
         });
 
-        querya = "PREFIX nubbe:  <http://nubbekg.aksw.org/ontology#>" ;
-        queryb = "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" ;
-        queryc = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" ;
-        queryd = "PREFIX owl:  <http://www.w3.org/2002/07/owl#>" ;
-        querye = "PREFIX xsd:  <http://www.w3.org/2001/XMLSchema#>" ;
+        qa = "PREFIX nubbe:  <http://nubbekg.aksw.org/ontology#>" ;
+        qb = "PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>" ;
+        qc = "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>" ;
 
-        queryinfo = "#Get the Name, Smiles, molecular formula, species and bioactivity of the first 100 compounds"
+        qinfo = "#Get the Name, Smiles, molecular formula, species and bioactivity of the first 100 compounds" ;
 
-        queryf = "SELECT DISTINCT ?formula ?name ?smiles ?labelSpecies ?labelBioactivity WHERE {" ;
-        queryg = "?compound a nubbe:Compound ." ;
-        queryh = "?compound nubbe:molecularFormula ?formula ." ;
-        queryi = "?compound nubbe:commonName ?name ." ;
-        queryj = "?compound nubbe:smiles ?smiles ." ;
+        qd = "SELECT DISTINCT  ?formula ?name ?smiles ?species ?bioactivity" ;
+        qe = "WHERE" ;
+        qf = "{ ?compound a             					    nubbe:Compound ;" ;
+        qg = "                nubbe:molecularFormula  		    ?formula ;" ;
+        qh = "                nubbe:commonName      		    ?name ;" ;
+        qi = "                nubbe:smiles         		        ?smiles ;" ;
+        qj = "                nubbe:wasSubjectedTo  		    ?bioanalysis ." ;
+        qk = "  ?compound 	  nubbe:partOfSpecies/rdfs:label    ?species ." ;
+        ql = "  ?bioanalysis  nubbe:revealed/rdfs:label 		?bioactivity" ;
+        qm = "}" ;
+        qn = "LIMIT   100" ;
 
-        queryk = "?compound nubbe:wasSubjectedTo ?bioanalysis ." ;
-        queryl = "?bioanalysis nubbe:revealed ?bioactivity ." ;
-        querym = "?bioactivity rdfs:label ?labelBioactivity ." ;
-
-        queryn = "?compound nubbe:partOfSpecies ?species .";
-        queryo = "?species rdfs:label ?labelSpecies .}" ;
-
-        queryp = "LIMIT 100" ;
-        query = querya+"\n"+queryb+"\n"+queryc+"\n"+queryd+"\n"+querye+"\n\n"+queryinfo+"\n\n"+queryf+"\n\n"+queryg+"\n"+queryh+"\n"+queryi+"\n"+queryj+"\n\n"+queryk+"\n"+queryl+"\n"+querym+"\n\n"+queryn+"\n"+queryo+"\n\n"+queryp ;
+        query = qa+"\n"+qb+"\n"+qc+"\n\n"+qinfo+"\n\n"+qd+"\n"+qe+"\n"+qf+"\n"+qg+"\n"+qh+"\n"+qi+"\n"+qj+"\n"+qk+"\n"+ql+"\n"+qm+"\n"+qn ;
 
         yasgui.getTab().yasqe.setValue(query);
 
