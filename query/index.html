@@ -68,13 +68,13 @@
 
         qd = "SELECT DISTINCT  ?formula ?name ?smiles ?species ?bioactivity" ;
         qe = "WHERE" ;
-        qf = "{ ?compound a             					    nubbe:Compound ;" ;
-        qg = "                nubbe:molecularFormula  		    ?formula ;" ;
-        qh = "                nubbe:commonName      		    ?name ;" ;
-        qi = "                nubbe:smiles         		        ?smiles ;" ;
-        qj = "                nubbe:wasSubjectedTo  		    ?bioanalysis ." ;
-        qk = "  ?compound 	  nubbe:partOfSpecies/rdfs:label    ?species ." ;
-        ql = "  ?bioanalysis  nubbe:revealed/rdfs:label 		?bioactivity" ;
+        qf = "{ ?compound a             					nubbe:Compound ;" ;
+        qg = "                nubbe:molecularFormula  		?formula ;" ;
+        qh = "                nubbe:commonName      			?name ;" ;
+        qi = "                nubbe:smiles         		    ?smiles ;" ;
+        qj = "                nubbe:wasSubjectedTo  			?bioanalysis ." ;
+        qk = "    ?compound 	 nubbe:partOfSpecies/rdfs:label ?species ." ;
+        ql = "    ?bioanalysis nubbe:revealed/rdfs:label 		?bioactivity" ;
         qm = "}" ;
         qn = "LIMIT   100" ;
 
