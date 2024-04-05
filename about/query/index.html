@@ -400,18 +400,15 @@ The backend is provided by <a href="https://virtuoso.openlinksw.com/">OpenLink V
 <pre><code>PREFIX nubbe:  &lt;http://nubbekg.aksw.org/ontology#&gt;
 PREFIX rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
-PREFIX xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
 SELECT DISTINCT ?formula ?name ?smiles ?weight WHERE {
 
-?compound a nubbe:Compound .
-?compound nubbe:molecularFormula ?formula .
-?compound nubbe:commonName ?name .
-?compound nubbe:smiles ?smiles .
-
-?compound nubbe:hasDescriptors ?descr .
-?descr nubbe:molecularWeight ?weight .}
+  ?compound a                       nubbe:Compound ;
+            nubbe:molecularFormula  ?formula ;
+            nubbe:commonName        ?name ;
+            nubbe:smiles            ?smiles ;
+            nubbe:hasDescriptors    ?descr .
+  ?descr    nubbe:molecularWeight   ?weight }
 
 LIMIT 100
 </code></pre>
@@ -419,18 +416,16 @@ LIMIT 100
 <pre><code>PREFIX nubbe:  &lt;http://nubbekg.aksw.org/ontology#&gt;
 PREFIX rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
 PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
 PREFIX xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-SELECT DISTINCT ?formula ?name ?smiles ?weight WHERE {
+SELECT DISTINCT ?formula ?weight WHERE {
 
-?compound a nubbe:Compound .
-?compound nubbe:molecularFormula ?formula .
+  ?compound a                       nubbe:Compound ;
+            nubbe:molecularFormula  ?formula ;
+            nubbe:hasDescriptors    ?descr .
+  ?descr    nubbe:molecularWeight   ?weight .
 
-?compound nubbe:hasDescriptors ?descr .
-?descr nubbe:molecularWeight ?weight .
-
-FILTER (?weight &gt; 320.00 &amp;&amp; ?weight &lt; 340.00) .
+FILTER (?weight &gt; 320.00 &amp;&amp; ?weight &lt; 340.00)
 }
 LIMIT 100
 </code></pre>
@@ -447,24 +442,20 @@ sparql.setQuery(
     PREFIX nubbe:  &lt;http://nubbekg.aksw.org/ontology#&gt;
     PREFIX rdf:  &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
     PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-    PREFIX owl:  &lt;http://www.w3.org/2002/07/owl#&gt;
-    PREFIX xsd:  &lt;http://www.w3.org/2001/XMLSchema#&gt;
 
-    SELECT DISTINCT ?formula ?name ?smiles ?labelSpecies ?labelBioactivity WHERE {
+    #Get the Name, Smiles, molecular formula, species and bioactivity of the first 100 compounds
 
-    ?compound a nubbe:Compound .
-    ?compound nubbe:molecularFormula ?formula .
-    ?compound nubbe:commonName ?name .
-    ?compound nubbe:smiles ?smiles .
-
-    ?compound nubbe:wasSubjectedTo ?bioanalysis .
-    ?bioanalysis nubbe:revealed ?bioactivity .
-    ?bioactivity rdfs:label ?labelBioactivity .
-
-    ?compound nubbe:partOfSpecies ?species .
-    ?species rdfs:label ?labelSpecies .}
-
-    LIMIT 100
+    SELECT DISTINCT  ?formula ?name ?smiles ?species ?bioactivity
+    WHERE
+        { ?compound a             					nubbe:Compound ;
+                    nubbe:molecularFormula  		?formula ;
+                    nubbe:commonName      			?name ;
+                    nubbe:smiles         		    ?smiles ;
+                    nubbe:wasSubjectedTo  			?bioanalysis .
+        ?compound 	 nubbe:partOfSpecies/rdfs:label ?species .
+        ?bioanalysis nubbe:revealed/rdfs:label 		?bioactivity
+        }
+    LIMIT   100
     &quot;&quot;&quot;
 )
 
