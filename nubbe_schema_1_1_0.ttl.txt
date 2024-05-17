@@ -1,0 +1,100 @@
+@startuml
+title nubbe: The data model for nubbeDB Knowledge Graph
+"nubbe:Descriptors" <|-- "nubbe:ElectronicDescriptors"
+"nubbe:Descriptors" <|-- "nubbe:ConstitutionalDescriptors"
+"nubbe:Descriptors" <|-- "nubbe:TopologicalDescriptors"
+"nubbe:Descriptors" <|-- "nubbe:MolecularDescriptors"
+"nubbe:IsolationSite" <|-- "nubbe:City"
+"nubbe:IsolationSite" <|-- "nubbe:State"
+Class "nubbe:Compound" [[http://nubbekg.aksw.org/ontology#Compound]] {
+[[http://nubbekg.aksw.org/ontology#commonName nubbe:commonName]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#smiles nubbe:smiles]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#molecularFormula nubbe:molecularFormula]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+}
+Class "nubbe:Descriptors" [[http://nubbekg.aksw.org/ontology#Descriptors]] {
+}
+Class "nubbe:Publication" [[http://nubbekg.aksw.org/ontology#Publication]] {
+[[http://nubbekg.aksw.org/ontology#subpubId nubbe:subpubId]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+[[http://nubbekg.aksw.org/ontology#publicationId nubbe:publicationId]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+[[http://nubbekg.aksw.org/ontology#publicationTitle nubbe:publicationTitle]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationYear nubbe:publicationYear]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+[[http://nubbekg.aksw.org/ontology#publicationVolume nubbe:publicationVolume]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationPages nubbe:publicationPages]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationAgency nubbe:publicationAgency]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationPeriodic nubbe:publicationPeriodic]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationProcess nubbe:publicationProcess]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationLocal nubbe:publicationLocal]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationPublisher nubbe:publicationPublisher]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationEvent nubbe:publicationEvent]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#publicationCitationExtra nubbe:publicationCitationExtra]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+}
+Class "nubbe:BioactivityAnalysis" [[http://nubbekg.aksw.org/ontology#BioactivityAnalysis]] {
+[[http://nubbekg.aksw.org/ontology#IC50 nubbe:IC50]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#IC12 nubbe:IC12]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#LD50 nubbe:LD50]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#EC50 nubbe:EC50]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#MIC nubbe:MIC]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#MFC nubbe:MFC]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+[[http://nubbekg.aksw.org/ontology#ED50 nubbe:ED50]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
+}
+Class "nubbe:ElectronicDescriptors" [[http://nubbekg.aksw.org/ontology#ElectronicDescriptors]] {
+[[http://nubbekg.aksw.org/ontology#hBondAcceptorCount nubbe:hBondAcceptorCount]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+[[http://nubbekg.aksw.org/ontology#hBondDonorCount nubbe:hBondDonorCount]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+}
+Class "nubbe:ConstitutionalDescriptors" [[http://nubbekg.aksw.org/ontology#ConstitutionalDescriptors]] {
+[[http://nubbekg.aksw.org/ontology#logpCoefficient nubbe:logpCoefficient]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+[[http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures nubbe:lipinskiRuleOf5Failures]] : [[http://www.w3.org/2001/XMLSchema#int xsd:int]]
+}
+Class "nubbe:TopologicalDescriptors" [[http://nubbekg.aksw.org/ontology#TopologicalDescriptors]] {
+[[http://nubbekg.aksw.org/ontology#tpsa nubbe:tpsa]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+}
+Class "nubbe:MolecularDescriptors" [[http://nubbekg.aksw.org/ontology#MolecularDescriptors]] {
+[[http://nubbekg.aksw.org/ontology#molecularWeight nubbe:molecularWeight]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+[[http://nubbekg.aksw.org/ontology#monoisotopicMass nubbe:monoisotopicMass]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+[[http://nubbekg.aksw.org/ontology#molecularVolume nubbe:molecularVolume]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+[[http://nubbekg.aksw.org/ontology#nrotb nubbe:nrotb]] : [[http://www.w3.org/2001/XMLSchema#float xsd:float]]
+}
+Class "nubbe:UniqueIdentifiers" [[http://nubbekg.aksw.org/ontology#UniqueIdentifiers]] {
+[[http://nubbekg.aksw.org/ontology#nubbeId nubbe:nubbeId]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#iupacName nubbe:iupacName]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#inchi nubbe:inchi]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+[[http://nubbekg.aksw.org/ontology#inchikey nubbe:inchikey]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+}
+Class "nubbe:Species" [[http://nubbekg.aksw.org/ontology#Species]] {
+}
+Class "nubbe:IsolationSite" [[http://nubbekg.aksw.org/ontology#IsolationSite]] {
+}
+Class "nubbe:City" [[http://nubbekg.aksw.org/ontology#City]] {
+}
+Class "nubbe:State" [[http://nubbekg.aksw.org/ontology#State]] {
+}
+Class "nubbe:Bioactivity" [[http://nubbekg.aksw.org/ontology#Bioactivity]] {
+}
+Class "nubbe:PublicationType" [[http://nubbekg.aksw.org/ontology#PublicationType]] {
+}
+Class "nubbe:MetabolicSubclass" [[http://nubbekg.aksw.org/ontology#MetabolicSubclass]] {
+}
+Class "nubbe:MetabolicClass" [[http://nubbekg.aksw.org/ontology#MetabolicClass]] {
+}
+Class "nubbe:Sample" [[http://nubbekg.aksw.org/ontology#Sample]] {
+[[http://nubbekg.aksw.org/ontology#sampleType nubbe:sampleType]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+}
+Class "nubbe:NaturalProduct" [[http://nubbekg.aksw.org/ontology#NaturalProduct]] {
+}
+"nubbe:Compound" --> "nubbe:Descriptors" : "[[http://nubbekg.aksw.org/ontology#hasDescriptors nubbe:hasDescriptors]]"
+"nubbe:NaturalProduct" --> "nubbe:Compound" : "[[http://nubbekg.aksw.org/ontology#about nubbe:about]]"
+"nubbe:Sample" --> "nubbe:IsolationSite" : "[[http://nubbekg.aksw.org/ontology#wasDiscoveredAt nubbe:wasDiscoveredAt]]"
+"nubbe:Compound" --> "nubbe:BioactivityAnalysis" : "[[http://nubbekg.aksw.org/ontology#wasSubjectedTo nubbe:wasSubjectedTo]]"
+"nubbe:Compound" --> "nubbe:UniqueIdentifiers" : "[[http://nubbekg.aksw.org/ontology#isIdentifiedBy nubbe:isIdentifiedBy]]"
+"nubbe:NaturalProduct" --> "nubbe:Publication" : "[[http://nubbekg.aksw.org/ontology#wasMentionedIn nubbe:wasMentionedIn]]"
+"nubbe:Sample" --> "nubbe:Species" : "[[http://nubbekg.aksw.org/ontology#partOfSpecies nubbe:partOfSpecies]]"
+"nubbe:Compound" --> "nubbe:MetabolicSubclass" : "[[http://nubbekg.aksw.org/ontology#partOfSubclass nubbe:partOfSubclass]]"
+"nubbe:MetabolicSubclass" --> "nubbe:MetabolicClass" : "[[http://nubbekg.aksw.org/ontology#partOfClass nubbe:partOfClass]]"
+"nubbe:BioactivityAnalysis" --> "nubbe:Bioactivity" : "[[http://nubbekg.aksw.org/ontology#revealed nubbe:revealed]]"
+"nubbe:City" --> "nubbe:State" : "[[http://nubbekg.aksw.org/ontology#locatedIn nubbe:locatedIn]]"
+"nubbe:Publication" --> "nubbe:PublicationType" : "[[http://nubbekg.aksw.org/ontology#wasPublishedAs nubbe:wasPublishedAs]]"
+header
+Creator: Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy 
+endheader
+center footer Generated by [[https://github.com/edmondchuc/ontogram https://github.com/edmondchuc/ontogram]]
+@enduml
