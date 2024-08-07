@@ -19,7 +19,7 @@ jobs:
           python-version: '3.9'
       - name: install cmemc
         run: |
-          pip install -q cmem-cmemc
+          pip install cmem-cmemc
           cmemc --version
       - name: use cmemc to validate ontology
         run: |
