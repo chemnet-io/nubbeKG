@@ -1,0 +1,5 @@
+# XML reports
+*.xml
+
+# secret files
+.env

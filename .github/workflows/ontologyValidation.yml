@@ -1,0 +1,31 @@
+---
+name: Ontology_Validation
+
+on:
+  push:
+    branches: ["feature/buildPlan"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+jobs:
+  use_cmemc:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: arduino/setup-task@v2
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - name: install cmemc
+        run: |
+          pip install -q cmem-cmemc
+          cmemc --version
+      - name: use cmemc to validate ontology
+        run: |
+          task validate
+        env:
+          CMEM_BASE_URI: ${{ secrets.MY_CMEM_BASE_URI }}
+          OAUTH_GRANT_TYPE: ${{ secrets.MY_OAUTH_GRANT_TYPE }}
+          OAUTH_CLIENT_ID: ${{ secrets.MY_OAUTH_CLIENT_ID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.MY_OAUTH_CLIENT_SECRET }}
