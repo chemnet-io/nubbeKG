@@ -25,7 +25,7 @@ jobs:
         run: |
           task validate
         env:
-          CMEM_BASE_URI: ${{ secrets.MY_CMEM_BASE_URI }}
-          OAUTH_GRANT_TYPE: ${{ secrets.MY_OAUTH_GRANT_TYPE }}
-          OAUTH_CLIENT_ID: ${{ secrets.MY_OAUTH_CLIENT_ID }}
-          OAUTH_CLIENT_SECRET: ${{ secrets.MY_OAUTH_CLIENT_SECRET }}
+          CMEM_BASE_URI: ${{ secrets.CMEM_BASE_URI }}
+          OAUTH_GRANT_TYPE: ${{ secrets.OAUTH_GRANT_TYPE }}
+          OAUTH_CLIENT_ID: ${{ secrets.OAUTH_CLIENT_ID }}
+          OAUTH_CLIENT_SECRET: ${{ secrets.OAUTH_CLIENT_SECRET }}
