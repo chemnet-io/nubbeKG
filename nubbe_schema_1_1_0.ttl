@@ -64,10 +64,17 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:comment "A chemical compound has various descriptors."@en ;
                     rdfs:label "has descriptors"@en .
 
+###  http://nubbekg.aksw.org/ontology#discovered
+:discovered rdf:type owl:ObjectProperty ;
+                    rdfs:domain :Publication ;
+                    rdfs:range :Compound ;
+                    rdfs:comment "A publication discovered one ore several natural chemical compounds."@en ;
+                    rdfs:label "discovered"@en .
+
 
 ###  http://nubbekg.aksw.org/ontology#wasDiscoveredAt
 :wasDiscoveredAt rdf:type owl:ObjectProperty ;
-                    rdfs:domain :NaturalProductSample ;
+                    rdfs:domain :NaturalResource ;
                     rdfs:range :IsolationSite ;
                     rdfs:comment "A compound was discovered in a distinct isolation site."@en ;
                     rdfs:label "was discovered at"@en .
@@ -103,22 +110,22 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://nubbekg.aksw.org/ontology#about
 :about rdf:type owl:ObjectProperty ;
                     rdfs:domain :Publication ;
-                    rdfs:range :NaturalProductSample ;
-                    rdfs:comment "A publication is about a natural product sample."@en ;
+                    rdfs:range :NaturalResource ;
+                    rdfs:comment "A publication has made studies about a natural resource."@en ;
                     rdfs:label "about"@en .
 
 ###  http://nubbekg.aksw.org/ontology#contains
 :contains rdf:type owl:ObjectProperty ;
-                    rdfs:domain :NaturalProductSample ;
+                    rdfs:domain :NaturalResource ;
                     rdfs:range :Compound ;
-                    rdfs:comment "A natural product sample contains one or more chemical compounds."@en ;
+                    rdfs:comment "A natural source contains one or more natural chemical compounds."@en ;
                     rdfs:label "contains"@en .
 
 ###  http://nubbekg.aksw.org/ontology#partOfSpecies
 :partOfSpecies rdf:type owl:ObjectProperty ;
-                    rdfs:domain :NaturalProductSample ;
+                    rdfs:domain :NaturalResource ;
                     rdfs:range :Species ;
-                    rdfs:comment "A sample is part of a species of life."@en ;
+                    rdfs:comment "A natural resource is part of a species of life."@en ;
                     rdfs:label "part of species"@en .
 
 ###  http://nubbekg.aksw.org/ontology#partOfSubclass
@@ -379,9 +386,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#sampleType
 :sampleType rdf:type owl:DatatypeProperty ;
-                rdfs:domain :NaturalProductSample ;
+                rdfs:domain :NaturalResource ;
                 rdfs:range xsd:string ;
-                rdfs:comment "The type of sample, wether it has been taking from a plant, microorganism or animal."@en ;
+                rdfs:comment "The type of resource sample, wether it has been taking from a plant, microorganism or animal."@en ;
                 rdfs:label "sample type"@en .
 
 
@@ -492,10 +499,10 @@ xsd:date rdf:type rdfs:Datatype .
           rdfs:comment "The metabolic class of which a chemical compound is part of."@en ;
           rdfs:label "Metabolic class"@en .
 
-###  http://nubbekg.aksw.org/ontology#NaturalProductSample
-:NaturalProductSample  rdf:type owl:Class ;
-         rdfs:comment "A discovered natural product."@en ;
-         rdfs:label "Natural product sample"@en .
+###  http://nubbekg.aksw.org/ontology#NaturalResource
+:NaturalResource  rdf:type owl:Class ;
+         rdfs:comment "A natural resource, like a plant or microorganism, that contains natural chemical compounds."@en ;
+         rdfs:label "Natural resource"@en .
 
 #################################################################
 #    Annotations
