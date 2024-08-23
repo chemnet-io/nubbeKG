@@ -4,8 +4,6 @@ title nubbe: The data model for nubbeDB Knowledge Graph
 "nubbe:Descriptors" <|-- "nubbe:ConstitutionalDescriptors"
 "nubbe:Descriptors" <|-- "nubbe:TopologicalDescriptors"
 "nubbe:Descriptors" <|-- "nubbe:MolecularDescriptors"
-"nubbe:IsolationSite" <|-- "nubbe:City"
-"nubbe:IsolationSite" <|-- "nubbe:State"
 Class "nubbe:Compound" [[http://nubbekg.aksw.org/ontology#Compound]] {
 [[http://nubbekg.aksw.org/ontology#commonName nubbe:commonName]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 [[http://nubbekg.aksw.org/ontology#smiles nubbe:smiles]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
@@ -82,6 +80,8 @@ Class "nubbe:NaturalResource" [[http://nubbekg.aksw.org/ontology#NaturalResource
 "nubbe:Publication" --> "nubbe:Compound" : "[[http://nubbekg.aksw.org/ontology#discovered nubbe:discovered]]"
 "nubbe:NaturalResource" --> "nubbe:IsolationSite" : "[[http://nubbekg.aksw.org/ontology#wasDiscoveredAt nubbe:wasDiscoveredAt]]"
 "nubbe:Event" --> "nubbe:EventLocation" : "[[http://nubbekg.aksw.org/ontology#wasHeldAt nubbe:wasHeldAt]]"
+"nubbe:IsolationSite" --> "nubbe:City" : "[[http://nubbekg.aksw.org/ontology#isInCity nubbe:isInCity]]"
+"nubbe:IsolationSite" --> "nubbe:State" : "[[http://nubbekg.aksw.org/ontology#isInState nubbe:isInState]]"
 "nubbe:Publication" --> "nubbe:Event" : "[[http://nubbekg.aksw.org/ontology#wasPresentedAt nubbe:wasPresentedAt]]"
 "nubbe:Compound" --> "nubbe:BioactivityAnalysis" : "[[http://nubbekg.aksw.org/ontology#wasSubjectedTo nubbe:wasSubjectedTo]]"
 "nubbe:Compound" --> "nubbe:UniqueIdentifiers" : "[[http://nubbekg.aksw.org/ontology#isIdentifiedBy nubbe:isIdentifiedBy]]"

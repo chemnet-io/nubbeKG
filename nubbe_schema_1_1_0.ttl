@@ -86,6 +86,20 @@ xsd:date rdf:type rdfs:Datatype .
                     rdfs:comment "A event took place at a certain location."@en ;
                     rdfs:label "was held at"@en .
 
+###  http://nubbekg.aksw.org/ontology#isInCity
+:isInCity rdf:type owl:ObjectProperty ;
+                    rdfs:domain :IsolationSite ;
+                    rdfs:range :City ;
+                    rdfs:comment "A Isolationsite is located in a certain city."@en ;
+                    rdfs:label "is in city"@en .
+
+###  http://nubbekg.aksw.org/ontology#isInState
+:isInState rdf:type owl:ObjectProperty ;
+                    rdfs:domain :IsolationSite ;
+                    rdfs:range :State ;
+                    rdfs:comment "A Isolationsite is located in a certain state."@en ;
+                    rdfs:label "is in state"@en .
+
 ###  http://nubbekg.aksw.org/ontology#wasPresentedAt
 :wasPresentedAt rdf:type owl:ObjectProperty ;
                     rdfs:domain :Publication ;
@@ -137,9 +151,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#partOfClass
 :partOfClass rdf:type owl:ObjectProperty ;
-                    rdfs:domain :MetabolicSubclass ;
+                    rdfs:domain :MetabolicSubclass, :Compound ;
                     rdfs:range :MetabolicClass ;
-                    rdfs:comment "A metabolic subclass is part of a higher metabolic class."@en ;
+                    rdfs:comment "A metabolic subclass is part of a higher metabolic class. A Compound can be part of a class without prior subclassification aswell."@en ;
                     rdfs:label "part of class"@en .
 
 ###  http://nubbekg.aksw.org/ontology#revealed
@@ -469,13 +483,11 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://nubbekg.aksw.org/ontology#City
 :City rdf:type owl:Class ;
-          rdfs:subClassOf :IsolationSite ;
           rdfs:comment "The city in which the chemical compound has been extracted."@en ;
           rdfs:label "City"@en .
 
 ###  http://nubbekg.aksw.org/ontology#State
 :State rdf:type owl:Class ;
-          rdfs:subClassOf :IsolationSite ;
           rdfs:comment "The state in which the chemical compound has been extracted, usually just by it's short code."@en ;
           rdfs:label "State"@en .
 

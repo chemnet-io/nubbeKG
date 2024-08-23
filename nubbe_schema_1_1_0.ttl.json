@@ -1,0 +1,756 @@
+[
+  {
+    "id": "8fd1c26b3e27a8e7aec88490643d832e",
+    "user": "http://eccenca.com/service-account-cmem-service-account",
+    "resources": [
+      "http://purl.org/dc/terms/title",
+      "http://purl.org/dc/terms/description",
+      "http://www.w3.org/2001/XMLSchema#date",
+      "http://purl.org/vocab/vann/preferredNamespacePrefix",
+      "http://purl.org/vocab/vann/preferredNamespaceUri",
+      "http://purl.org/dc/terms/rights",
+      "http://purl.org/dc/terms/creator",
+      "http://nubbekg.aksw.org/ontology#",
+      "http://nubbekg.aksw.org/ontology#hasDescriptors",
+      "http://nubbekg.aksw.org/ontology#Compound",
+      "http://nubbekg.aksw.org/ontology#Descriptors",
+      "http://nubbekg.aksw.org/ontology#wasDiscoveredAt",
+      "http://nubbekg.aksw.org/ontology#IsolationSite",
+      "http://nubbekg.aksw.org/ontology#wasHeldAt",
+      "http://nubbekg.aksw.org/ontology#Event",
+      "http://nubbekg.aksw.org/ontology#EventLocation",
+      "http://nubbekg.aksw.org/ontology#wasPresentedAt",
+      "http://nubbekg.aksw.org/ontology#Publication",
+      "http://nubbekg.aksw.org/ontology#wasSubjectedTo",
+      "http://nubbekg.aksw.org/ontology#BioactivityAnalysis",
+      "http://nubbekg.aksw.org/ontology#isIdentifiedBy",
+      "http://nubbekg.aksw.org/ontology#UniqueIdentifiers",
+      "http://nubbekg.aksw.org/ontology#about",
+      "http://nubbekg.aksw.org/ontology#contains",
+      "http://nubbekg.aksw.org/ontology#partOfSpecies",
+      "http://nubbekg.aksw.org/ontology#Species",
+      "http://nubbekg.aksw.org/ontology#partOfSubclass",
+      "http://nubbekg.aksw.org/ontology#MetabolicSubclass",
+      "http://nubbekg.aksw.org/ontology#partOfClass",
+      "http://nubbekg.aksw.org/ontology#MetabolicClass",
+      "http://nubbekg.aksw.org/ontology#revealed",
+      "http://nubbekg.aksw.org/ontology#Bioactivity",
+      "http://nubbekg.aksw.org/ontology#locatedIn",
+      "http://nubbekg.aksw.org/ontology#City",
+      "http://nubbekg.aksw.org/ontology#State",
+      "http://nubbekg.aksw.org/ontology#wasPublishedAs",
+      "http://nubbekg.aksw.org/ontology#PublicationType",
+      "http://nubbekg.aksw.org/ontology#commonName",
+      "http://nubbekg.aksw.org/ontology#molecularWeight",
+      "http://nubbekg.aksw.org/ontology#MolecularDescriptors",
+      "http://nubbekg.aksw.org/ontology#monoisotopicMass",
+      "http://nubbekg.aksw.org/ontology#molecularVolume",
+      "http://nubbekg.aksw.org/ontology#logpCoefficient",
+      "http://nubbekg.aksw.org/ontology#ConstitutionalDescriptors",
+      "http://nubbekg.aksw.org/ontology#tpsa",
+      "http://nubbekg.aksw.org/ontology#TopologicalDescriptors",
+      "http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures",
+      "http://nubbekg.aksw.org/ontology#hBondAcceptorCount",
+      "http://nubbekg.aksw.org/ontology#ElectronicDescriptors",
+      "http://nubbekg.aksw.org/ontology#hBondDonorCount",
+      "http://nubbekg.aksw.org/ontology#nrotb",
+      "http://nubbekg.aksw.org/ontology#nubbeId",
+      "http://nubbekg.aksw.org/ontology#smiles",
+      "http://nubbekg.aksw.org/ontology#iupacName",
+      "http://nubbekg.aksw.org/ontology#inchi",
+      "http://nubbekg.aksw.org/ontology#inchikey",
+      "http://nubbekg.aksw.org/ontology#molecularFormula",
+      "http://nubbekg.aksw.org/ontology#title",
+      "http://nubbekg.aksw.org/ontology#doi",
+      "http://nubbekg.aksw.org/ontology#publicationYear",
+      "http://nubbekg.aksw.org/ontology#volume",
+      "http://nubbekg.aksw.org/ontology#pages",
+      "http://nubbekg.aksw.org/ontology#periodicMagazine",
+      "http://nubbekg.aksw.org/ontology#publisher",
+      "http://nubbekg.aksw.org/ontology#summary",
+      "http://nubbekg.aksw.org/ontology#IC50",
+      "http://nubbekg.aksw.org/ontology#IC12",
+      "http://nubbekg.aksw.org/ontology#LD50",
+      "http://nubbekg.aksw.org/ontology#EC50",
+      "http://nubbekg.aksw.org/ontology#MIC",
+      "http://nubbekg.aksw.org/ontology#MFC",
+      "http://nubbekg.aksw.org/ontology#ED50",
+      "http://nubbekg.aksw.org/ontology#sampleType",
+      "http://nubbekg.aksw.org/ontology#discovered",
+      "http://nubbekg.aksw.org/ontology#NaturalResource"
+    ],
+    "executionStarted": 1724318110060,
+    "executionFinished": 1724318121548,
+    "resourceSelectionQuery": "SELECT DISTINCT  ?resource\nFROM <http://nubbekg.aksw.org/ontology#>\nWHERE\n  { ?resource  a  ?class\n    FILTER isIRI(?resource)\n  }\n",
+    "shapeGraphIri": "https://vocab.eccenca.com/shacl/",
+    "contextGraphIri": "http://nubbekg.aksw.org/ontology#",
+    "results": [
+      {
+        "resourceIri": "http://purl.org/dc/terms/title",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://purl.org/vocab/vann/preferredNamespacePrefix",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://purl.org/dc/terms/description",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://www.w3.org/2001/XMLSchema#date",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/RdfsDatatypeNodeShape"
+        ],
+        "violations": [
+          {
+            "path": "<http://www.w3.org/2000/01/rdf-schema#label>",
+            "focusNode": "http://www.w3.org/2001/XMLSchema#date",
+            "source": "https://vocab.eccenca.com/shacl/TermLabelPropertyShape",
+            "severity": "VIOLATION",
+            "messages": [
+              {
+                "value": "minCount[1]: Invalid cardinality: expected min 1: Got count = 0",
+                "lang": "",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            ],
+            "reportEntryConstraintMessageTemplate": {
+              "constraintName": "MIN_COUNT",
+              "param1": "1",
+              "scope": "NODE"
+            }
+          }
+        ],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#BioactivityAnalysis",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Publication",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#wasPresentedAt",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#wasSubjectedTo",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#City",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#wasPublishedAs",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#locatedIn",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#State",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#hBondDonorCount",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#nubbeId",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#ElectronicDescriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#nrotb",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#LD50",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#IC50",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#summary",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#IC12",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://purl.org/dc/terms/rights",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://purl.org/vocab/vann/preferredNamespaceUri",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://purl.org/dc/terms/creator",
+        "nodeShapes": [],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/GraphInformationNodeShapeOntology"
+        ],
+        "violations": [
+          {
+            "path": "<http://purl.org/dc/terms/creator>",
+            "focusNode": "http://nubbekg.aksw.org/ontology#",
+            "source": "https://vocab.eccenca.com/shacl/GraphAuthors",
+            "severity": "VIOLATION",
+            "value": {
+              "termType": "LITERAL",
+              "literal": {
+                "value": "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            },
+            "messages": [
+              {
+                "value": "NodeKind[IRI] : Expected IRI for \"Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy\"",
+                "lang": "",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            ],
+            "reportEntryConstraintMessageTemplate": {
+              "constraintName": "NODE_KIND",
+              "param1": "http://www.w3.org/ns/shacl#IRI",
+              "scope": "VALUE"
+            }
+          },
+          {
+            "path": "<http://purl.org/dc/terms/creator>",
+            "focusNode": "http://nubbekg.aksw.org/ontology#",
+            "source": "https://vocab.eccenca.com/shacl/GraphAuthors",
+            "severity": "VIOLATION",
+            "value": {
+              "termType": "LITERAL",
+              "literal": {
+                "value": "Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            },
+            "messages": [
+              {
+                "value": "ClassConstraint[<http://xmlns.com/foaf/0.1/Person>]: Expected class :<http://xmlns.com/foaf/0.1/Person> for \"Edgard Marx, Stefan Schmidt-Dichte, Istvan J. Mocsy\"",
+                "lang": "",
+                "datatype": "http://www.w3.org/2001/XMLSchema#string"
+              }
+            ],
+            "reportEntryConstraintMessageTemplate": {
+              "constraintName": "CLASS",
+              "param1": "http://xmlns.com/foaf/0.1/Person",
+              "scope": "VALUE"
+            }
+          }
+        ],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#UniqueIdentifiers",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#isIdentifiedBy",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#about",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#contains",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#commonName",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#PublicationType",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#molecularWeight",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#MolecularDescriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#iupacName",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#smiles",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#inchi",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#inchikey",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#MIC",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#EC50",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#MFC",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#ED50",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Compound",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#hasDescriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Descriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#wasDiscoveredAt",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Species",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#partOfSpecies",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#MetabolicSubclass",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#partOfSubclass",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#molecularVolume",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#monoisotopicMass",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#logpCoefficient",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#ConstitutionalDescriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#title",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#molecularFormula",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#doi",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#publicationYear",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#discovered",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#sampleType",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#NaturalResource",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#EventLocation",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#wasHeldAt",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#IsolationSite",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Event",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#Bioactivity",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#MetabolicClass",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#partOfClass",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#hBondAcceptorCount",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#revealed",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlObjectPropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#TopologicalDescriptors",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlClassNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#tpsa",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#publisher",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#lipinskiRuleOf5Failures",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#pages",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#volume",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      },
+      {
+        "resourceIri": "http://nubbekg.aksw.org/ontology#periodicMagazine",
+        "nodeShapes": [
+          "https://vocab.eccenca.com/shacl/OwlDatatypePropertyNodeShape"
+        ],
+        "violations": [],
+        "shapeGraphIri": "https://vocab.eccenca.com/shacl/"
+      }
+    ],
+    "state": "FINISHED",
+    "traceId": "66c7019d128f712066c3e55b1a4ae000",
+    "filteredGraphs": [],
+    "resourceCount": 75,
+    "violationsCount": 3,
+    "resourceProcessedCount": 75,
+    "resourcesWithViolationsCount": 2,
+    "executionTime": 11488
+  }
+]
