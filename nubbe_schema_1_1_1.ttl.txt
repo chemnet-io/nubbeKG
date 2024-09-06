@@ -1,14 +1,20 @@
 @startuml
 title nubbe: The data model for nubbeDB Knowledge Graph
+"nubbe:Reference" <|-- "nubbe:Publication"
 "nubbe:Descriptors" <|-- "nubbe:ElectronicDescriptors"
 "nubbe:Descriptors" <|-- "nubbe:ConstitutionalDescriptors"
 "nubbe:Descriptors" <|-- "nubbe:TopologicalDescriptors"
 "nubbe:Descriptors" <|-- "nubbe:MolecularDescriptors"
+"nubbe:Location" <|-- "nubbe:City"
+"nubbe:Location" <|-- "nubbe:State"
+"nubbe:MetabolicClass" <|-- "nubbe:MetabolicClass"
 Class "nubbe:Compound" [[http://nubbekg.aksw.org/ontology#Compound]] {
 [[http://nubbekg.aksw.org/ontology#commonName nubbe:commonName]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 [[http://nubbekg.aksw.org/ontology#smiles nubbe:smiles]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 }
 Class "nubbe:EventLocation" [[http://nubbekg.aksw.org/ontology#EventLocation]] {
+}
+Class "nubbe:Location" [[http://nubbekg.aksw.org/ontology#Location]] {
 }
 Class "nubbe:Event" [[http://nubbekg.aksw.org/ontology#Event]] {
 }
@@ -23,6 +29,8 @@ Class "nubbe:Publication" [[http://nubbekg.aksw.org/ontology#Publication]] {
 [[http://nubbekg.aksw.org/ontology#periodicMagazine nubbe:periodicMagazine]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 [[http://nubbekg.aksw.org/ontology#publisher nubbe:publisher]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 [[http://nubbekg.aksw.org/ontology#summary nubbe:summary]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
+}
+Class "nubbe:Reference" [[http://nubbekg.aksw.org/ontology#Reference]] {
 }
 Class "nubbe:BioactivityQuantification" [[http://nubbekg.aksw.org/ontology#BioactivityQuantification]] {
 [[http://nubbekg.aksw.org/ontology#ic50 nubbe:ic50]] : [[http://www.w3.org/2001/XMLSchema#double xsd:double]]
@@ -65,26 +73,22 @@ Class "nubbe:Bioactivity" [[http://nubbekg.aksw.org/ontology#Bioactivity]] {
 }
 Class "nubbe:PublicationType" [[http://nubbekg.aksw.org/ontology#PublicationType]] {
 }
-Class "nubbe:MetabolicSubclass" [[http://nubbekg.aksw.org/ontology#MetabolicSubclass]] {
-}
 Class "nubbe:MetabolicClass" [[http://nubbekg.aksw.org/ontology#MetabolicClass]] {
 }
 Class "nubbe:Specimen" [[http://nubbekg.aksw.org/ontology#Specimen]] {
 [[http://nubbekg.aksw.org/ontology#sampleType nubbe:sampleType]] : [[http://www.w3.org/2001/XMLSchema#string xsd:string]]
 }
 "nubbe:Compound" --> "nubbe:Descriptors" : "[[http://nubbekg.aksw.org/ontology#hasDescriptors nubbe:hasDescriptors]]"
-"nubbe:Publication" --> "nubbe:Compound" : "[[http://nubbekg.aksw.org/ontology#discovered nubbe:discovered]]"
-"nubbe:Specimen" --> "nubbe:City" : "[[http://nubbekg.aksw.org/ontology#wasDiscoveredIn nubbe:wasDiscoveredIn]]"
+"nubbe:Specimen" --> "nubbe:Location" : "[[http://nubbekg.aksw.org/ontology#wasDiscoveredIn nubbe:wasDiscoveredIn]]"
 "nubbe:Event" --> "nubbe:EventLocation" : "[[http://nubbekg.aksw.org/ontology#wasHeldAt nubbe:wasHeldAt]]"
 "nubbe:Publication" --> "nubbe:Event" : "[[http://nubbekg.aksw.org/ontology#wasPresentedAt nubbe:wasPresentedAt]]"
-"nubbe:Bioactivity" --> "nubbe:BioactivityQuantification" : "[[http://nubbekg.aksw.org/ontology#hasQuantification nubbe:hasQuantification]]"
+"nubbe:Specimen" --> "nubbe:BioactivityQuantification" : "[[http://nubbekg.aksw.org/ontology#bioactivity nubbe:bioactivity]]"
+"nubbe:BioactivityQuantification" --> "nubbe:Bioactivity" : "[[http://nubbekg.aksw.org/ontology#quantification nubbe:quantification]]"
 "nubbe:Compound" --> "nubbe:UniqueIdentifiers" : "[[http://nubbekg.aksw.org/ontology#isIdentifiedBy nubbe:isIdentifiedBy]]"
-"nubbe:Publication" --> "nubbe:Specimen" : "[[http://nubbekg.aksw.org/ontology#about nubbe:about]]"
+"nubbe:Specimen" --> "nubbe:Reference" : "[[http://nubbekg.aksw.org/ontology#reference nubbe:reference]]"
 "nubbe:Specimen" --> "nubbe:Compound" : "[[http://nubbekg.aksw.org/ontology#contains nubbe:contains]]"
 "nubbe:Specimen" --> "nubbe:Species" : "[[http://nubbekg.aksw.org/ontology#partOfSpecies nubbe:partOfSpecies]]"
-"nubbe:Compound" --> "nubbe:MetabolicSubclass" : "[[http://nubbekg.aksw.org/ontology#partOfSubclass nubbe:partOfSubclass]]"
-"nubbe:MetabolicSubclass" --> "nubbe:MetabolicClass" : "[[http://nubbekg.aksw.org/ontology#partOfClass nubbe:partOfClass]]"
-"nubbe:Publication" --> "nubbe:Bioactivity" : "[[http://nubbekg.aksw.org/ontology#revealed nubbe:revealed]]"
+"nubbe:Compound" --> "nubbe:MetabolicClass" : "[[http://nubbekg.aksw.org/ontology#partOfMetabolicClass nubbe:partOfMetabolicClass]]"
 "nubbe:City" --> "nubbe:State" : "[[http://nubbekg.aksw.org/ontology#locatedIn nubbe:locatedIn]]"
 "nubbe:Publication" --> "nubbe:PublicationType" : "[[http://nubbekg.aksw.org/ontology#wasPublishedAs nubbe:wasPublishedAs]]"
 header
