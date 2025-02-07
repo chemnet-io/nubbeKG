@@ -3,3 +3,6 @@ All scripts need to be refactored as soon as possible. Some variable names have 
 
 ## Workings
 It searches through all the necessary Nubbe data and just searches for exact matches of those found labels/inchikeys. This is so you don't have to search through all of wikidata or dbpedia which can be very big.
+
+## Next steps
+After the refactoring process this should all be very self explanatory, however there will be some more documentation.
