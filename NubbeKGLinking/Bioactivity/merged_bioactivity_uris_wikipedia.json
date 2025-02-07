@@ -1,0 +1,42 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/31017",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q4990531",
+        "dbpedia_label": "anesthetic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7843",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q578726",
+        "dbpedia_label": "antifungal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7843",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q70340365",
+        "dbpedia_label": "antifungal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7846",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q133948",
+        "dbpedia_label": "antioxidant"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7846",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q11644436",
+        "dbpedia_label": "antioxidant"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7852",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q521616",
+        "dbpedia_label": "antimalarial"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7859",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q572294",
+        "dbpedia_label": "anthelmintic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7864",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q62903",
+        "dbpedia_label": "anxiolytic"
+    }
+]

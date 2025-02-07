@@ -1,0 +1,227 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10005",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15394465",
+        "dbpedia_label": "Pilocarpus spicatus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10015",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q309552",
+        "dbpedia_label": "Carapa guianensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10030",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15394167",
+        "dbpedia_label": "Spathelia excelsa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1016",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15597734",
+        "dbpedia_label": "Piper arboreum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1026",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q103817215",
+        "dbpedia_label": "Phomopsis cassiae"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1032",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q3683010",
+        "dbpedia_label": "Colletotrichum gloeosporioides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10328",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q3814977",
+        "dbpedia_label": "Khaya ivorensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10334",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q2934367",
+        "dbpedia_label": "Calophyllum brasiliense"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1066",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15434339",
+        "dbpedia_label": "Coussarea hydrangeifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10781",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q104847196",
+        "dbpedia_label": "Deguelia hatschbachii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11069",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15526153",
+        "dbpedia_label": "Trichilia lepidota"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1133",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q110692215",
+        "dbpedia_label": "Cinnamomum australe"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11677",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15389772",
+        "dbpedia_label": "Conchocarpus heterophyllus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1222",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q10279910",
+        "dbpedia_label": "Cassia leptophylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12561",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q927609",
+        "dbpedia_label": "Khaya senegalensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12776",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15394236",
+        "dbpedia_label": "Aspidosperma nigricans"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1318",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15600954",
+        "dbpedia_label": "Piper hispidum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1335",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15364782",
+        "dbpedia_label": "Porcelia macrocarpa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/13564",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15613014",
+        "dbpedia_label": "Licaria macrophylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1428",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q5961786",
+        "dbpedia_label": "Hypsipyla grandella"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/14947",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q7256795",
+        "dbpedia_label": "Pterodon polygalaeflorus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15227",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q3003935",
+        "dbpedia_label": "Croton argyrophylloides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15347",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15612397",
+        "dbpedia_label": "Licaria canella"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15472",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q110689629",
+        "dbpedia_label": "Nectandra rubra"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15724",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q1493913",
+        "dbpedia_label": "Apuleia leiocarpa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1592",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q109577721",
+        "dbpedia_label": "Peschiera catharinensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1696",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q11690306",
+        "dbpedia_label": "Chrysophyllum flexuosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1890",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q18077206",
+        "dbpedia_label": "Aspidosperma olivaceum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/29883",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q104596583",
+        "dbpedia_label": "Licaria rigida"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/30277",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15432206",
+        "dbpedia_label": "Lippia aristata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/30991",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q39520444",
+        "dbpedia_label": "Ottonia corcovadensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31650",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q3945063",
+        "dbpedia_label": "Palythoa variabilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/32457",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15610322",
+        "dbpedia_label": "Endlicheria sericea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/32824",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15583739",
+        "dbpedia_label": "Vellozia stipitata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34211",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q936202",
+        "dbpedia_label": "Cedrela fissilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3775",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15464113",
+        "dbpedia_label": "Aristolochia albida"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63692",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15474845",
+        "dbpedia_label": "Brosimum parinarioides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63775",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q39269942",
+        "dbpedia_label": "Brosimum amplicoma"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63778",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q111158942",
+        "dbpedia_label": "Brosimum krukovii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6474",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q2947551",
+        "dbpedia_label": "Chaetomium globosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7092",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15525815",
+        "dbpedia_label": "Trichilia claussenii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7350",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15332055",
+        "dbpedia_label": "Vochysia thyrsoidea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7676",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q15387277",
+        "dbpedia_label": "Almeidea rubra"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9306",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q108162191",
+        "dbpedia_label": "Pestalotiopsis foedans"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9608",
+        "dbpedia_uri": "http://www.wikidata.org/entity/Q155867",
+        "dbpedia_label": "Ricinus communis"
+    }
+]

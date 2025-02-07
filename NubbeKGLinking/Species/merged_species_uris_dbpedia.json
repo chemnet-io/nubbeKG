@@ -1,0 +1,847 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1001",
+        "dbpedia_uri": "http://dbpedia.org/resource/Eugenia_jambolana",
+        "dbpedia_label": "Eugenia jambolana"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10015",
+        "dbpedia_uri": "http://dbpedia.org/resource/Carapa_guianensis",
+        "dbpedia_label": "Carapa guianensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10030",
+        "dbpedia_uri": "http://dbpedia.org/resource/Spathelia_excelsa",
+        "dbpedia_label": "Spathelia excelsa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1032",
+        "dbpedia_uri": "http://dbpedia.org/resource/Colletotrichum_gloeosporioides",
+        "dbpedia_label": "Colletotrichum gloeosporioides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10328",
+        "dbpedia_uri": "http://dbpedia.org/resource/Khaya_ivorensis",
+        "dbpedia_label": "Khaya ivorensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10334",
+        "dbpedia_uri": "http://dbpedia.org/resource/Calophyllum_brasiliense",
+        "dbpedia_label": "Calophyllum brasiliense"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1041",
+        "dbpedia_uri": "http://dbpedia.org/resource/Polymnia_sonchifolia",
+        "dbpedia_label": "Polymnia sonchifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1045",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspergillus_flavus",
+        "dbpedia_label": "Aspergillus flavus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10543",
+        "dbpedia_uri": "http://dbpedia.org/resource/Azadirachta_indica",
+        "dbpedia_label": "Azadirachta indica"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10728",
+        "dbpedia_uri": "http://dbpedia.org/resource/Murraya_paniculata",
+        "dbpedia_label": "Murraya paniculata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1074",
+        "dbpedia_uri": "http://dbpedia.org/resource/Senna_spectabilis",
+        "dbpedia_label": "Senna spectabilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1093",
+        "dbpedia_uri": "http://dbpedia.org/resource/Pothomorphe_umbellata",
+        "dbpedia_label": "Pothomorphe umbellata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/10980",
+        "dbpedia_uri": "http://dbpedia.org/resource/Eucalyptus_maculata",
+        "dbpedia_label": "Eucalyptus maculata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11073",
+        "dbpedia_uri": "http://dbpedia.org/resource/Khaya_anthotheca",
+        "dbpedia_label": "Khaya anthotheca"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11119",
+        "dbpedia_uri": "http://dbpedia.org/resource/Dimorphandra_mollis",
+        "dbpedia_label": "Dimorphandra mollis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11143",
+        "dbpedia_uri": "http://dbpedia.org/resource/Citrus_limonia",
+        "dbpedia_label": "Citrus limonia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11144",
+        "dbpedia_uri": "http://dbpedia.org/resource/Citrus_reticulata",
+        "dbpedia_label": "Citrus reticulata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11372",
+        "dbpedia_uri": "http://dbpedia.org/resource/Amorpha_fruticosa",
+        "dbpedia_label": "Amorpha fruticosa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11377",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tephrosia_candida",
+        "dbpedia_label": "Tephrosia candida"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1155",
+        "dbpedia_uri": "http://dbpedia.org/resource/Uncaria_guianensis",
+        "dbpedia_label": "Uncaria guianensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1173",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mentha_spicata",
+        "dbpedia_label": "Mentha spicata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11749",
+        "dbpedia_uri": "http://dbpedia.org/resource/Swietenia_macrophylla",
+        "dbpedia_label": "Swietenia macrophylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1176",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cymbopogon_citratus",
+        "dbpedia_label": "Cymbopogon citratus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11772",
+        "dbpedia_uri": "http://dbpedia.org/resource/Penicillium_corylophilum",
+        "dbpedia_label": "Penicillium corylophilum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/11778",
+        "dbpedia_uri": "http://dbpedia.org/resource/Zingiber_officinale",
+        "dbpedia_label": "Zingiber officinale"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1199",
+        "dbpedia_uri": "http://dbpedia.org/resource/Toona_ciliata",
+        "dbpedia_label": "Toona ciliata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1212",
+        "dbpedia_uri": "http://dbpedia.org/resource/Calycophyllum_spruceanum",
+        "dbpedia_label": "Calycophyllum spruceanum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12162",
+        "dbpedia_uri": "http://dbpedia.org/resource/Byrsonima_coccolobifolia",
+        "dbpedia_label": "Byrsonima coccolobifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1222",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cassia_leptophylla",
+        "dbpedia_label": "Cassia leptophylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1237",
+        "dbpedia_uri": "http://dbpedia.org/resource/Apis_mellifera",
+        "dbpedia_label": "Apis mellifera"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12561",
+        "dbpedia_uri": "http://dbpedia.org/resource/Khaya_senegalensis",
+        "dbpedia_label": "Khaya senegalensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12615",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspidosperma_pyricollum",
+        "dbpedia_label": "Aspidosperma pyricollum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1267",
+        "dbpedia_uri": "http://dbpedia.org/resource/Alabama_argillacea",
+        "dbpedia_label": "Alabama argillacea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12780",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspidosperma_tomentosum",
+        "dbpedia_label": "Aspidosperma tomentosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1291",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cupania_vernalis",
+        "dbpedia_label": "Cupania vernalis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1298",
+        "dbpedia_uri": "http://dbpedia.org/resource/Petiveria_alliacea",
+        "dbpedia_label": "Petiveria alliacea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/12989",
+        "dbpedia_uri": "http://dbpedia.org/resource/Zanthoxylum_rhoifolium",
+        "dbpedia_label": "Zanthoxylum rhoifolium"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1329",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_sebifera",
+        "dbpedia_label": "Virola sebifera"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/13373",
+        "dbpedia_uri": "http://dbpedia.org/resource/Peschiera_affinis",
+        "dbpedia_label": "Peschiera affinis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/13381",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anacardium_occidentale",
+        "dbpedia_label": "Anacardium occidentale"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1340",
+        "dbpedia_uri": "http://dbpedia.org/resource/Ocotea_odorifera",
+        "dbpedia_label": "Ocotea odorifera"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1370",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cedrela_odorata",
+        "dbpedia_label": "Cedrela odorata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1379",
+        "dbpedia_uri": "http://dbpedia.org/resource/Bothrops_asper",
+        "dbpedia_label": "Bothrops asper"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1386",
+        "dbpedia_uri": "http://dbpedia.org/resource/Trichilia_emetica",
+        "dbpedia_label": "Trichilia emetica"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/14098",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_multinervia",
+        "dbpedia_label": "Virola multinervia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1421",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_surinamensis",
+        "dbpedia_label": "Virola surinamensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1428",
+        "dbpedia_uri": "http://dbpedia.org/resource/Hypsipyla_grandella",
+        "dbpedia_label": "Hypsipyla grandella"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1447",
+        "dbpedia_uri": "http://dbpedia.org/resource/Frullania_nisquallensis",
+        "dbpedia_label": "Frullania nisquallensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1489",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tabebuia_palmeri",
+        "dbpedia_label": "Tabebuia palmeri"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/14930",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_carinata",
+        "dbpedia_label": "Virola carinata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/14947",
+        "dbpedia_uri": "http://dbpedia.org/resource/Pterodon_polygalaeflorus",
+        "dbpedia_label": "Pterodon polygalaeflorus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1498",
+        "dbpedia_uri": "http://dbpedia.org/resource/Alibertia_edulis",
+        "dbpedia_label": "Alibertia edulis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1507",
+        "dbpedia_uri": "http://dbpedia.org/resource/Taxus_brevifolia",
+        "dbpedia_label": "Taxus brevifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15322",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_venosa",
+        "dbpedia_label": "Virola venosa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15324",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_divergens",
+        "dbpedia_label": "Virola divergens"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15326",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_melinonii",
+        "dbpedia_label": "Virola melinonii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15328",
+        "dbpedia_uri": "http://dbpedia.org/resource/Virola_pavonis",
+        "dbpedia_label": "Virola pavonis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15383",
+        "dbpedia_uri": "http://dbpedia.org/resource/Goniorrhachis_marginata",
+        "dbpedia_label": "Goniorrhachis marginata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15428",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aphis_nerii",
+        "dbpedia_label": "Aphis nerii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1545",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aristolochia_elegans",
+        "dbpedia_label": "Aristolochia elegans"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15724",
+        "dbpedia_uri": "http://dbpedia.org/resource/Apuleia_leiocarpa",
+        "dbpedia_label": "Apuleia leiocarpa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1574",
+        "dbpedia_uri": "http://dbpedia.org/resource/Hedychium_coronarium",
+        "dbpedia_label": "Hedychium coronarium"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1578",
+        "dbpedia_uri": "http://dbpedia.org/resource/Copaifera_langsdorffii",
+        "dbpedia_label": "Copaifera langsdorffii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15796",
+        "dbpedia_uri": "http://dbpedia.org/resource/Pilocarpus_jaborandi",
+        "dbpedia_label": "Pilocarpus jaborandi"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15842",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tipuana_tipu",
+        "dbpedia_label": "Tipuana tipu"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/15908",
+        "dbpedia_uri": "http://dbpedia.org/resource/Toona_ciliata",
+        "dbpedia_label": "Toona ciliata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1592",
+        "dbpedia_uri": "http://dbpedia.org/resource/Peschiera_catharinensis",
+        "dbpedia_label": "Peschiera catharinensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/16022",
+        "dbpedia_uri": "http://dbpedia.org/resource/Adenocalymma_alliaceum",
+        "dbpedia_label": "Adenocalymma alliaceum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/16079",
+        "dbpedia_uri": "http://dbpedia.org/resource/Zoanthus_sociatus",
+        "dbpedia_label": "Zoanthus sociatus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1639",
+        "dbpedia_uri": "http://dbpedia.org/resource/Peperomia_obtusifolia",
+        "dbpedia_label": "Peperomia obtusifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1651",
+        "dbpedia_uri": "http://dbpedia.org/resource/Colletotrichum_crassipes",
+        "dbpedia_label": "Colletotrichum crassipes"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1687",
+        "dbpedia_uri": "http://dbpedia.org/resource/Chiococca_alba",
+        "dbpedia_label": "Chiococca alba"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1696",
+        "dbpedia_uri": "http://dbpedia.org/resource/Chrysophyllum_flexuosum",
+        "dbpedia_label": "Chrysophyllum flexuosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1741",
+        "dbpedia_uri": "http://dbpedia.org/resource/Jatropha_gossypifolia",
+        "dbpedia_label": "Jatropha gossypifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1744",
+        "dbpedia_uri": "http://dbpedia.org/resource/Jatropha_curcas",
+        "dbpedia_label": "Jatropha curcas"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1748",
+        "dbpedia_uri": "http://dbpedia.org/resource/Michelia_champaca",
+        "dbpedia_label": "Michelia champaca"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1764",
+        "dbpedia_uri": "http://dbpedia.org/resource/Avicennia_schaueriana",
+        "dbpedia_label": "Avicennia schaueriana"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1772",
+        "dbpedia_uri": "http://dbpedia.org/resource/Citrus_sinensis",
+        "dbpedia_label": "Citrus sinensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1777",
+        "dbpedia_uri": "http://dbpedia.org/resource/Citrus_limonia",
+        "dbpedia_label": "Citrus limonia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1795",
+        "dbpedia_uri": "http://dbpedia.org/resource/Kielmeyera_rubriflora",
+        "dbpedia_label": "Kielmeyera rubriflora"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1803",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cinchona_officinalis",
+        "dbpedia_label": "Cinchona officinalis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1811",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tabernaemontana_angulata",
+        "dbpedia_label": "Tabernaemontana angulata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1821",
+        "dbpedia_uri": "http://dbpedia.org/resource/Solanum_aculeatissimum",
+        "dbpedia_label": "Solanum aculeatissimum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1840",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rigidoporus_microporus",
+        "dbpedia_label": "Rigidoporus microporus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1846",
+        "dbpedia_uri": "http://dbpedia.org/resource/Machaerium_villosum",
+        "dbpedia_label": "Machaerium villosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1890",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspidosperma_olivaceum",
+        "dbpedia_label": "Aspidosperma olivaceum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1896",
+        "dbpedia_uri": "http://dbpedia.org/resource/Prunus_myrtifolia",
+        "dbpedia_label": "Prunus myrtifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1921",
+        "dbpedia_uri": "http://dbpedia.org/resource/Alchornea_glandulosa",
+        "dbpedia_label": "Alchornea glandulosa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/1942",
+        "dbpedia_uri": "http://dbpedia.org/resource/Erythrina_speciosa",
+        "dbpedia_label": "Erythrina speciosa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2090",
+        "dbpedia_uri": "http://dbpedia.org/resource/Dialypetalanthus_fuscescens",
+        "dbpedia_label": "Dialypetalanthus fuscescens"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2206",
+        "dbpedia_uri": "http://dbpedia.org/resource/Couma_utilis",
+        "dbpedia_label": "Couma utilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2372",
+        "dbpedia_uri": "http://dbpedia.org/resource/Persea_pyrifolia",
+        "dbpedia_label": "Persea pyrifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2676",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aegiphila_sellowiana",
+        "dbpedia_label": "Aegiphila sellowiana"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2679",
+        "dbpedia_uri": "http://dbpedia.org/resource/Chrysophyllum_inornatum",
+        "dbpedia_label": "Chrysophyllum inornatum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2736",
+        "dbpedia_uri": "http://dbpedia.org/resource/Phyllanthus_niruri",
+        "dbpedia_label": "Phyllanthus niruri"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2853",
+        "dbpedia_uri": "http://dbpedia.org/resource/Botrytis_cinerea",
+        "dbpedia_label": "Botrytis cinerea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/2857",
+        "dbpedia_uri": "http://dbpedia.org/resource/Trichoderma_viride",
+        "dbpedia_label": "Trichoderma viride"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3017",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aristolochia_esperanzae",
+        "dbpedia_label": "Aristolochia esperanzae"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/30293",
+        "dbpedia_uri": "http://dbpedia.org/resource/Lippia_alba",
+        "dbpedia_label": "Lippia alba"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3044",
+        "dbpedia_uri": "http://dbpedia.org/resource/Allophylus_edulis",
+        "dbpedia_label": "Allophylus edulis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/30930",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aniba_santalodora",
+        "dbpedia_label": "Aniba santalodora"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31029",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aniba_ferrea",
+        "dbpedia_label": "Aniba ferrea"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31128",
+        "dbpedia_uri": "http://dbpedia.org/resource/Orbignya_martiana",
+        "dbpedia_label": "Orbignya martiana"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31135",
+        "dbpedia_uri": "http://dbpedia.org/resource/Caryocar_coriaceum",
+        "dbpedia_label": "Caryocar coriaceum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31139",
+        "dbpedia_uri": "http://dbpedia.org/resource/Elaeis_guineensis",
+        "dbpedia_label": "Elaeis guineensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3149",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aristolochia_brasiliensis",
+        "dbpedia_label": "Aristolochia brasiliensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/31730",
+        "dbpedia_uri": "http://dbpedia.org/resource/Calopogonium_mucunoides",
+        "dbpedia_label": "Calopogonium mucunoides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/32478",
+        "dbpedia_uri": "http://dbpedia.org/resource/Theobroma_grandiflorum",
+        "dbpedia_label": "Theobroma grandiflorum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/32655",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aniba_rosaeodora",
+        "dbpedia_label": "Aniba rosaeodora"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/33863",
+        "dbpedia_uri": "http://dbpedia.org/resource/Ocotea_aciphylla",
+        "dbpedia_label": "Ocotea aciphylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/33916",
+        "dbpedia_uri": "http://dbpedia.org/resource/Ocotea_catharinensis",
+        "dbpedia_label": "Ocotea catharinensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34211",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cedrela_fissilis",
+        "dbpedia_label": "Cedrela fissilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34412",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tabernaemontana_heterophylla",
+        "dbpedia_label": "Tabernaemontana heterophylla"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34452",
+        "dbpedia_uri": "http://dbpedia.org/resource/Coleus_barbatus",
+        "dbpedia_label": "Coleus barbatus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34479",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rosmarinus_officinalis",
+        "dbpedia_label": "Rosmarinus officinalis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/34543",
+        "dbpedia_uri": "http://dbpedia.org/resource/Araucaria_angustifolia",
+        "dbpedia_label": "Araucaria angustifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3694",
+        "dbpedia_uri": "http://dbpedia.org/resource/Teucrium_marum",
+        "dbpedia_label": "Teucrium marum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/3779",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aristolochia_indica",
+        "dbpedia_label": "Aristolochia indica"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/4087",
+        "dbpedia_uri": "http://dbpedia.org/resource/Esenbeckia_leiocarpa",
+        "dbpedia_label": "Esenbeckia leiocarpa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/4208",
+        "dbpedia_uri": "http://dbpedia.org/resource/Eutypa_lata",
+        "dbpedia_label": "Eutypa lata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/4577",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cylindrocarpon_radicicola",
+        "dbpedia_label": "Cylindrocarpon radicicola"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/4695",
+        "dbpedia_uri": "http://dbpedia.org/resource/Xylopia_aethiopica",
+        "dbpedia_label": "Xylopia aethiopica"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63323",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cyclolobium_vecchii",
+        "dbpedia_label": "Cyclolobium vecchii"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6346",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cunninghamella_elegans",
+        "dbpedia_label": "Cunninghamella elegans"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63692",
+        "dbpedia_uri": "http://dbpedia.org/resource/Brosimum_parinarioides",
+        "dbpedia_label": "Brosimum parinarioides"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63697",
+        "dbpedia_uri": "http://dbpedia.org/resource/Brosimum_guianense",
+        "dbpedia_label": "Brosimum guianense"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63715",
+        "dbpedia_uri": "http://dbpedia.org/resource/Brosimum_lecointei",
+        "dbpedia_label": "Brosimum lecointei"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/63718",
+        "dbpedia_uri": "http://dbpedia.org/resource/Brosimum_utile",
+        "dbpedia_label": "Brosimum utile"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6474",
+        "dbpedia_uri": "http://dbpedia.org/resource/Chaetomium_globosum",
+        "dbpedia_label": "Chaetomium globosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6750",
+        "dbpedia_uri": "http://dbpedia.org/resource/Guignardia_mangiferae",
+        "dbpedia_label": "Guignardia mangiferae"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6792",
+        "dbpedia_uri": "http://dbpedia.org/resource/Byrsonima_crassa",
+        "dbpedia_label": "Byrsonima crassa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6828",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspergillus_fumigatus",
+        "dbpedia_label": "Aspergillus fumigatus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/6944",
+        "dbpedia_uri": "http://dbpedia.org/resource/Penicillium_crustosum",
+        "dbpedia_label": "Penicillium crustosum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7058",
+        "dbpedia_uri": "http://dbpedia.org/resource/Nigrospora_sphaerica",
+        "dbpedia_label": "Nigrospora sphaerica"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7062",
+        "dbpedia_uri": "http://dbpedia.org/resource/Phoma_betae",
+        "dbpedia_label": "Phoma betae"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7072",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tithonia_diversifolia",
+        "dbpedia_label": "Tithonia diversifolia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7079",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspergillus_terreus",
+        "dbpedia_label": "Aspergillus terreus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7083",
+        "dbpedia_uri": "http://dbpedia.org/resource/Smallanthus_sonchifolius",
+        "dbpedia_label": "Smallanthus sonchifolius"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7102",
+        "dbpedia_uri": "http://dbpedia.org/resource/Swinglea_glutinosa",
+        "dbpedia_label": "Swinglea glutinosa"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7116",
+        "dbpedia_uri": "http://dbpedia.org/resource/Trichilia_catigua",
+        "dbpedia_label": "Trichilia catigua"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7150",
+        "dbpedia_uri": "http://dbpedia.org/resource/Balfourodendron_riedelianum",
+        "dbpedia_label": "Balfourodendron riedelianum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7159",
+        "dbpedia_uri": "http://dbpedia.org/resource/Balfourodendron_riedelianum",
+        "dbpedia_label": "Balfourodendron riedelianum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7172",
+        "dbpedia_uri": "http://dbpedia.org/resource/Phoma_sorghina",
+        "dbpedia_label": "Phoma sorghina"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7335",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspergillus_ochraceus",
+        "dbpedia_label": "Aspergillus ochraceus"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7363",
+        "dbpedia_uri": "http://dbpedia.org/resource/Myrcia_lingua",
+        "dbpedia_label": "Myrcia lingua"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7384",
+        "dbpedia_uri": "http://dbpedia.org/resource/Schinus_terebinthifolius",
+        "dbpedia_label": "Schinus terebinthifolius"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7405",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cabralea_canjerana",
+        "dbpedia_label": "Cabralea canjerana"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7422",
+        "dbpedia_uri": "http://dbpedia.org/resource/Carapa_guianensis",
+        "dbpedia_label": "Carapa guianensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7450",
+        "dbpedia_uri": "http://dbpedia.org/resource/Hortia_superba",
+        "dbpedia_label": "Hortia superba"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/7754",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cedrela_fissilis",
+        "dbpedia_label": "Cedrela fissilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/799",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mentha_pulegium",
+        "dbpedia_label": "Mentha pulegium"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/818",
+        "dbpedia_uri": "http://dbpedia.org/resource/Pterogyne_nitens",
+        "dbpedia_label": "Pterogyne nitens"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/855",
+        "dbpedia_uri": "http://dbpedia.org/resource/Peperomia_blanda",
+        "dbpedia_label": "Peperomia blanda"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/867",
+        "dbpedia_uri": "http://dbpedia.org/resource/Erythrina_mulungu",
+        "dbpedia_label": "Erythrina mulungu"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/896",
+        "dbpedia_uri": "http://dbpedia.org/resource/Casearia_sylvestris",
+        "dbpedia_label": "Casearia sylvestris"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/906",
+        "dbpedia_uri": "http://dbpedia.org/resource/Piper_aduncum",
+        "dbpedia_label": "Piper aduncum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/909",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anticarsia_gemmatalis",
+        "dbpedia_label": "Anticarsia gemmatalis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/915",
+        "dbpedia_uri": "http://dbpedia.org/resource/Agaricus_blazei",
+        "dbpedia_label": "Agaricus blazei"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9277",
+        "dbpedia_uri": "http://dbpedia.org/resource/Glomerella_cingulata",
+        "dbpedia_label": "Glomerella cingulata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9280",
+        "dbpedia_uri": "http://dbpedia.org/resource/Diaporthe_phaseolorum",
+        "dbpedia_label": "Diaporthe phaseolorum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9292",
+        "dbpedia_uri": "http://dbpedia.org/resource/Aspergillus_niger",
+        "dbpedia_label": "Aspergillus niger"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9309",
+        "dbpedia_uri": "http://dbpedia.org/resource/Fusarium_oxysporum",
+        "dbpedia_label": "Fusarium oxysporum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/960",
+        "dbpedia_uri": "http://dbpedia.org/resource/Iryanthera_juruensis",
+        "dbpedia_label": "Iryanthera juruensis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9608",
+        "dbpedia_uri": "http://dbpedia.org/resource/Ricinus_communis",
+        "dbpedia_label": "Ricinus communis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9614",
+        "dbpedia_uri": "http://dbpedia.org/resource/Siphoneugena_densiflora",
+        "dbpedia_label": "Siphoneugena densiflora"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/967",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cassia_spectabilis",
+        "dbpedia_label": "Cassia spectabilis"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/9709",
+        "dbpedia_uri": "http://dbpedia.org/resource/Dipteryx_odorata",
+        "dbpedia_label": "Dipteryx odorata"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/973",
+        "dbpedia_uri": "http://dbpedia.org/resource/Chrysophyllum_marginatum",
+        "dbpedia_label": "Chrysophyllum marginatum"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/species/993",
+        "dbpedia_uri": "http://dbpedia.org/resource/Xylopia_aromatica",
+        "dbpedia_label": "Xylopia aromatica"
+    }
+]

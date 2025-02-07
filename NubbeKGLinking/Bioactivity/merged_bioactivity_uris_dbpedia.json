@@ -1,0 +1,140 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/11925",
+        "original_label": "Antiallergenic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antiallergenic",
+        "dbpedia_label": "Antiallergenic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/13024",
+        "original_label": "Molluscicidal",
+        "dbpedia_uri": "http://dbpedia.org/resource/Molluscicidal",
+        "dbpedia_label": "Molluscicidal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/31017",
+        "original_label": "Anesthetic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anesthetic",
+        "dbpedia_label": "Anesthetic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/63639",
+        "original_label": "Inhibition of Tubulin polymerization",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tubulin_polymerization_inhibitor",
+        "dbpedia_label": "Tubulin polymerization inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/63640",
+        "original_label": "Inhibition of Topoisomerase",
+        "dbpedia_uri": "http://dbpedia.org/resource/Topoisomerase_inhibitor",
+        "dbpedia_label": "Topoisomerase inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/64243",
+        "original_label": "Mutagenic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mutagenic",
+        "dbpedia_label": "Mutagenic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/64244",
+        "original_label": "Genotoxic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Genotoxic",
+        "dbpedia_label": "Genotoxic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7842",
+        "original_label": "Anticancer",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anticancer",
+        "dbpedia_label": "Anticancer"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7843",
+        "original_label": "Antifungal",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antifungal",
+        "dbpedia_label": "Antifungal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7844",
+        "original_label": "Inhibition of Acetylcholinesterase",
+        "dbpedia_uri": "http://dbpedia.org/resource/Acetylcholinesterase_inhibitor",
+        "dbpedia_label": "Acetylcholinesterase inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7846",
+        "original_label": "Antioxidant",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antioxidant",
+        "dbpedia_label": "Antioxidant"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7847",
+        "original_label": "Antiviral",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antiviral",
+        "dbpedia_label": "Antiviral"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7849",
+        "original_label": "Insecticidal",
+        "dbpedia_uri": "http://dbpedia.org/resource/Insecticidal",
+        "dbpedia_label": "Insecticidal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7850",
+        "original_label": "Cytotoxic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cytotoxic",
+        "dbpedia_label": "Cytotoxic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7852",
+        "original_label": "Antimalarial",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antimalarial",
+        "dbpedia_label": "Antimalarial"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7853",
+        "original_label": "Inhibition of Protease",
+        "dbpedia_uri": "http://dbpedia.org/resource/Protease_inhibitor",
+        "dbpedia_label": "Protease inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7854",
+        "original_label": "Antibacterial",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antibacterial",
+        "dbpedia_label": "Antibacterial"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7855",
+        "original_label": "Antinociceptive",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antinociceptive",
+        "dbpedia_label": "Antinociceptive"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7856",
+        "original_label": "Anti-inflamatory",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anti-inflamatory",
+        "dbpedia_label": "Anti-inflamatory"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7859",
+        "original_label": "Anthelmintic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anthelmintic",
+        "dbpedia_label": "Anthelmintic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7861",
+        "original_label": "Antileishmanial",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antileishmanial",
+        "dbpedia_label": "Antileishmanial"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7863",
+        "original_label": "Antiangiogenic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Antiangiogenic",
+        "dbpedia_label": "Antiangiogenic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7864",
+        "original_label": "Anxiolytic",
+        "dbpedia_uri": "http://dbpedia.org/resource/Anxiolytic",
+        "dbpedia_label": "Anxiolytic"
+    }
+]
