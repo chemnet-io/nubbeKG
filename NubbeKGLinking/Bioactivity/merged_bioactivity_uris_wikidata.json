@@ -1,0 +1,80 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/31017",
+        "original_label": "Anesthetic",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q4990531",
+        "wikidata_label": "anesthetic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7843",
+        "original_label": "Antifungal",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q578726",
+        "wikidata_label": "antifungal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7843",
+        "original_label": "Antifungal",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q70340365",
+        "wikidata_label": "antifungal"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7844",
+        "original_label": "Inhibition of Acetylcholinesterase",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q2592323",
+        "wikidata_label": "acetylcholinesterase inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7846",
+        "original_label": "Antioxidant",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q133948",
+        "wikidata_label": "antioxidant"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7846",
+        "original_label": "Antioxidant",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q11644436",
+        "wikidata_label": "antioxidant"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7852",
+        "original_label": "Antimalarial",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q521616",
+        "wikidata_label": "antimalarial"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7853",
+        "original_label": "Inhibition of Protease",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q166774",
+        "wikidata_label": "protease inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7853",
+        "original_label": "Inhibition of Protease",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q55761529",
+        "wikidata_label": "protease inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7853",
+        "original_label": "Inhibition of Protease",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q63012698",
+        "wikidata_label": "protease inhibitor"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7859",
+        "original_label": "Anthelmintic",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q572294",
+        "wikidata_label": "anthelmintic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/7864",
+        "original_label": "Anxiolytic",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q62903",
+        "wikidata_label": "anxiolytic"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/bioactivity/63640",
+        "original_label": "Inhibition of Topoisomerase",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q281044",
+        "wikidata_label": "topoisomerase inhibitor"
+    }
+]
