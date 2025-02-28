@@ -2,8 +2,8 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/AC",
         "original_label": "AC",
-        "dbpedia_uri": "http://dbpedia.org/resource/Acre",
-        "dbpedia_label": "Acre"
+        "dbpedia_uri": "http://dbpedia.org/resource/Acre_(state)",
+        "dbpedia_label": "Acre_(state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/AL",
@@ -14,8 +14,8 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/AM",
         "original_label": "AM",
-        "dbpedia_uri": "http://dbpedia.org/resource/Amazonas",
-        "dbpedia_label": "Amazonas"
+        "dbpedia_uri": "http://dbpedia.org/resource/Amazonas_(Brazilian_state)",
+        "dbpedia_label": "Amazonas_(Brazilian_state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/AP",
@@ -38,13 +38,13 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/DF",
         "original_label": "DF",
-        "dbpedia_uri": "http://dbpedia.org/resource/Distrito%20Federal%20(Brazil)",
+        "dbpedia_uri": "http://dbpedia.org/resource/Distrito_Federal_(Brazil)",
         "dbpedia_label": "Distrito Federal (Brazil)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/ES",
         "original_label": "ES",
-        "dbpedia_uri": "http://dbpedia.org/resource/Esp%C3%ADrito%20Santo",
+        "dbpedia_uri": "http://dbpedia.org/resource/Esp%C3%ADrito_Santo",
         "dbpedia_label": "Espírito Santo"
     },
     {
@@ -62,19 +62,19 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/MG",
         "original_label": "MG",
-        "dbpedia_uri": "http://dbpedia.org/resource/Minas%20Gerais",
+        "dbpedia_uri": "http://dbpedia.org/resource/Minas_Gerais",
         "dbpedia_label": "Minas Gerais"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/MS",
         "original_label": "MS",
-        "dbpedia_uri": "http://dbpedia.org/resource/Mato%20Grosso%20do%20Sul",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mato_Grosso_do_Sul",
         "dbpedia_label": "Mato Grosso do Sul"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/MT",
         "original_label": "MT",
-        "dbpedia_uri": "http://dbpedia.org/resource/Mato%20Grosso",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mato_Grosso",
         "dbpedia_label": "Mato Grosso"
     },
     {
@@ -110,32 +110,32 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/RJ",
         "original_label": "RJ",
-        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20de%20Janeiro",
-        "dbpedia_label": "Rio de Janeiro"
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio_de_Janeiro_(state)",
+        "dbpedia_label": "Rio_de_Janeiro_(state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/RN",
         "original_label": "RN",
-        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20Grande%20do%20Norte",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio_Grande_do_Norte",
         "dbpedia_label": "Rio Grande do Norte"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/RS",
         "original_label": "RS",
-        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20Grande%20do%20Sul",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio_Grande_do_Sul",
         "dbpedia_label": "Rio Grande do Sul"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/SC",
         "original_label": "SC",
-        "dbpedia_uri": "http://dbpedia.org/resource/Santa%20Catarina",
-        "dbpedia_label": "Santa Catarina"
+        "dbpedia_uri": "http://dbpedia.org/resource/Santa_Catarina_(state)",
+        "dbpedia_label": "Santa_Catarina_(state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/SP",
         "original_label": "SP",
-        "dbpedia_uri": "http://dbpedia.org/resource/S%C3%A3o%20Paulo",
-        "dbpedia_label": "São Paulo"
+        "dbpedia_uri": "http://dbpedia.org/resource/S%C3%A3o_Paulo_(state)",
+        "dbpedia_label": "São_Paulo_(state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/TO",

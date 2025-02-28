@@ -3,9 +3,9 @@ import urllib.parse
 
 # Mapping from state abbreviation to the full state name (as used by DBpedia)
 state_mapping = {
-    "AC": "Acre",
+    "AC": "Acre_(state)",
     "AL": "Alagoas",
-    "AM": "Amazonas",
+    "AM": "Amazonas_(Brazilian_state)",
     "AP": "Amapá",
     "BA": "Bahia",
     "CE": "Ceará",
@@ -21,11 +21,11 @@ state_mapping = {
     "PE": "Pernambuco",
     "PI": "Piauí",
     "PR": "Paraná",
-    "RJ": "Rio de Janeiro",
+    "RJ": "Rio_de_Janeiro_(state)",
     "RN": "Rio Grande do Norte",
     "RS": "Rio Grande do Sul",
-    "SC": "Santa Catarina",
-    "SP": "São Paulo",
+    "SC": "Santa_Catarina_(state)",
+    "SP": "São_Paulo_(state)",
     "TO": "Tocantins"
 }
 
@@ -42,10 +42,12 @@ for entry in data:
     # Use the abbreviation as key to get the full state name.
     abbr = entry.get("original_label")
     full_name = state_mapping.get(abbr, abbr)  # fallback to abbreviation if not found
+
+    # Replace every space with an underscore
+    dbpedia_name = full_name.replace(" ", "_")
     
-    # URL-encode the full name appropriately.
-    # Allow some characters like parentheses and underscores that might appear in DBpedia URIs.
-    encoded_name = urllib.parse.quote(full_name, safe="()_")
+    # Optionally, encode the name to handle special characters (while preserving underscores)
+    encoded_name = urllib.parse.quote(dbpedia_name, safe="()_")
     
     # Construct the DBpedia URI.
     dbpedia_uri = f"http://dbpedia.org/resource/{encoded_name}"
