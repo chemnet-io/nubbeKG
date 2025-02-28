@@ -25,7 +25,7 @@ state_mapping = {
     "RN": "Rio Grande do Norte",
     "RS": "Rio Grande do Sul",
     "SC": "Santa_Catarina_(state)",
-    "SP": "São_Paulo_(state)",
+    "SP": "Sao_Paulo_(state)",
     "TO": "Tocantins"
 }
 

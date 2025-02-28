@@ -134,8 +134,8 @@
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/SP",
         "original_label": "SP",
-        "dbpedia_uri": "http://dbpedia.org/resource/S%C3%A3o_Paulo_(state)",
-        "dbpedia_label": "São_Paulo_(state)"
+        "dbpedia_uri": "http://dbpedia.org/resource/Sao_Paulo_(state)",
+        "dbpedia_label": "Sao_Paulo_(state)"
     },
     {
         "nubbe_uri": "http://nubbekg.aksw.org/data/location/TO",
