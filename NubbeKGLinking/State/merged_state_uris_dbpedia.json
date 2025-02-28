@@ -1,0 +1,146 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AC",
+        "original_label": "AC",
+        "dbpedia_uri": "http://dbpedia.org/resource/Acre",
+        "dbpedia_label": "Acre"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AL",
+        "original_label": "AL",
+        "dbpedia_uri": "http://dbpedia.org/resource/Alagoas",
+        "dbpedia_label": "Alagoas"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AM",
+        "original_label": "AM",
+        "dbpedia_uri": "http://dbpedia.org/resource/Amazonas",
+        "dbpedia_label": "Amazonas"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AP",
+        "original_label": "AP",
+        "dbpedia_uri": "http://dbpedia.org/resource/Amap%C3%A1",
+        "dbpedia_label": "Amapá"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/BA",
+        "original_label": "BA",
+        "dbpedia_uri": "http://dbpedia.org/resource/Bahia",
+        "dbpedia_label": "Bahia"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/CE",
+        "original_label": "CE",
+        "dbpedia_uri": "http://dbpedia.org/resource/Cear%C3%A1",
+        "dbpedia_label": "Ceará"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/DF",
+        "original_label": "DF",
+        "dbpedia_uri": "http://dbpedia.org/resource/Distrito%20Federal%20(Brazil)",
+        "dbpedia_label": "Distrito Federal (Brazil)"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/ES",
+        "original_label": "ES",
+        "dbpedia_uri": "http://dbpedia.org/resource/Esp%C3%ADrito%20Santo",
+        "dbpedia_label": "Espírito Santo"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/GO",
+        "original_label": "GO",
+        "dbpedia_uri": "http://dbpedia.org/resource/Goi%C3%A1s",
+        "dbpedia_label": "Goiás"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MA",
+        "original_label": "MA",
+        "dbpedia_uri": "http://dbpedia.org/resource/Maranh%C3%A3o",
+        "dbpedia_label": "Maranhão"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MG",
+        "original_label": "MG",
+        "dbpedia_uri": "http://dbpedia.org/resource/Minas%20Gerais",
+        "dbpedia_label": "Minas Gerais"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MS",
+        "original_label": "MS",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mato%20Grosso%20do%20Sul",
+        "dbpedia_label": "Mato Grosso do Sul"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MT",
+        "original_label": "MT",
+        "dbpedia_uri": "http://dbpedia.org/resource/Mato%20Grosso",
+        "dbpedia_label": "Mato Grosso"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PA",
+        "original_label": "PA",
+        "dbpedia_uri": "http://dbpedia.org/resource/Par%C3%A1",
+        "dbpedia_label": "Pará"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PB",
+        "original_label": "PB",
+        "dbpedia_uri": "http://dbpedia.org/resource/Para%C3%ADba",
+        "dbpedia_label": "Paraíba"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PE",
+        "original_label": "PE",
+        "dbpedia_uri": "http://dbpedia.org/resource/Pernambuco",
+        "dbpedia_label": "Pernambuco"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PI",
+        "original_label": "PI",
+        "dbpedia_uri": "http://dbpedia.org/resource/Piau%C3%AD",
+        "dbpedia_label": "Piauí"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PR",
+        "original_label": "PR",
+        "dbpedia_uri": "http://dbpedia.org/resource/Paran%C3%A1",
+        "dbpedia_label": "Paraná"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RJ",
+        "original_label": "RJ",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20de%20Janeiro",
+        "dbpedia_label": "Rio de Janeiro"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RN",
+        "original_label": "RN",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20Grande%20do%20Norte",
+        "dbpedia_label": "Rio Grande do Norte"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RS",
+        "original_label": "RS",
+        "dbpedia_uri": "http://dbpedia.org/resource/Rio%20Grande%20do%20Sul",
+        "dbpedia_label": "Rio Grande do Sul"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/SC",
+        "original_label": "SC",
+        "dbpedia_uri": "http://dbpedia.org/resource/Santa%20Catarina",
+        "dbpedia_label": "Santa Catarina"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/SP",
+        "original_label": "SP",
+        "dbpedia_uri": "http://dbpedia.org/resource/S%C3%A3o%20Paulo",
+        "dbpedia_label": "São Paulo"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/TO",
+        "original_label": "TO",
+        "dbpedia_uri": "http://dbpedia.org/resource/Tocantins",
+        "dbpedia_label": "Tocantins"
+    }
+]

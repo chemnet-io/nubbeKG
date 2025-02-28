@@ -1,0 +1,146 @@
+[
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AC",
+        "original_label": "AC",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40780",
+        "wikidata_label": "AC"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AL",
+        "original_label": "AL",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40885",
+        "wikidata_label": "AL"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AM",
+        "original_label": "AM",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40040",
+        "wikidata_label": "AM"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/AP",
+        "original_label": "AP",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40130",
+        "wikidata_label": "AP"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/BA",
+        "original_label": "BA",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40430",
+        "wikidata_label": "BA"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/CE",
+        "original_label": "CE",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40123",
+        "wikidata_label": "CE"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/DF",
+        "original_label": "DF",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q119158",
+        "wikidata_label": "DF"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/ES",
+        "original_label": "ES",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q43233",
+        "wikidata_label": "ES"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/GO",
+        "original_label": "GO",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q41587",
+        "wikidata_label": "GO"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MA",
+        "original_label": "MA",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q42362",
+        "wikidata_label": "MA"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MG",
+        "original_label": "MG",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q39109",
+        "wikidata_label": "MG"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MS",
+        "original_label": "MS",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q43319",
+        "wikidata_label": "MS"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/MT",
+        "original_label": "MT",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q42824",
+        "wikidata_label": "MT"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PA",
+        "original_label": "PA",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q39517",
+        "wikidata_label": "PA"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PB",
+        "original_label": "PB",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q38088",
+        "wikidata_label": "PB"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PE",
+        "original_label": "PE",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40942",
+        "wikidata_label": "PE"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PI",
+        "original_label": "PI",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q42722",
+        "wikidata_label": "PI"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/PR",
+        "original_label": "PR",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q15499",
+        "wikidata_label": "PR"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RJ",
+        "original_label": "RJ",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q41428",
+        "wikidata_label": "RJ"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RN",
+        "original_label": "RN",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q43255",
+        "wikidata_label": "RN"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/RS",
+        "original_label": "RS",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q40030",
+        "wikidata_label": "RS"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/SC",
+        "original_label": "SC",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q41115",
+        "wikidata_label": "SC"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/SP",
+        "original_label": "SP",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q175",
+        "wikidata_label": "SP"
+    },
+    {
+        "nubbe_uri": "http://nubbekg.aksw.org/data/location/TO",
+        "original_label": "TO",
+        "wikidata_uri": "http://www.wikidata.org/entity/Q43695",
+        "wikidata_label": "TO"
+    }
+]
