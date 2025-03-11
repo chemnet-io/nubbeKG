@@ -74,8 +74,8 @@
         qi = "                nubbe:discovered/nubbe:commonName ?compound;" ;
         qj = "                nubbe:discovered/nubbe:smiles ?smiles." ;
         qk = "  ?specimen nubbe:partOfSpecies/rdfs:label ?species ." ;
-        ql = "  ?analysis nubbe:discovered/nubbe:commonName ?compound.";
-        ql += "\n OPTIONAL { ?analysis nubbe:hasBioAssay            ?assay ." ;
+        ql += " OPTIONAL { ?analysis nubbe:hasBioAssay            ?assay ." ;
+        ql += "\n            ?analysis nubbe:discovered/nubbe:commonName ?compound.";
         qm = "             ?assay    nubbe:bioactivity/rdfs:label ?bio. }}" ;
         qn = "LIMIT   1000" ;
 
