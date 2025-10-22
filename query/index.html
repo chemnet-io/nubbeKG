@@ -69,16 +69,16 @@
         qd = "SELECT DISTINCT  ?analysis ?compound ?smiles ?ref ?species ?bio" ;
         qe = "WHERE" ;
         qf = "{ ?analysis a             					nubbe:Analysis ." ;
-        qg = "  ?analysis nubbe:reference/rdfs:label ?ref;" ;
-        qh = "                nubbe:aboutSpecimen ?specimen;" ;
-        qi = "                nubbe:discovered/nubbe:commonName ?compound;" ;
-        qj = "                nubbe:discovered/nubbe:smiles ?smiles." ;
+        qg = "  ?analysis nubbe:reference/rdfs:label ?ref ;" ;
+        qh = "                nubbe:aboutSpecimen ?specimen ;" ;
+        qj = "                nubbe:discovered/nubbe:smiles ?smiles ." ;
         qk = "  ?specimen nubbe:partOfSpecies/rdfs:label ?species ." ;
-        ql = "  OPTIONAL { ?analysis nubbe:hasBioAssay            ?assay ." ;
-        qm = "             ?assay    nubbe:bioactivity/rdfs:label ?bio. }}" ;
+        ql = " OPTIONAL { ?analysis nubbe:discovered/nubbe:commonName ?compound . }";
+        ql += "\n  OPTIONAL {            ?analysis nubbe:hasBioAssay            ?assay ." ;  
+        qm = "             ?assay    nubbe:bioactivity/rdfs:label ?bio . }}" ;
         qn = "LIMIT   1000" ;
 
-        query = qa+"\n"+qb+"\n"+qc+"\n\n"+qinfo+"\n\n"+qd+"\n"+qe+"\n"+qf+"\n"+qg+"\n"+qh+"\n"+qi+"\n"+qj+"\n"+qk+"\n"+ql+"\n"+qm+"\n"+qn ;
+        query = qa+"\n"+qb+"\n"+qc+"\n\n"+qinfo+"\n\n"+qd+"\n"+qe+"\n"+qf+"\n"+qg+"\n"+qh+"\n"+qj+"\n"+qk+"\n"+ql+"\n"+qm+"\n"+qn ;
 
         yasgui.getTab().yasqe.setValue(query);
 
